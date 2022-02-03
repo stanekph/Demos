@@ -1,0 +1,1882 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="no"?>
+<?xml-stylesheet href="file:/C:/qa_systems/cantata/configuration/org.eclipse.osgi/8/0/.cp/xslt/HTML%20Detailed%20Report.xslt" type="text/xsl"?><testReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generated="26th January 2022 15:29" xsi:noNamespaceSchemaLocation="test_report.xsd">
+  <project name="serial">
+    <testScriptInfo>
+      <summary status="passed">
+        <testScripts>2</testScripts>
+        <testScriptsPass>2</testScriptsPass>
+        <testScriptsFail>0</testScriptsFail>
+        <testCases>15</testCases>
+        <testCasesPassed>15</testCasesPassed>
+        <testCasesFailed>0</testCasesFailed>
+        <checksPassed>55</checksPassed>
+        <checksFailed>0</checksFailed>
+        <checksWarning>0</checksWarning>
+        <scriptDirectives>114</scriptDirectives>
+        <scriptErrors>0</scriptErrors>
+        <callSequenceFailures>0</callSequenceFailures>
+        <userComments>8</userComments>
+      </summary>
+    </testScriptInfo>
+    <filterInfo>Filters Applied: None</filterInfo>
+    <coverageInfo>
+      <coverageAchieved>
+        <entryPoint>100</entryPoint>
+        <statement>100</statement>
+        <decision>100</decision>
+        <callReturn>NO DATA</callReturn>
+        <booleanOperandEffectivenessMasking>100</booleanOperandEffectivenessMasking>
+        <booleanOperandEffectivenessUnique>100</booleanOperandEffectivenessUnique>
+      </coverageAchieved>
+    </coverageInfo>
+    <coverageTargets>
+      <entryPoint enabled="true">
+        <targetInfo>
+          <targetPercent>100</targetPercent>
+          <functionsPassed>3</functionsPassed>
+          <totalFunctions>3</totalFunctions>
+          <uninstrumentedFunctions>46</uninstrumentedFunctions>
+        </targetInfo>
+      </entryPoint>
+      <statement enabled="true">
+        <targetInfo>
+          <targetPercent>100</targetPercent>
+          <functionsPassed>3</functionsPassed>
+          <totalFunctions>3</totalFunctions>
+          <uninstrumentedFunctions>46</uninstrumentedFunctions>
+        </targetInfo>
+      </statement>
+      <decision enabled="true">
+        <targetInfo>
+          <targetPercent>100</targetPercent>
+          <functionsPassed>3</functionsPassed>
+          <totalFunctions>3</totalFunctions>
+          <uninstrumentedFunctions>46</uninstrumentedFunctions>
+        </targetInfo>
+      </decision>
+      <callReturn enabled="true">
+        <targetInfo>
+          <targetPercent>100</targetPercent>
+          <functionsPassed>0</functionsPassed>
+          <totalFunctions>0</totalFunctions>
+          <uninstrumentedFunctions>49</uninstrumentedFunctions>
+        </targetInfo>
+      </callReturn>
+      <booleanOperandEffectivenessMasking enabled="true">
+        <targetInfo>
+          <targetPercent>100</targetPercent>
+          <functionsPassed>3</functionsPassed>
+          <totalFunctions>3</totalFunctions>
+          <uninstrumentedFunctions>46</uninstrumentedFunctions>
+        </targetInfo>
+      </booleanOperandEffectivenessMasking>
+      <booleanOperandEffectivenessUnique enabled="true">
+        <targetInfo>
+          <targetPercent>100</targetPercent>
+          <functionsPassed>3</functionsPassed>
+          <totalFunctions>3</totalFunctions>
+          <uninstrumentedFunctions>46</uninstrumentedFunctions>
+        </targetInfo>
+      </booleanOperandEffectivenessUnique>
+    </coverageTargets>
+  </project>
+  <testResults>
+    <testScript>
+      <info>
+        <testScriptName>struct</testScriptName>
+        <testScriptDescription>= Cantata Test Harness v9.5                                               =
+= (c) 2021 QA Systems GmbH                                                =
+=    Configuration: x86-Win32-gcc8.2.0-bundled                            =
+=     Test Started: Mon Jan 03 22:19:23 2022                              =</testScriptDescription>
+        <testScriptFile name="atest_struct.c" path="atest_struct/"/>
+      </info>
+      <summary status="passed">
+        <testCases>8</testCases>
+        <testCasesPassed>8</testCasesPassed>
+        <testCasesFailed>0</testCasesFailed>
+        <checksPassed>34</checksPassed>
+        <checksFailed>0</checksFailed>
+        <checksWarning>0</checksWarning>
+        <scriptDirectives>62</scriptDirectives>
+        <scriptErrors>0</scriptErrors>
+        <scriptWarnings>0</scriptWarnings>
+        <callSequenceFailures>0</callSequenceFailures>
+        <userComments>4</userComments>
+      </summary>
+      <testScriptBody>
+        <testCase description="default case" title="1: check_bus">
+          <summary status="passed">
+            <checksPassed>2</checksPassed>
+            <checksFailed>0</checksFailed>
+            <checksWarning>0</checksWarning>
+            <scriptDirectives>2</scriptDirectives>
+            <scriptErrors>0</scriptErrors>
+            <scriptWarnings>0</scriptWarnings>
+            <callSequenceFailures>0</callSequenceFailures>
+            <userComments>0</userComments>
+          </summary>
+          <contents>
+            <scriptDirective>
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>174</lineNumber>
+              </position>
+              <name>Start Call Sequence Validation</name>
+              <description/>
+            </scriptDirective>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>180</lineNumber>
+              </position>
+              <name>returnValue = READY</name>
+              <expectedValue>0</expectedValue>
+              <actualValue>0</actualValue>
+            </check>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>59</lineNumber>
+              </position>
+              <name>ACCESS_VARIABLE(struct, _testArray)</name>
+              <expectedValue/>
+              <actualValue/>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>183</lineNumber>
+              </position>
+              <name>End Call Sequence Validation </name>
+              <description/>
+            </callSequenceScriptDir>
+          </contents>
+        </testCase>
+        <testCase description="default case" title="2: mem_alloc">
+          <summary status="passed">
+            <checksPassed>3</checksPassed>
+            <checksFailed>0</checksFailed>
+            <checksWarning>0</checksWarning>
+            <scriptDirectives>4</scriptDirectives>
+            <scriptErrors>0</scriptErrors>
+            <scriptWarnings>0</scriptWarnings>
+            <callSequenceFailures>0</callSequenceFailures>
+            <userComments>0</userComments>
+          </summary>
+          <contents>
+            <scriptDirective>
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>202</lineNumber>
+              </position>
+              <name>Start Call Sequence Validation</name>
+              <description/>
+            </scriptDirective>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>383</lineNumber>
+              </position>
+              <name>Function: malloc</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>383</lineNumber>
+              </position>
+              <name>Instance: 1</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>386</lineNumber>
+              </position>
+              <name>param_1 = 0U</name>
+              <expectedValue>0</expectedValue>
+              <actualValue>0</actualValue>
+            </check>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>208</lineNumber>
+              </position>
+              <name>returnValue = NULL</name>
+              <expectedValue>0x00000000</expectedValue>
+              <actualValue>0x00000000</actualValue>
+            </check>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>59</lineNumber>
+              </position>
+              <name>ACCESS_VARIABLE(struct, _testArray)</name>
+              <expectedValue/>
+              <actualValue/>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>211</lineNumber>
+              </position>
+              <name>End Call Sequence Validation </name>
+              <description/>
+            </callSequenceScriptDir>
+          </contents>
+        </testCase>
+        <testCase description="default case" title="3: serial_com">
+          <summary status="passed">
+            <checksPassed>5</checksPassed>
+            <checksFailed>0</checksFailed>
+            <checksWarning>0</checksWarning>
+            <scriptDirectives>12</scriptDirectives>
+            <scriptErrors>0</scriptErrors>
+            <scriptWarnings>0</scriptWarnings>
+            <callSequenceFailures>0</callSequenceFailures>
+            <userComments>0</userComments>
+          </summary>
+          <contents>
+            <scriptDirective>
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>230</lineNumber>
+              </position>
+              <name>Start Call Sequence Validation</name>
+              <description/>
+            </scriptDirective>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>417</lineNumber>
+              </position>
+              <name>Function: mem_alloc</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>417</lineNumber>
+              </position>
+              <name>Instance: 1</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>420</lineNumber>
+              </position>
+              <name>size = 4U</name>
+              <expectedValue>4</expectedValue>
+              <actualValue>4</actualValue>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>459</lineNumber>
+              </position>
+              <name>Function: check_bus</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>459</lineNumber>
+              </position>
+              <name>Instance: 1</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>362</lineNumber>
+              </position>
+              <name>Function: disable_watchdog</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>362</lineNumber>
+              </position>
+              <name>Instance: 1</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>366</lineNumber>
+              </position>
+              <name>param = 0</name>
+              <expectedValue>0</expectedValue>
+              <actualValue>0</actualValue>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>362</lineNumber>
+              </position>
+              <name>Function: disable_watchdog</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>362</lineNumber>
+              </position>
+              <name>Instance: 1</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>366</lineNumber>
+              </position>
+              <name>param = 0</name>
+              <expectedValue>0</expectedValue>
+              <actualValue>0</actualValue>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>459</lineNumber>
+              </position>
+              <name>Function: check_bus</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>459</lineNumber>
+              </position>
+              <name>Instance: 1</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>236</lineNumber>
+              </position>
+              <name>returnValue = &amp;ACCESS_VARIABLE(struct, _testArray)[2]</name>
+              <expectedValue>0x0042C050</expectedValue>
+              <actualValue>0x0042C050</actualValue>
+            </check>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>59</lineNumber>
+              </position>
+              <name>ACCESS_VARIABLE(struct, _testArray)</name>
+              <expectedValue/>
+              <actualValue/>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>239</lineNumber>
+              </position>
+              <name>End Call Sequence Validation </name>
+              <description/>
+            </callSequenceScriptDir>
+          </contents>
+        </testCase>
+        <testCase description="created to solve false case of check_bus()==READY at line number 57" title="4: serial_com">
+          <summary status="passed">
+            <checksPassed>5</checksPassed>
+            <checksFailed>0</checksFailed>
+            <checksWarning>0</checksWarning>
+            <scriptDirectives>12</scriptDirectives>
+            <scriptErrors>0</scriptErrors>
+            <scriptWarnings>0</scriptWarnings>
+            <callSequenceFailures>0</callSequenceFailures>
+            <userComments>0</userComments>
+          </summary>
+          <contents>
+            <scriptDirective>
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>258</lineNumber>
+              </position>
+              <name>Start Call Sequence Validation</name>
+              <description/>
+            </scriptDirective>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>417</lineNumber>
+              </position>
+              <name>Function: mem_alloc</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>417</lineNumber>
+              </position>
+              <name>Instance: 1</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>420</lineNumber>
+              </position>
+              <name>size = 4U</name>
+              <expectedValue>4</expectedValue>
+              <actualValue>4</actualValue>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>459</lineNumber>
+              </position>
+              <name>Function: check_bus</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>459</lineNumber>
+              </position>
+              <name>Instance: 1</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>362</lineNumber>
+              </position>
+              <name>Function: disable_watchdog</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>362</lineNumber>
+              </position>
+              <name>Instance: 1</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>366</lineNumber>
+              </position>
+              <name>param = 0</name>
+              <expectedValue>0</expectedValue>
+              <actualValue>0</actualValue>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>362</lineNumber>
+              </position>
+              <name>Function: disable_watchdog</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>362</lineNumber>
+              </position>
+              <name>Instance: 1</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>366</lineNumber>
+              </position>
+              <name>param = 0</name>
+              <expectedValue>0</expectedValue>
+              <actualValue>0</actualValue>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>459</lineNumber>
+              </position>
+              <name>Function: check_bus</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>459</lineNumber>
+              </position>
+              <name>Instance: 2</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>264</lineNumber>
+              </position>
+              <name>returnValue = NULL</name>
+              <expectedValue>0x00000000</expectedValue>
+              <actualValue>0x00000000</actualValue>
+            </check>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>59</lineNumber>
+              </position>
+              <name>ACCESS_VARIABLE(struct, _testArray)</name>
+              <expectedValue/>
+              <actualValue/>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>267</lineNumber>
+              </position>
+              <name>End Call Sequence Validation </name>
+              <description/>
+            </callSequenceScriptDir>
+          </contents>
+        </testCase>
+        <testCase description="created to solve true case of disable_watchdog(0) at line number 56" title="5: serial_com">
+          <summary status="passed">
+            <checksPassed>5</checksPassed>
+            <checksFailed>0</checksFailed>
+            <checksWarning>0</checksWarning>
+            <scriptDirectives>10</scriptDirectives>
+            <scriptErrors>0</scriptErrors>
+            <scriptWarnings>0</scriptWarnings>
+            <callSequenceFailures>0</callSequenceFailures>
+            <userComments>0</userComments>
+          </summary>
+          <contents>
+            <scriptDirective>
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>286</lineNumber>
+              </position>
+              <name>Start Call Sequence Validation</name>
+              <description/>
+            </scriptDirective>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>417</lineNumber>
+              </position>
+              <name>Function: mem_alloc</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>417</lineNumber>
+              </position>
+              <name>Instance: 1</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>420</lineNumber>
+              </position>
+              <name>size = 4U</name>
+              <expectedValue>4</expectedValue>
+              <actualValue>4</actualValue>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>459</lineNumber>
+              </position>
+              <name>Function: check_bus</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>459</lineNumber>
+              </position>
+              <name>Instance: 1</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>362</lineNumber>
+              </position>
+              <name>Function: disable_watchdog</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>362</lineNumber>
+              </position>
+              <name>Instance: 1</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>366</lineNumber>
+              </position>
+              <name>param = 0</name>
+              <expectedValue>0</expectedValue>
+              <actualValue>0</actualValue>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>362</lineNumber>
+              </position>
+              <name>Function: disable_watchdog</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>362</lineNumber>
+              </position>
+              <name>Instance: 2</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>371</lineNumber>
+              </position>
+              <name>param = 0</name>
+              <expectedValue>0</expectedValue>
+              <actualValue>0</actualValue>
+            </check>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>292</lineNumber>
+              </position>
+              <name>returnValue = NULL</name>
+              <expectedValue>0x00000000</expectedValue>
+              <actualValue>0x00000000</actualValue>
+            </check>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>59</lineNumber>
+              </position>
+              <name>ACCESS_VARIABLE(struct, _testArray)</name>
+              <expectedValue/>
+              <actualValue/>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>295</lineNumber>
+              </position>
+              <name>End Call Sequence Validation </name>
+              <description/>
+            </callSequenceScriptDir>
+          </contents>
+        </testCase>
+        <testCase description="created to solve false case of fl==NULL at line number 56" title="6: serial_com">
+          <summary status="passed">
+            <checksPassed>5</checksPassed>
+            <checksFailed>0</checksFailed>
+            <checksWarning>0</checksWarning>
+            <scriptDirectives>12</scriptDirectives>
+            <scriptErrors>0</scriptErrors>
+            <scriptWarnings>0</scriptWarnings>
+            <callSequenceFailures>0</callSequenceFailures>
+            <userComments>0</userComments>
+          </summary>
+          <contents>
+            <scriptDirective>
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>314</lineNumber>
+              </position>
+              <name>Start Call Sequence Validation</name>
+              <description/>
+            </scriptDirective>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>417</lineNumber>
+              </position>
+              <name>Function: mem_alloc</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>417</lineNumber>
+              </position>
+              <name>Instance: 2</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>424</lineNumber>
+              </position>
+              <name>size = 4U</name>
+              <expectedValue>4</expectedValue>
+              <actualValue>4</actualValue>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>459</lineNumber>
+              </position>
+              <name>Function: check_bus</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>459</lineNumber>
+              </position>
+              <name>Instance: 1</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>362</lineNumber>
+              </position>
+              <name>Function: disable_watchdog</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>362</lineNumber>
+              </position>
+              <name>Instance: 1</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>366</lineNumber>
+              </position>
+              <name>param = 0</name>
+              <expectedValue>0</expectedValue>
+              <actualValue>0</actualValue>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>362</lineNumber>
+              </position>
+              <name>Function: disable_watchdog</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>362</lineNumber>
+              </position>
+              <name>Instance: 2</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>371</lineNumber>
+              </position>
+              <name>param = 0</name>
+              <expectedValue>0</expectedValue>
+              <actualValue>0</actualValue>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>459</lineNumber>
+              </position>
+              <name>Function: check_bus</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>459</lineNumber>
+              </position>
+              <name>Instance: 1</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>320</lineNumber>
+              </position>
+              <name>returnValue = &amp;ACCESS_VARIABLE(struct, _testArray)[2]</name>
+              <expectedValue>0x0042C050</expectedValue>
+              <actualValue>0x0042C050</actualValue>
+            </check>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>59</lineNumber>
+              </position>
+              <name>ACCESS_VARIABLE(struct, _testArray)</name>
+              <expectedValue/>
+              <actualValue/>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>323</lineNumber>
+              </position>
+              <name>End Call Sequence Validation </name>
+              <description/>
+            </callSequenceScriptDir>
+          </contents>
+        </testCase>
+        <testCase description="created to solve false case of bst == READY at line number 52" title="7: serial_com">
+          <summary status="passed">
+            <checksPassed>4</checksPassed>
+            <checksFailed>0</checksFailed>
+            <checksWarning>0</checksWarning>
+            <scriptDirectives>10</scriptDirectives>
+            <scriptErrors>0</scriptErrors>
+            <scriptWarnings>0</scriptWarnings>
+            <callSequenceFailures>0</callSequenceFailures>
+            <userComments>0</userComments>
+          </summary>
+          <contents>
+            <scriptDirective>
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>342</lineNumber>
+              </position>
+              <name>Start Call Sequence Validation</name>
+              <description/>
+            </scriptDirective>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>417</lineNumber>
+              </position>
+              <name>Function: mem_alloc</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>417</lineNumber>
+              </position>
+              <name>Instance: 1</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>420</lineNumber>
+              </position>
+              <name>size = 4U</name>
+              <expectedValue>4</expectedValue>
+              <actualValue>4</actualValue>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>459</lineNumber>
+              </position>
+              <name>Function: check_bus</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>459</lineNumber>
+              </position>
+              <name>Instance: 2</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>362</lineNumber>
+              </position>
+              <name>Function: disable_watchdog</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>362</lineNumber>
+              </position>
+              <name>Instance: 1</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>366</lineNumber>
+              </position>
+              <name>param = 0</name>
+              <expectedValue>0</expectedValue>
+              <actualValue>0</actualValue>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>459</lineNumber>
+              </position>
+              <name>Function: check_bus</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>459</lineNumber>
+              </position>
+              <name>Instance: 1</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>348</lineNumber>
+              </position>
+              <name>returnValue = &amp;ACCESS_VARIABLE(struct, _testArray)[2]</name>
+              <expectedValue>0x0042C050</expectedValue>
+              <actualValue>0x0042C050</actualValue>
+            </check>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>59</lineNumber>
+              </position>
+              <name>ACCESS_VARIABLE(struct, _testArray)</name>
+              <expectedValue/>
+              <actualValue/>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>351</lineNumber>
+              </position>
+              <name>End Call Sequence Validation </name>
+              <description/>
+            </callSequenceScriptDir>
+          </contents>
+        </testCase>
+        <testCase description="DO-178B/C Level A" title="COVERAGE RULE SET">
+          <summary status="passed">
+            <checksPassed>5</checksPassed>
+            <checksFailed>0</checksFailed>
+            <checksWarning>0</checksWarning>
+            <scriptDirectives>0</scriptDirectives>
+            <scriptErrors>0</scriptErrors>
+            <scriptWarnings>0</scriptWarnings>
+            <callSequenceFailures>0</callSequenceFailures>
+            <userComments>0</userComments>
+          </summary>
+          <contents>
+            <checkRange status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>90</lineNumber>
+              </position>
+              <name>100% Entry Point Coverage</name>
+              <lowerValue>100</lowerValue>
+              <upperValue>100</upperValue>
+              <actualValue>100</actualValue>
+            </checkRange>
+            <checkRange status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>94</lineNumber>
+              </position>
+              <name>100% Statement Coverage</name>
+              <lowerValue>100</lowerValue>
+              <upperValue>100</upperValue>
+              <actualValue>100</actualValue>
+            </checkRange>
+            <checkRange status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>98</lineNumber>
+              </position>
+              <name>100% Decision Coverage</name>
+              <lowerValue>100</lowerValue>
+              <upperValue>100</upperValue>
+              <actualValue>100</actualValue>
+            </checkRange>
+            <checkRange status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>102</lineNumber>
+              </position>
+              <name>100% Call Return Coverage</name>
+              <lowerValue>100</lowerValue>
+              <upperValue>100</upperValue>
+              <actualValue>100</actualValue>
+            </checkRange>
+            <checkRange status="passed">
+              <position>
+                <sourceFile name="atest_struct.c" path="atest_struct/"/>
+                <lineNumber>106</lineNumber>
+              </position>
+              <name>100% Boolean Operand Effectiveness Coverage</name>
+              <lowerValue>100</lowerValue>
+              <upperValue>100</upperValue>
+              <actualValue>100</actualValue>
+            </checkRange>
+          </contents>
+        </testCase>
+        <nonTestCase>
+          <contents>
+            <userComment>
+              <position>
+                <sourceFile name="struct.c" path="C:/Users/ph.stanek/workspace9/serial/"/>
+                <lineNumber>57</lineNumber>
+              </position>
+              <comment>Report on memory usage
+</comment>
+            </userComment>
+            <userComment>
+              <position>
+                <sourceFile name="struct.c" path="C:/Users/ph.stanek/workspace9/serial/"/>
+                <lineNumber>57</lineNumber>
+              </position>
+              <comment>    Peak memory used         : 9828 bytes
+</comment>
+            </userComment>
+            <userComment>
+              <position>
+                <sourceFile name="struct.c" path="C:/Users/ph.stanek/workspace9/serial/"/>
+                <lineNumber>57</lineNumber>
+              </position>
+              <comment>    Initial memory pool size : 32000 bytes
+</comment>
+            </userComment>
+            <userComment>
+              <position>
+                <sourceFile name="struct.c" path="C:/Users/ph.stanek/workspace9/serial/"/>
+                <lineNumber>57</lineNumber>
+              </position>
+              <comment>    Memory pool unused       : 22172 bytes
+</comment>
+            </userComment>
+          </contents>
+        </nonTestCase>
+      </testScriptBody>
+    </testScript>
+    <testScript>
+      <info>
+        <testScriptName>struct</testScriptName>
+        <testScriptDescription>= Cantata Test Harness v9.5                                               =
+= (c) 2021 QA Systems GmbH                                                =
+=    Configuration: x86-win-gnuARM-LauterbachSim-c                        =
+=     Test Started: Time not available                                    =</testScriptDescription>
+        <testScriptFile name="test_struct.c" path="test_struct/"/>
+      </info>
+      <summary status="passed">
+        <testCases>7</testCases>
+        <testCasesPassed>7</testCasesPassed>
+        <testCasesFailed>0</testCasesFailed>
+        <checksPassed>21</checksPassed>
+        <checksFailed>0</checksFailed>
+        <checksWarning>0</checksWarning>
+        <scriptDirectives>52</scriptDirectives>
+        <scriptErrors>0</scriptErrors>
+        <scriptWarnings>1</scriptWarnings>
+        <callSequenceFailures>0</callSequenceFailures>
+        <userComments>4</userComments>
+      </summary>
+      <testScriptBody>
+        <testCase description="&lt;Insert test case description here&gt;" title="test_serial_com">
+          <summary status="passed">
+            <checksPassed>3</checksPassed>
+            <checksFailed>0</checksFailed>
+            <checksWarning>0</checksWarning>
+            <scriptDirectives>11</scriptDirectives>
+            <scriptErrors>0</scriptErrors>
+            <scriptWarnings>0</scriptWarnings>
+            <callSequenceFailures>0</callSequenceFailures>
+            <userComments>0</userComments>
+          </summary>
+          <contents>
+            <scriptDirective>
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>168</lineNumber>
+              </position>
+              <name>Start Call Sequence Validation</name>
+              <description/>
+            </scriptDirective>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>506</lineNumber>
+              </position>
+              <name>Function: mem_alloc</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>506</lineNumber>
+              </position>
+              <name>Instance: default</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>361</lineNumber>
+              </position>
+              <name>Function: disable_watchdog</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>361</lineNumber>
+              </position>
+              <name>Instance: default</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>554</lineNumber>
+              </position>
+              <name>Function: check_bus</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>554</lineNumber>
+              </position>
+              <name>Instance: default</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>192</lineNumber>
+              </position>
+              <name>returnValue-&gt;dataIn[0] = 'U'</name>
+              <expectedValue>0x55    'U'</expectedValue>
+              <actualValue>0x55    'U'</actualValue>
+            </check>
+            <check status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>193</lineNumber>
+              </position>
+              <name>pTest-&gt;dataIn[0] = 'm'</name>
+              <expectedValue>0x6D    'm'</expectedValue>
+              <actualValue>0x6D    'm'</actualValue>
+            </check>
+            <check status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>63</lineNumber>
+              </position>
+              <name>ACCESS_VARIABLE(struct, _testArray)</name>
+              <expectedValue/>
+              <actualValue/>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>196</lineNumber>
+              </position>
+              <name>End Call Sequence Validation </name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>196</lineNumber>
+              </position>
+              <name>Function:  mem_alloc</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>196</lineNumber>
+              </position>
+              <name>Function:  disable_watchdog</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>196</lineNumber>
+              </position>
+              <name>Function:  check_bus</name>
+              <description/>
+            </callSequenceScriptDir>
+          </contents>
+        </testCase>
+        <testCase description="&lt;Insert test case description here&gt;" title="test_serial_com_busKO">
+          <summary status="passed">
+            <checksPassed>2</checksPassed>
+            <checksFailed>0</checksFailed>
+            <checksWarning>0</checksWarning>
+            <scriptDirectives>11</scriptDirectives>
+            <scriptErrors>0</scriptErrors>
+            <scriptWarnings>0</scriptWarnings>
+            <callSequenceFailures>0</callSequenceFailures>
+            <userComments>0</userComments>
+          </summary>
+          <contents>
+            <scriptDirective>
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>211</lineNumber>
+              </position>
+              <name>Start Call Sequence Validation</name>
+              <description/>
+            </scriptDirective>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>506</lineNumber>
+              </position>
+              <name>Function: mem_alloc</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>506</lineNumber>
+              </position>
+              <name>Instance: default</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>361</lineNumber>
+              </position>
+              <name>Function: disable_watchdog</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>361</lineNumber>
+              </position>
+              <name>Instance: default</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>554</lineNumber>
+              </position>
+              <name>Function: check_bus</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>554</lineNumber>
+              </position>
+              <name>Instance: busKO</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>236</lineNumber>
+              </position>
+              <name>returnValue = NULL</name>
+              <expectedValue>0x00000000</expectedValue>
+              <actualValue>0x00000000</actualValue>
+            </check>
+            <check status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>63</lineNumber>
+              </position>
+              <name>ACCESS_VARIABLE(struct, _testArray)</name>
+              <expectedValue/>
+              <actualValue/>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>239</lineNumber>
+              </position>
+              <name>End Call Sequence Validation </name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>239</lineNumber>
+              </position>
+              <name>Function:  mem_alloc</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>239</lineNumber>
+              </position>
+              <name>Function:  disable_watchdog</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>239</lineNumber>
+              </position>
+              <name>Function:  check_bus</name>
+              <description/>
+            </callSequenceScriptDir>
+          </contents>
+        </testCase>
+        <testCase description="default case" title="3: serial_com">
+          <summary status="passed">
+            <checksPassed>4</checksPassed>
+            <checksFailed>0</checksFailed>
+            <checksWarning>0</checksWarning>
+            <scriptDirectives>8</scriptDirectives>
+            <scriptErrors>0</scriptErrors>
+            <scriptWarnings>0</scriptWarnings>
+            <callSequenceFailures>0</callSequenceFailures>
+            <userComments>0</userComments>
+          </summary>
+          <contents>
+            <scriptDirective>
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>258</lineNumber>
+              </position>
+              <name>Start Call Sequence Validation</name>
+              <description/>
+            </scriptDirective>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>506</lineNumber>
+              </position>
+              <name>Function: mem_alloc</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>506</lineNumber>
+              </position>
+              <name>Instance: 1</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>512</lineNumber>
+              </position>
+              <name>size = 4U</name>
+              <expectedValue>4</expectedValue>
+              <actualValue>4</actualValue>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>361</lineNumber>
+              </position>
+              <name>Function: disable_watchdog</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>361</lineNumber>
+              </position>
+              <name>Instance: 21</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>489</lineNumber>
+              </position>
+              <name>param = 0</name>
+              <expectedValue>0</expectedValue>
+              <actualValue>0</actualValue>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>554</lineNumber>
+              </position>
+              <name>Function: check_bus</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>554</lineNumber>
+              </position>
+              <name>Instance: 1</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>264</lineNumber>
+              </position>
+              <name>returnValue = &amp;ACCESS_VARIABLE(struct, _testArray)[2]</name>
+              <expectedValue>0x00025810</expectedValue>
+              <actualValue>0x00025810</actualValue>
+            </check>
+            <check status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>63</lineNumber>
+              </position>
+              <name>ACCESS_VARIABLE(struct, _testArray)</name>
+              <expectedValue/>
+              <actualValue/>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>267</lineNumber>
+              </position>
+              <name>End Call Sequence Validation </name>
+              <description/>
+            </callSequenceScriptDir>
+          </contents>
+        </testCase>
+        <testCase description="created to solve false case of check_bus()==READY at line number 58" title="4: serial_com">
+          <summary status="passed">
+            <checksPassed>4</checksPassed>
+            <checksFailed>0</checksFailed>
+            <checksWarning>0</checksWarning>
+            <scriptDirectives>8</scriptDirectives>
+            <scriptErrors>0</scriptErrors>
+            <scriptWarnings>0</scriptWarnings>
+            <callSequenceFailures>0</callSequenceFailures>
+            <userComments>0</userComments>
+          </summary>
+          <contents>
+            <scriptDirective>
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>286</lineNumber>
+              </position>
+              <name>Start Call Sequence Validation</name>
+              <description/>
+            </scriptDirective>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>506</lineNumber>
+              </position>
+              <name>Function: mem_alloc</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>506</lineNumber>
+              </position>
+              <name>Instance: 1</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>512</lineNumber>
+              </position>
+              <name>size = 4U</name>
+              <expectedValue>4</expectedValue>
+              <actualValue>4</actualValue>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>361</lineNumber>
+              </position>
+              <name>Function: disable_watchdog</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>361</lineNumber>
+              </position>
+              <name>Instance: 21</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>489</lineNumber>
+              </position>
+              <name>param = 0</name>
+              <expectedValue>0</expectedValue>
+              <actualValue>0</actualValue>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>554</lineNumber>
+              </position>
+              <name>Function: check_bus</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>554</lineNumber>
+              </position>
+              <name>Instance: 2</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>292</lineNumber>
+              </position>
+              <name>returnValue = NULL</name>
+              <expectedValue>0x00000000</expectedValue>
+              <actualValue>0x00000000</actualValue>
+            </check>
+            <check status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>63</lineNumber>
+              </position>
+              <name>ACCESS_VARIABLE(struct, _testArray)</name>
+              <expectedValue/>
+              <actualValue/>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>295</lineNumber>
+              </position>
+              <name>End Call Sequence Validation </name>
+              <description/>
+            </callSequenceScriptDir>
+          </contents>
+        </testCase>
+        <testCase description="created to solve true case of disable_watchdog(0) at line number 57" title="5: serial_com">
+          <summary status="passed">
+            <checksPassed>4</checksPassed>
+            <checksFailed>0</checksFailed>
+            <checksWarning>0</checksWarning>
+            <scriptDirectives>6</scriptDirectives>
+            <scriptErrors>0</scriptErrors>
+            <scriptWarnings>0</scriptWarnings>
+            <callSequenceFailures>0</callSequenceFailures>
+            <userComments>0</userComments>
+          </summary>
+          <contents>
+            <scriptDirective>
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>314</lineNumber>
+              </position>
+              <name>Start Call Sequence Validation</name>
+              <description/>
+            </scriptDirective>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>506</lineNumber>
+              </position>
+              <name>Function: mem_alloc</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>506</lineNumber>
+              </position>
+              <name>Instance: 1</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>512</lineNumber>
+              </position>
+              <name>size = 4U</name>
+              <expectedValue>4</expectedValue>
+              <actualValue>4</actualValue>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>361</lineNumber>
+              </position>
+              <name>Function: disable_watchdog</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>361</lineNumber>
+              </position>
+              <name>Instance: 22</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>495</lineNumber>
+              </position>
+              <name>param = 0</name>
+              <expectedValue>0</expectedValue>
+              <actualValue>0</actualValue>
+            </check>
+            <check status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>320</lineNumber>
+              </position>
+              <name>returnValue = NULL</name>
+              <expectedValue>0x00000000</expectedValue>
+              <actualValue>0x00000000</actualValue>
+            </check>
+            <check status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>63</lineNumber>
+              </position>
+              <name>ACCESS_VARIABLE(struct, _testArray)</name>
+              <expectedValue/>
+              <actualValue/>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>323</lineNumber>
+              </position>
+              <name>End Call Sequence Validation </name>
+              <description/>
+            </callSequenceScriptDir>
+          </contents>
+        </testCase>
+        <testCase description="created to solve false case of fl==NULL at line number 57" title="6: serial_com">
+          <summary status="passed">
+            <checksPassed>4</checksPassed>
+            <checksFailed>0</checksFailed>
+            <checksWarning>0</checksWarning>
+            <scriptDirectives>8</scriptDirectives>
+            <scriptErrors>0</scriptErrors>
+            <scriptWarnings>0</scriptWarnings>
+            <callSequenceFailures>0</callSequenceFailures>
+            <userComments>0</userComments>
+          </summary>
+          <contents>
+            <scriptDirective>
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>342</lineNumber>
+              </position>
+              <name>Start Call Sequence Validation</name>
+              <description/>
+            </scriptDirective>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>506</lineNumber>
+              </position>
+              <name>Function: mem_alloc</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>506</lineNumber>
+              </position>
+              <name>Instance: 2</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>516</lineNumber>
+              </position>
+              <name>size = 4U</name>
+              <expectedValue>4</expectedValue>
+              <actualValue>4</actualValue>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>361</lineNumber>
+              </position>
+              <name>Function: disable_watchdog</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>361</lineNumber>
+              </position>
+              <name>Instance: 22</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>495</lineNumber>
+              </position>
+              <name>param = 0</name>
+              <expectedValue>0</expectedValue>
+              <actualValue>0</actualValue>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>554</lineNumber>
+              </position>
+              <name>Function: check_bus</name>
+              <description/>
+            </callSequenceScriptDir>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>554</lineNumber>
+              </position>
+              <name>Instance: 1</name>
+              <description/>
+            </callSequenceScriptDir>
+            <check status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>348</lineNumber>
+              </position>
+              <name>returnValue = &amp;ACCESS_VARIABLE(struct, _testArray)[2]</name>
+              <expectedValue>0x00025810</expectedValue>
+              <actualValue>0x00025810</actualValue>
+            </check>
+            <check status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>63</lineNumber>
+              </position>
+              <name>ACCESS_VARIABLE(struct, _testArray)</name>
+              <expectedValue/>
+              <actualValue/>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>351</lineNumber>
+              </position>
+              <name>End Call Sequence Validation </name>
+              <description/>
+            </callSequenceScriptDir>
+          </contents>
+        </testCase>
+        <testCase description="ISO26262-6 2011 ASIL D unit level (HR)" title="COVERAGE RULE SET">
+          <summary status="passed">
+            <checksPassed>0</checksPassed>
+            <checksFailed>0</checksFailed>
+            <checksWarning>0</checksWarning>
+            <scriptDirectives>0</scriptDirectives>
+            <scriptErrors>0</scriptErrors>
+            <scriptWarnings>1</scriptWarnings>
+            <callSequenceFailures>0</callSequenceFailures>
+            <userComments>0</userComments>
+          </summary>
+          <contents>
+            <scriptWarning>
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>85</lineNumber>
+              </position>
+              <name>Coverage Rule Set ignored in deferred analysis mode</name>
+            </scriptWarning>
+          </contents>
+        </testCase>
+        <nonTestCase>
+          <contents>
+            <userComment>
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>85</lineNumber>
+              </position>
+              <comment>Report on memory usage
+</comment>
+            </userComment>
+            <userComment>
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>85</lineNumber>
+              </position>
+              <comment>    Peak memory used         : 1868 bytes
+</comment>
+            </userComment>
+            <userComment>
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>85</lineNumber>
+              </position>
+              <comment>    Initial memory pool size : 16000 bytes
+</comment>
+            </userComment>
+            <userComment>
+              <position>
+                <sourceFile name="test_struct.c" path="test_struct/"/>
+                <lineNumber>85</lineNumber>
+              </position>
+              <comment>    Memory pool unused       : 14132 bytes
+</comment>
+            </userComment>
+          </contents>
+        </nonTestCase>
+      </testScriptBody>
+    </testScript>
+  </testResults>
+  <coverageReport>
+    <srcFile name="struct.c" path="C:\Users\ph.stanek\workspace9\serial\">
+      <fileCoverage>
+        <coverageAchieved>
+          <entryPoint>100</entryPoint>
+          <statement>100</statement>
+          <decision>100</decision>
+          <callReturn>NO DATA</callReturn>
+          <booleanOperandEffectivenessMasking>100</booleanOperandEffectivenessMasking>
+          <booleanOperandEffectivenessUnique>100</booleanOperandEffectivenessUnique>
+        </coverageAchieved>
+      </fileCoverage>
+      <coveragePerFunction>
+        <function name="check_bus()">
+          <coverageAchieved>
+            <entryPoint>100</entryPoint>
+            <statement>100</statement>
+            <decision>100</decision>
+            <callReturn>NO DATA</callReturn>
+            <booleanOperandEffectivenessMasking>100</booleanOperandEffectivenessMasking>
+            <booleanOperandEffectivenessUnique>100</booleanOperandEffectivenessUnique>
+          </coverageAchieved>
+        </function>
+        <function name="mem_alloc(size_t )">
+          <coverageAchieved>
+            <entryPoint>100</entryPoint>
+            <statement>100</statement>
+            <decision>100</decision>
+            <callReturn>NO DATA</callReturn>
+            <booleanOperandEffectivenessMasking>100</booleanOperandEffectivenessMasking>
+            <booleanOperandEffectivenessUnique>100</booleanOperandEffectivenessUnique>
+          </coverageAchieved>
+        </function>
+        <function name="serial_com(s_TEST_COM *)">
+          <coverageAchieved>
+            <entryPoint>100</entryPoint>
+            <statement>100</statement>
+            <decision>100</decision>
+            <callReturn>NO DATA</callReturn>
+            <booleanOperandEffectivenessMasking>100</booleanOperandEffectivenessMasking>
+            <booleanOperandEffectivenessUnique>100</booleanOperandEffectivenessUnique>
+          </coverageAchieved>
+        </function>
+      </coveragePerFunction>
+    </srcFile>
+  </coverageReport>
+</testReport>

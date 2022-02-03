@@ -1,0 +1,30 @@
+Cantata CPPCONV v9.5 (c) 2021 QA Systems GmbH
+Convert "test_struct/test_struct_output.txt" -> "test_struct"
+Convert "test_struct/test_struct_output.txt"
+Successfully decoded 835 lines (980 text lines) of input data
+Coverage File saved as test_struct/test_struct.def
+Coverage successfully converted and saved as "test_struct/test_struct.cov"
+Results File saved as test_struct/test_struct.ctr
+CTG results File saved as test_struct/test_struct.ctg
+Warning: 1 bytes were ignored during the decode process
+Cantata CPPGETCOV v9.5 (c) 2021 QA Systems GmbH
+===========================================================================
+= Cantata Test Harness v9.5                                               =
+= (c) 2021 QA Systems GmbH                                                =
+=-------------------------------------------------------------------------=
+= Test Description: Coverage Analysis                                     =
+=         Log File: test_struct/test_struct_coverage_results.ctr          =
+=    Configuration: cppgetcov                                             =
+=     Test Started: Wed Jan 26 15:29:28 2022                              =
+===========================================================================
+===========================================================================
+= Test Finished: Wed Jan 26 15:29:28 2022                                 =
+=-------------------------------------------------------------------------=
+= Test                 Script  Checks  Checks  Checks  Call Seq     TEST  =
+= Case                 Errors  Failed  Passed  Warned  Failures    RESULT =
+=-------------------------------------------------------------------------=
+= Coverage Analysis         0       0       3       0         0      PASS =
+= Other                     0       0       0       0         0      PASS =
+=-------------------------------------------------------------------------=
+= TOTALS                    0       0       3       0         0      PASS =
+===========================================================================

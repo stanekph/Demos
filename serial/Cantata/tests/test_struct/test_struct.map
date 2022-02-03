@@ -1,0 +1,1237 @@
+Host OS:	Windows
+ELXR: Copyright (C) 1983-2016 Green Hills Software.  All Rights Reserved.
+Release: Compiler v2017.1.4
+Build Directory: [Directory] COMP-VAL-WIN47:l:/compiler/release-branch-2017-1-comp/build/v2017.1-2017-04-09/win64-comp
+Revision: [VCInfo] http://toolsvc/branches/release-branch-2017-1-comp/src@589570 (built by auto-compiler)
+Revision Date: Mon Apr 10 05:24:55 2017
+
+Release Date: Mon Apr 10 02:00:05 2017
+
+
+
+
+Load Map Mon Feb 22 14:38:43 2021
+Image Summary
+
+  Section              Base      Size(hex)    Size(dec)  SecOffs
+  .picbase             02008000  00000000            0   0000000
+  .text                02008000  0002191c       137500   0000160
+  .syscall             0202991c  00000008            8   0021a7c
+  .intercall           02029924  00000000            0   0000000
+  .interfunc           02029924  00000004            4   0021a84
+  .fixaddr             02029928  00000000            0   0000000
+  .fixtype             02029928  00000000            0   0000000
+  .rodata              02029928  00004788        18312   0021a88
+  .secinfo             0202e0b0  00000048           72   0026210
+  .pidbase             0202e100  00000000            0   0000000
+  .sdabase             0202e100  00000000            0   0000000
+  .sbss                0202e100  00000000            0   0000000
+  .sdata               0202e100  00000000            0   0000000
+  .data                0202e100  000009c6         2502   0026258
+  .tls.cond.data       0202eac6  00000000            0   0000000
+  .bss                 0202eac8  000048f0        18672   0000000
+  .tls.cond.bss        020333b8  00000000            0   0000000
+  .ghcovfz             020333b8  00000000            0   0000000
+  .ghcovcz             020333b8  00000000            0   0000000
+  .ghcovdz             020333b8  00000000            0   0000000
+  .heap                020333c0  00100000      1048576   0000000
+  .stack               021333c0  00080000       524288   0000000
+  .linfix              00000000  00000334          820   0026c20
+  .gstackfix           00000000  00000000            0   0000000
+
+Load Map Mon Feb 22 14:38:43 2021
+Module Summary
+
+  Origin+Size    Section          Module
+02008000+0000a8  .text            crt0.o
+020080a8+000700  .text            struct.o
+02032a50+000010  .bss             struct.o
+02029928+00091a  .rodata          struct.o
+0202e100+0000c4  .data            struct.o
+020087a8+001060  .text            test_struct.o
+0202a242+0007bb  .rodata          test_struct.o
+02009808+00000c  .text            libmulti.a
+02032a60+0003e8  .bss             libmulti.a
+0202aa00+000004  .rodata          libmulti.a
+02009814+0000b0  .text            libstartup.a(ind_mset.o)
+020098c4+0003ec  .text            libstartup.a(ind_crt0.o)
+02009cb0+000220  .text            libstartup.a(ind_mcpy.o)
+02009ed0+000090  .text            libcantpp.a(t1a02.o)
+0202aa04+00002b  .rodata          libcantpp.a(t1a02.o)
+02009f60+000308  .text            libcantpp.a(t1a03.o)
+0202aa2f+000013  .rodata          libcantpp.a(t1a03.o)
+0200a268+000374  .text            libcantpp.a(t1a04.o)
+0202aa42+000001  .rodata          libcantpp.a(t1a04.o)
+0200a5dc+0002a0  .text            libcantpp.a(t1a05.o)
+0200a87c+000190  .text            libcantpp.a(t1a06.o)
+0200aa0c+00019c  .text            libcantpp.a(t1a08.o)
+0200aba8+0001c8  .text            libcantpp.a(t1a11.o)
+0200ad70+0001c8  .text            libcantpp.a(t1a14.o)
+0200af38+000278  .text            libcantpp.a(t1a19.o)
+0200b1b0+0001d8  .text            libcantpp.a(t1a39.o)
+0200b388+00048c  .text            libcantpp.a(t1a42.o)
+0200b814+00057c  .text            libcantpp.a(t1a43.o)
+0200bd90+0004fc  .text            libcantpp.a(t1a44.o)
+0202aa43+000001  .rodata          libcantpp.a(t1a44.o)
+0200c28c+000184  .text            libcantpp.a(t1a45.o)
+0200c410+000368  .text            libcantpp.a(t1a46.o)
+0202aa44+000001  .rodata          libcantpp.a(t1a46.o)
+0200c778+0003e0  .text            libcantpp.a(t1a50.o)
+0200cb58+000834  .text            libcantpp.a(t1a51.o)
+0200d38c+0000b8  .text            libcantpp.a(t1a52.o)
+0200d444+000288  .text            libcantpp.a(t1a53.o)
+0200d6cc+0004bc  .text            libcantpp.a(t1a54.o)
+0200db88+00064c  .text            libcantpp.a(t1a55.o)
+0200e1d4+00019c  .text            libcantpp.a(t1a56.o)
+0202aa45+000006  .rodata          libcantpp.a(t1a56.o)
+0200e370+000154  .text            libcantpp.a(t1a57.o)
+0200e4c4+000230  .text            libcantpp.a(t1a58.o)
+0200e6f4+000020  .text            libcantpp.a(t1a65.o)
+0200e714+000018  .text            libcantpp.a(t1a67.o)
+0200e72c+0000ac  .text            libcantpp.a(t1a75.o)
+0200e7d8+000034  .text            libcantpp.a(t1a76.o)
+0200e80c+0000d8  .text            libcantpp.a(t1a77.o)
+0200e8e4+0000f4  .text            libcantpp.a(t1a78.o)
+0200e9d8+000034  .text            libcantpp.a(t1a80.o)
+0200ea0c+000034  .text            libcantpp.a(t1a81.o)
+0200ea40+001258  .text            libcantpp.a(t1a82.o)
+0202aa4b+000027  .rodata          libcantpp.a(t1a82.o)
+0200fc98+000328  .text            libcantpp.a(t1a5a.o)
+02032e48+00003b  .bss             libcantpp.a(t1a96.o)
+0202e1c4+000024  .data            libcantpp.a(t1a96.o)
+0200ffc0+00048c  .text            libcantpp.a(t1a5b.o)
+0202aa72+000005  .rodata          libcantpp.a(t1a5b.o)
+02032e84+00003a  .bss             libcantpp.a(t1a99.o)
+0202e1e8+000034  .data            libcantpp.a(t1a99.o)
+0202aa77+000006  .rodata          libcantpp.a(t1a99.o)
+0201044c+000018  .text            libcantpp.a(t1a7b.o)
+02010464+000090  .text            libcantpp.a(t2a10.o)
+020104f4+000074  .text            libcantpp.a(t2a11.o)
+02010568+000090  .text            libcantpp.a(t2a13.o)
+020105f8+000034  .text            libcantpp.a(t2a14.o)
+0201062c+000110  .text            libcantpp.a(t2a15.o)
+0201073c+000024  .text            libcantpp.a(t2a16.o)
+02010760+00008c  .text            libcantpp.a(t2a17.o)
+020107ec+000028  .text            libcantpp.a(t2a18.o)
+02010814+000070  .text            libcantpp.a(t2a19.o)
+02010884+0005c8  .text            libcantpp.a(t2a20.o)
+0202aa7d+00000b  .rodata          libcantpp.a(t2a20.o)
+02010e4c+0000dc  .text            libcantpp.a(t2a30.o)
+0202aa88+00000b  .rodata          libcantpp.a(t2a30.o)
+02010f28+00004c  .text            libcantpp.a(t2a31.o)
+02010f74+0007ec  .text            libcantpp.a(t2a64.o)
+0202aa94+000318  .rodata          libcantpp.a(t2a64.o)
+02011760+000070  .text            libcantpp.a(t2a65.o)
+02032ec0+000030  .bss             libcantpp.a(t2a99.o)
+0202e21c+000003  .data            libcantpp.a(t2a99.o)
+020117d0+000024  .text            libcantpp.a(g0070.o)
+020117f4+000004  .text            libcantpp.a(g0650.o)
+020117f8+0015a0  .text            libcantpp.a(t1c01.o)
+02032ef0+000004  .bss             libcantpp.a(t1c01.o)
+0202adac+00006d  .rodata          libcantpp.a(t1c01.o)
+02012d98+00012c  .text            libcantpp.a(t1c02.o)
+0202ae19+000038  .rodata          libcantpp.a(t1c02.o)
+02012ec4+000018  .text            libcantpp.a(t1c06.o)
+02012edc+0004fc  .text            libcantpp.a(t1c07.o)
+0202ae51+000002  .rodata          libcantpp.a(t1c07.o)
+020133d8+000258  .text            libcantpp.a(t1c64.o)
+0202ae53+000001  .rodata          libcantpp.a(t1c64.o)
+02013630+000338  .text            libcantpp.a(t1c66.o)
+0202ae54+000012  .rodata          libcantpp.a(t1c66.o)
+02013968+000a14  .text            libcantpp.a(t1c91.o)
+0202ae66+000002  .rodata          libcantpp.a(t1c91.o)
+0202e220+000018  .data            libcantpp.a(t1c92.o)
+0202ae68+000089  .rodata          libcantpp.a(t1c92.o)
+0202e238+000024  .data            libcantpp.a(t1c94.o)
+0202aef1+0000af  .rodata          libcantpp.a(t1c94.o)
+0202e25c+0000e4  .data            libcantpp.a(t1c96.o)
+0202afa0+000904  .rodata          libcantpp.a(t1c96.o)
+0202e340+000210  .data            libcantpp.a(t1c97.o)
+0202b8a4+0001f7  .rodata          libcantpp.a(t1c97.o)
+0202e550+00009c  .data            libcantpp.a(t1c98.o)
+0202ba9b+0006fa  .rodata          libcantpp.a(t1c98.o)
+0202e5ec+00006c  .data            libcantpp.a(t1c99.o)
+0202c196+000129  .rodata          libcantpp.a(t1c99.o)
+02032ef4+000004  .bss             libcantpp.a(t1c99.o)
+0201437c+000070  .text            libcantpp.a(t2002.o)
+0202c2bf+000003  .rodata          libcantpp.a(t2002.o)
+020143ec+0001c0  .text            libcantpp.a(t2010.o)
+020145ac+000134  .text            libcantpp.a(t2011.o)
+020146e0+000154  .text            libcantpp.a(t2030.o)
+02014834+000178  .text            libcantpp.a(t2050.o)
+020149ac+000308  .text            libcantpp.a(t2061.o)
+0202c2c2+000001  .rodata          libcantpp.a(t2061.o)
+02014cb4+0002ac  .text            libcantpp.a(t2064.o)
+02014f60+000518  .text            libcantpp.a(t2065.o)
+0202c2c3+000003  .rodata          libcantpp.a(t2065.o)
+02032ef8+000025  .bss             libcantpp.a(t2099.o)
+0202e658+00007c  .data            libcantpp.a(t2099.o)
+0202c2c6+00008a  .rodata          libcantpp.a(t2099.o)
+02015478+000f9c  .text            libcantpp.a(t2b62.o)
+0202c350+0003d3  .rodata          libcantpp.a(t2b62.o)
+02016414+000704  .text            libcantpp.a(t2b63.o)
+0202c723+0001cf  .rodata          libcantpp.a(t2b63.o)
+02016b18+00048c  .text            libcantpp.a(t2b64.o)
+0202c8f2+00009a  .rodata          libcantpp.a(t2b64.o)
+02016fa4+001094  .text            libcantpp.a(t2b68.o)
+0202c98c+0003c3  .rodata          libcantpp.a(t2b68.o)
+02018038+000474  .text            libcantpp.a(t2b81.o)
+020184ac+000538  .text            libcantpp.a(t2b82.o)
+0202cd4f+00025d  .rodata          libcantpp.a(t2b82.o)
+020189e4+0001b8  .text            libcantpp.a(t2b90.o)
+0202cfac+000006  .rodata          libcantpp.a(t2b90.o)
+02018b9c+0000c8  .text            libcantpp.a(t2b93.o)
+02032f20+00005c  .bss             libcantpp.a(t2b99.o)
+0202e6d4+0003e0  .data            libcantpp.a(t2b99.o)
+0202cfb2+0003b7  .rodata          libcantpp.a(t2b99.o)
+02018c64+000054  .text            libcantpp.a(g0102.o)
+02018cb8+000228  .text            libcantpp.a(g0103.o)
+0202d369+000017  .rodata          libcantpp.a(g0103.o)
+02018ee0+000074  .text            libcantpp.a(g0104.o)
+02018f54+000050  .text            libcantpp.a(g0105.o)
+02018fa4+0000d4  .text            libcantpp.a(g0111.o)
+02019078+00016c  .text            libcantpp.a(g0112.o)
+0202d380+00000e  .rodata          libcantpp.a(g0112.o)
+020191e4+0000cc  .text            libcantpp.a(g0113.o)
+020192b0+00009c  .text            libcantpp.a(g0114.o)
+0201934c+000138  .text            libcantpp.a(g0115.o)
+0202d38e+000008  .rodata          libcantpp.a(g0115.o)
+02019484+0001d0  .text            libcantpp.a(g0116.o)
+02019654+0002f4  .text            libcantpp.a(g0117.o)
+02019948+0000d0  .text            libcantpp.a(g0118.o)
+02019a18+00009c  .text            libcantpp.a(g0120.o)
+02019ab4+0001ac  .text            libcantpp.a(g0121.o)
+02019c60+0000d8  .text            libcantpp.a(g0122.o)
+02019d38+0001b4  .text            libcantpp.a(g0124.o)
+0202d396+000003  .rodata          libcantpp.a(g0124.o)
+02019eec+0000c8  .text            libcantpp.a(g0126.o)
+02019fb4+000184  .text            libcantpp.a(g0127.o)
+0202d399+000005  .rodata          libcantpp.a(g0127.o)
+0201a138+000030  .text            libcantpp.a(g0128.o)
+0201a168+000034  .text            libcantpp.a(g0132.o)
+0201a19c+000030  .text            libcantpp.a(g0133.o)
+0201a1cc+000044  .text            libcantpp.a(g0134.o)
+0201a210+000044  .text            libcantpp.a(g0136.o)
+0201a254+0000a8  .text            libcantpp.a(g0140.o)
+0201a2fc+000144  .text            libcantpp.a(g0141.o)
+02032f7c+0000ff  .bss             libcantpp.a(g0141.o)
+0201a440+000094  .text            libcantpp.a(g0142.o)
+0201a4d4+000124  .text            libcantpp.a(g0710.o)
+0201a5f8+0000b8  .text            libcantpp.a(g0720.o)
+0201a6b0+00004c  .text            libcantpp.a(g0730.o)
+0201a6fc+0000f4  .text            libcantpp.a(g0740.o)
+0202d39e+0000dd  .rodata          libcantpp.a(g0740.o)
+0203307c+000018  .bss             libcantpp.a(g0799.o)
+0201a7f0+000170  .text            libcantpp.a(gf90_t.o)
+0202d47b+00001e  .rodata          libcantpp.a(gf90_t.o)
+0202d49c+0006a2  .rodata          libcantpp.a(gf90_tstr.o)
+0201a960+0003ec  .text            libcantpp.a(t1a01.o)
+0201ad4c+00005c  .text            libcantpp.a(t1a74.o)
+0201ada8+0000e8  .text            libcantpp.a(t1a85.o)
+0201ae90+000048  .text            libcantpp.a(t1a3w.o)
+0202db3e+000001  .rodata          libcantpp.a(t1a3w.o)
+0201aed8+0000d4  .text            libcantpp.a(t2a03.o)
+0202db3f+00000b  .rodata          libcantpp.a(t2a03.o)
+0201afac+00007c  .text            libcantpp.a(t2a04.o)
+0202db4a+00000b  .rodata          libcantpp.a(t2a04.o)
+0201b028+000034  .text            libcantpp.a(t2a05.o)
+0202db55+00004b  .rodata          libcantpp.a(t2a05.o)
+0201b05c+000188  .text            libcantpp.a(t2a63.o)
+0202dba0+0000dc  .rodata          libcantpp.a(t2a63.o)
+0201b1e4+0002b8  .text            libcantpp.a(g0301.o)
+0202dc7c+000061  .rodata          libcantpp.a(g0301.o)
+0201b49c+000034  .text            libcantpp.a(g0303.o)
+0201b4d0+000018  .text            libcantpp.a(g0310.o)
+0201b4e8+0000b4  .text            libcantpp.a(g0320.o)
+0201b59c+000018  .text            libcantpp.a(g0340.o)
+02033094+00001d  .bss             libcantpp.a(g0399.o)
+0202eab4+000005  .data            libcantpp.a(g0399.o)
+0201b5b4+000150  .text            libcantpp.a(g0610.o)
+0202dcdd+000006  .rodata          libcantpp.a(g0610.o)
+0201b704+00003c  .text            libcantpp.a(g0611.o)
+0201b740+0000a8  .text            libcantpp.a(g0612.o)
+0202dce3+00000c  .rodata          libcantpp.a(g0612.o)
+020330b1+000002  .bss             libcantpp.a(g0699.o)
+0201b7e8+000068  .text            libcantpp.a(t1c03.o)
+0201b850+0006b4  .text            libcantpp.a(t1c04.o)
+0201bf04+000668  .text            libcantpp.a(t1c05.o)
+0201c56c+0000f0  .text            libcantpp.a(t1c55.o)
+0202dcef+000002  .rodata          libcantpp.a(t1c55.o)
+0201c65c+000100  .text            libcantpp.a(t1c56.o)
+0202dcf1+000007  .rodata          libcantpp.a(t1c56.o)
+0201c75c+000730  .text            libcantpp.a(t1c58.o)
+0202dcf8+000017  .rodata          libcantpp.a(t1c58.o)
+0201ce8c+00026c  .text            libcantpp.a(t1c61.o)
+0202dd0f+00001f  .rodata          libcantpp.a(t1c61.o)
+0201d0f8+000034  .text            libcantpp.a(t2004.o)
+0201d12c+000218  .text            libcantpp.a(t2021.o)
+0202dd2e+000019  .rodata          libcantpp.a(t2021.o)
+0201d344+00003c  .text            libcantpp.a(t2040.o)
+0201d380+0004a8  .text            libcantpp.a(t2060.o)
+0201d828+00018c  .text            libcantpp.a(t2063.o)
+0201d9b4+000068  .text            libcantpp.a(t2082.o)
+0201da1c+000068  .text            libcantpp.a(t2083.o)
+0201da84+0000ec  .text            libcantpp.a(t2085.o)
+0202dd47+00000b  .rodata          libcantpp.a(t2085.o)
+0201db70+0005fc  .text            libcantpp.a(t2087.o)
+0202dd52+00001b  .rodata          libcantpp.a(t2087.o)
+0201e16c+0000d0  .text            libcantpp.a(t2089.o)
+0202dd6d+000003  .rodata          libcantpp.a(t2089.o)
+0201e23c+000064  .text            libcantpp.a(t2b02.o)
+0202dd70+000003  .rodata          libcantpp.a(t2b02.o)
+0201e2a0+0001a0  .text            libcantpp.a(t2b10.o)
+0202dd73+00005a  .rodata          libcantpp.a(t2b10.o)
+0201e440+0005c8  .text            libcantpp.a(t2b11.o)
+0201ea08+000108  .text            libcantpp.a(t2b12.o)
+0201eb10+0009c8  .text            libcantpp.a(t2b20.o)
+0202ddcd+000049  .rodata          libcantpp.a(t2b20.o)
+0201f4d8+000718  .text            libcantpp.a(t2b21.o)
+0201fbf0+000efc  .text            libcantpp.a(t2b22.o)
+02020aec+0000fc  .text            libcantpp.a(t2b30.o)
+0202de16+000003  .rodata          libcantpp.a(t2b30.o)
+02020be8+0001dc  .text            libcantpp.a(t2b31.o)
+0202de19+000003  .rodata          libcantpp.a(t2b31.o)
+02020dc4+00031c  .text            libcantpp.a(t2b40.o)
+020210e0+000354  .text            libcantpp.a(t2b41.o)
+0202de1c+000021  .rodata          libcantpp.a(t2b41.o)
+02021434+0003c0  .text            libcantpp.a(t2b42.o)
+0202de3d+000005  .rodata          libcantpp.a(t2b42.o)
+020217f4+000300  .text            libcantpp.a(t2b43.o)
+0202de42+00000d  .rodata          libcantpp.a(t2b43.o)
+02021af4+000688  .text            libcantpp.a(t2b44.o)
+0202de4f+00000d  .rodata          libcantpp.a(t2b44.o)
+0202217c+0002b8  .text            libcantpp.a(t2b48.o)
+0202de5c+000009  .rodata          libcantpp.a(t2b48.o)
+0202eab9+000004  .data            libcantpp.a(t2b48.o)
+02022434+0006c0  .text            libcantpp.a(t2b49.o)
+0202eabd+000002  .data            libcantpp.a(t2b49.o)
+0202de65+000025  .rodata          libcantpp.a(t2b49.o)
+02022af4+0002f8  .text            libcantpp.a(t2b4a.o)
+0202de8a+00000d  .rodata          libcantpp.a(t2b4a.o)
+02022dec+000174  .text            libcantpp.a(t2b50.o)
+02022f60+000084  .text            libcantpp.a(t2b51.o)
+02022fe4+00009c  .text            libcantpp.a(t2b52.o)
+02023080+0004bc  .text            libcantpp.a(t2b91.o)
+0202de97+000115  .rodata          libcantpp.a(t2b91.o)
+0202353c+0002b4  .text            libcantpp.a(g0482.o)
+0202dfac+000001  .rodata          libcantpp.a(g0482.o)
+020237f0+000100  .text            libcantpp.a(g0483.o)
+0202dfad+000006  .rodata          libcantpp.a(g0483.o)
+020238f0+00013c  .text            libcantpp.a(t1c51.o)
+0202dfb3+00001d  .rodata          libcantpp.a(t1c51.o)
+02023a2c+00004c  .text            libcantpp.a(t1c54.o)
+0202dfd0+000006  .rodata          libcantpp.a(t1c54.o)
+02023a78+000118  .text            libcantpp.a(t2b13.o)
+02023b90+000a00  .text            libcantpp.a(t2b32.o)
+0202dfd8+00002c  .rodata          libcantpp.a(t2b32.o)
+02024590+00054c  .text            libcantpp.a(t2b45.o)
+0202e004+000016  .rodata          libcantpp.a(t2b45.o)
+02024adc+00053c  .text            libcantpp.a(t2b46.o)
+0202e01a+000009  .rodata          libcantpp.a(t2b46.o)
+02025018+000400  .text            libcantpp.a(t2b47.o)
+0202eabf+000002  .data            libcantpp.a(t2b47.o)
+0202e023+000011  .rodata          libcantpp.a(t2b47.o)
+02025418+0001b4  .text            libcantpp.a(t2031.o)
+020255cc+00078c  .text            libfmalloc.a(ccmalloc.o)
+02025d58+000064  .text            libansi.a(ccstrstr.o)
+02025dbc+0000c4  .text            libansi.a(ccstrncp.o)
+02025e80+000030  .text            libansi.a(ccstrncm.o)
+02025eb0+00003c  .text            libansi.a(ccstrnct.o)
+02025eec+000018  .text            libansi.a(ccstrlen.o)
+02025f04+000058  .text            libansi.a(ccstrcpy.o)
+02025f5c+0000d0  .text            libansi.a(ccstrcmp.o)
+0202602c+000024  .text            libansi.a(ccstrchr.o)
+02026050+000024  .text            libansi.a(ccstrcat.o)
+02026074+000028  .text            libansi.a(ccmemcmp.o)
+0202609c+000234  .text            libansi.a(ccllout.o)
+020262d0+000068  .text            libansi.a(ccsprntf.o)
+02026338+000024  .text            libansi.a(ccprintf.o)
+0202635c+000070  .text            libansi.a(ccgetenv.o)
+020263cc+000044  .text            libansi.a(ccexit.o)
+02026410+000088  .text            libansi.a(ccatexit.o)
+020330b4+000090  .bss             libansi.a(ccatexit.o)
+02026498+000020  .text            libansi.a(ccabort.o)
+020264b8+000170  .text            libansi.a(ccstrtul.o)
+02026628+00000c  .text            libansi.a(ccatol.o)
+02026634+00000c  .text            libansi.a(ccatoi.o)
+02026640+000914  .text            libansi.a(ccvsprnt.o)
+0202e034+000007  .rodata          libansi.a(ccvsprnt.o)
+02026f54+000110  .text            libansi.a(ccvprntf.o)
+02027064+000064  .text            libansi.a(ccbufsiz.o)
+02033144+000050  .bss             libansi.a(ccbufsiz.o)
+020270c8+000028  .text            libansi.a(ccputcu.o)
+020270f0+0000ec  .text            libansi.a(ccflsbuf.o)
+020271dc+0000f0  .text            libansi.a(ccflock.o)
+020272cc+0000ec  .text            libansi.a(ccfflush.o)
+020273b8+000188  .text            libansi.a(ccstrtol.o)
+02027540+000030  .text            libansi.a(ccstrnlen.o)
+02027570+000030  .text            libwc_u16.a(ccstorewc.o)
+020275a0+000058  .text            libwc_u16.a(ccwctomb.o)
+020275f8+000760  .text            libmath_sf.a(ccefgout.o)
+02027d58+000388  .text            libmath_sf.a(ccdocvt.o)
+0202e040+000068  .rodata          libmath_sf.a(ccdocvt.o)
+020280e0+000230  .text            libmath_sf.a(indsqrt.o)
+0202e0a8+000008  .rodata          libmath_sf.a(indsqrt.o)
+02028310+000018  .text            libmath_sf.a(ccdecimal.o)
+0202eac1+000002  .data            libmath_sf.a(ccdecimal.o)
+02028328+000020  .text            libmath_sf.a(indedomnan.o)
+02028348+000290  .text            libind_sf.a(ccmemmov.o)
+020285d8+00006c  .text            libind_sf.a(ind32tod.o)
+02028644+0000ec  .text            libind_sf.a(inddto32.o)
+02028730+000008  .text            libind_sf.a(inddrsb.o)
+02028738+0002d4  .text            libind_sf.a(indddiv.o)
+02028a0c+0001c0  .text            libind_sf.a(inddmul.o)
+02028bcc+000384  .text            libind_sf.a(inddadd.o)
+02028f50+000040  .text            libind_sf.a(inddcmp.o)
+02028f90+000034  .text            libsys.a(ind_lock.o)
+02028fc4+00009c  .text            libsys.a(ind_thrd.o)
+02033194+000004  .bss             libsys.a(ind_thrd.o)
+02029060+000150  .text            libsys.a(ind_sgnl.o)
+02033198+000084  .bss             libsys.a(ind_sgnl.o)
+020291b0+0000cc  .text            libsys.a(ind_iob.o)
+0202eac4+000002  .data            libsys.a(ind_iob.o)
+0203321c+000194  .bss             libsys.a(ind_iob.o)
+0202927c+00008c  .text            libsys.a(ind_heap.o)
+020333b0+000004  .bss             libsys.a(ind_heap.o)
+02029308+000090  .text            libsys.a(ind_exit.o)
+020333b4+000004  .bss             libsys.a(ind_exit.o)
+02029398+000048  .text            libsys.a(ind_errn.o)
+0202991c+000008  .syscall         libsys.a(ind_dots.o)
+020293e0+00007c  .text            libsys.a(ind_call.o)
+0202945c+000160  .text            libsys.a(ind_io.o)
+020295bc+0000e8  .text            libsys.a(ind_crt1.o)
+020296a4+00000c  .text            libarch.a(ind_mclr.o)
+020296b0+000044  .text            libarch.a(indclz32.o)
+020296f4+000034  .text            libarch.a(indarchk.o)
+02029728+00002c  .text            libarch.a(indarchj.o)
+02029754+0000d8  .text            libarch.a(indarchi.o)
+02029924+000004  .interfunc       libarch.a(indarch4.o)
+0202982c+0000f0  .text            libarch.a(indarch1.o)
+00000000+000334  .linfix          <Linker supplemental debug info>
+0202e0b0+000048  .secinfo         <section info>
+0202eac8+003f88  COMMON -> .bss   <commons>
+
+Load Map Mon Feb 22 14:38:43 2021
+Global Symbols (sorted alphabetically)
+
+ .text            020096bc+000078 AFTER_check_bus
+ .text            02009344+000050 AFTER_mem_alloc
+ .text            020095cc+0000f0 BEFORE_check_bus
+ .text            02009230+000114 BEFORE_mem_alloc
+ .text            02008370+00003c CPPSM_WRAP_check_bus..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5Cserial.5CCantata.5Ctests.5Ctest_struct.5Cstruct.
+ .text            02008320+000050 CPPSM_WRAP_mem_alloc..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5Cserial.5CCantata.5Ctests.5Ctest_struct.5Cstruct.
+ .text            02009734+00007c REPLACE_check_bus
+ .text            02009548+000084 REPLACE_mem_alloc
+ .text            02029308+000058 _Exit
+ .text            020296b0+000044 __CLZ32
+ .text            02026410+000038 __atexit_cleanup_func
+                  00000000+000000 __cpp_exception_cleanup
+                  00000000+000000 __cpp_exception_init
+ .text            02028bd0+000380 __dadd
+ .text            02028f50+000040 __dcmp
+ .text            02028738+0002d4 __ddiv
+                  00000000+000000 __division_by_zero
+ .text            02028a0c+0001c0 __dmul
+ .text            02027d58+000364 __docvt
+ .syscall         0202991c+000008 __dotsyscall
+ .text            02028730+000008 __drsb
+ .text            02028bcc+000004 __dsub
+ .text            0202864c+000008 __dtoi
+ .text            0202865c+000008 __dtoi32r
+ .text            0202866c+000008 __dtoi32rne
+ .text            02028644+000008 __dtou
+ .text            02028654+000008 __dtou32r
+ .text            02028664+000008 __dtou32rne
+ .data            0202eac4+000002 __gh_FOPEN_MAX
+ .text            02027084+00001c __gh_bufclose
+ .bss             02033144+000050 __gh_buffersizes
+ .text            020270a0+000020 __gh_bufinit
+ .text            02027064+000020 __gh_bufsize
+ .text            020293b0+000014 __gh_errno_ptr
+ .text            02027964+0003c8 __gh_float_print
+ .text            02027d2c+00001c __gh_float_printf
+ .text            020293c4+000018 __gh_get_errno
+ .text            020266b8+000050 __gh_hexout
+ .text            02029200+00006c __gh_iob_init
+ .text            02028fb0+000014 __gh_lock_init
+ .text            020261d4+000030 __gh_long_long_printf
+ .text            020296a4+00000c __gh_memclr
+ .text            02026708+000054 __gh_octhexout
+ .text            0202675c+00003c __gh_outchars
+ .text            02026798+000008 __gh_outspaces
+ .text            02028328+00001c __gh_set_edom_return_nan
+ .text            02029398+000018 __gh_set_errno
+ .text            02029060+00006c __gh_signal_init..trg.2Farma4.2Fobjs.2Flibs.2Flibsys.2Find_sgnl.
+ .text            02027570+00000c __gh_store_wc
+ .text            020267a0+000300 __gh_strout
+ .text            02026204+0000c4 __gh_uns_long_long_printf
+ .text            02026aa0+0004ac __gh_vsprintf
+ .text            0202757c+000024 __gh_wctomb
+ .text            02026640+000034 __gh_xxdecout
+ .interfunc       02029924+000004 __ghsArmBLR
+ .text            02028f90+000010 __ghsLock
+ .text            02028fa0+000010 __ghsUnlock
+ .text            02028fc4+000020 __ghs_GetThreadLocalStorageItem
+ .text            02028ff8+000010 __ghs_RestoreSignalContext
+ .text            02028fe4+000014 __ghs_SaveSignalContext
+ .text            02029360+000030 __ghs_at_exit
+                  00000000+000000 __ghs_board_cache_sync
+                  00000000+000000 __ghs_board_devices_init
+                  00000000+000000 __ghs_board_memory_init
+ .text            02028310+000014 __ghs_change_decimal
+                  00000000+000000 __ghs_checksum
+                  00000000+000000 __ghs_coverage_init
+                  00000000+000000 __ghs_cpp_exception_cleanup
+                  00000000+000000 __ghs_cpp_exception_init
+ .data            0202eac1+000002 __ghs_decimal
+                  00000000+000000 __ghs_decompress
+ .text            020290cc+000018 __ghs_default_signal_handler
+ .text            02008078+000004 __ghs_enterblock_func
+ .text            0202903c+000010 __ghs_flock_create
+ .text            0202904c+000010 __ghs_flock_destroy
+ .text            02029008+000010 __ghs_flock_file
+ .text            02027274+000054 __ghs_flock_in_use
+ .text            020291b0+000034 __ghs_flock_ptr
+ .text            020291e4+00001c __ghs_flock_word
+ .text            02029028+000014 __ghs_ftrylock_file
+ .text            02029018+000010 __ghs_funlock_file
+ .text            0202927c+000020 __ghs_heapseg_size
+ .text            0202950c+000020 __ghs_hostio_close
+ .text            020294e8+000024 __ghs_hostio_creat
+ .text            02029574+000028 __ghs_hostio_fcntl
+ .text            0202952c+000028 __ghs_hostio_lseek
+ .text            020294ac+00003c __ghs_hostio_open
+ .text            02029484+000028 __ghs_hostio_read
+ .text            02029554+000020 __ghs_hostio_unlink
+ .text            0202945c+000028 __ghs_hostio_write
+ .text            020098c4+000390 __ghs_ind_crt0
+ .text            020295bc+0000c4 __ghs_ind_crt1
+ .syscall         0202991c+000008 __ghs_initial_dotsyscall
+                  00000002+000000 __ghs_log_fee_level
+                  00000000+000000 __ghs_manprf_init
+ .text            02026074+000028 __ghs_memcmp
+                  00000000+000000 __ghs_rambootcodeend
+                  00000000+000000 __ghs_rambootcodestart
+                  03000000+000000 __ghs_ramend
+                  02000000+000000 __ghs_ramstart
+                  00000000+000000 __ghs_rombootcodeend
+                  00000000+000000 __ghs_rombootcodestart
+                  01000000+000000 __ghs_romend
+                  00000000+000000 __ghs_romstart
+                  00000000+000000 __ghs_set_stack_chk_guard
+ .text            02026050+000024 __ghs_strcat
+ .text            0202602c+000024 __ghs_strchr
+ .text            02025f5c+0000d0 __ghs_strcmp
+ .text            02025f04+000058 __ghs_strcpy
+ .text            02025eec+000018 __ghs_strlen
+ .text            02025eb0+00003c __ghs_strncat
+ .text            02025e80+000030 __ghs_strncmp
+ .text            02025dbc+0000c4 __ghs_strncpy
+ .text            02025d58+000064 __ghs_strstr
+ .text            020293e0+000038 __ghs_syscall
+ .text            0202941c+00003c __ghs_syscall64
+ .text            020275a0+000054 __ghs_u32tomb
+                  00000000+000000 __ghs_validate_ghtws
+ .fixaddr         02029928+000000 __ghsbegin_fixaddr
+ .fixtype         02029928+000000 __ghsbegin_fixtype
+ .heap            020333c0+000000 __ghsbegin_heap
+ .picbase         02008000+000000 __ghsbegin_picbase
+ .pidbase         0202e100+000000 __ghsbegin_pidbase
+                  00000000+000000 __ghsbegin_robase
+ .secinfo         0202e0b0+000000 __ghsbegin_secinfo
+ .secinfo         0202e0f8+000000 __ghsbinfo_aclear
+ .secinfo         0202e0f8+000000 __ghsbinfo_acopy
+ .secinfo         0202e0b0+000048 __ghsbinfo_clear
+ .secinfo         0202e0f8+000000 __ghsbinfo_comacopy
+ .secinfo         0202e0f8+000000 __ghsbinfo_comcopy
+ .secinfo         0202e0f8+000000 __ghsbinfo_comtcopy
+ .secinfo         0202e0f8+000000 __ghsbinfo_copy
+ .secinfo         0202e0f8+000000 __ghsbinfo_tcopy
+ .secinfo         0202e0f8+000000 __ghseinfo_clear
+ .secinfo         0202e0f8+000000 __ghseinfo_comcopy
+ .secinfo         0202e0f8+000000 __ghseinfo_copy
+ .fixaddr         02029928+000000 __ghsend_fixaddr
+ .heap            021333c0+000000 __ghsend_heap
+ .stack           021b33c0+000000 __ghsend_stack
+                  00000000+000000 __ghssize_fixaddr
+ .text            020285e0+000008 __itod
+ .bss             0202eb44+000084 __mallocInfo
+ .text            02025d30+00001c __malloc_info
+ .text            020296f4+000014 __sdiv10
+ .text            0202982c+0000dc __sdiv_32_32
+ .text            02029708+00001c __smod10
+ .text            02029908+000014 __smod_32_32
+ .text            02029728+000010 __udiv10
+ .text            02029754+0000c4 __udiv_32_32
+ .text            02029738+000018 __umod10
+ .text            02029818+000014 __umod_32_32
+ .text            020285d8+000008 __utod
+ .text            020285e8+00005c __x32tod..trg.2Farma4.2Fobjs.2Flibs.2Flibind_sf.2Find32tod.
+                  00000000+000000 _cleanup
+ .text            02029308+000058 _exit
+ .text            020270f0+0000e4 _flsbuf
+ .text            02025a50+0001a0 _free..trg.2Farma4.2Fobjs.2Flibs.2Flibfmalloc.2Fccmalloc.
+ .bss             0203321c+000140 _iob
+ .bss             0203335c+000054 _iob_lock
+ .text            020257f4+00025c _malloc..trg.2Farma4.2Fobjs.2Flibs.2Flibfmalloc.2Fccmalloc.
+ .bss             0202eb10+000030 _multiArgs
+ .rodata          0202aa00+000004 _multibufSize
+ .bss             02032a60+0003e8 _multibuffer
+ .text            02009808+000008 _multiend
+ .text            02009810+000004 _multiend2
+ .text            02008000+000078 _start
+ .data            0202e100+000048 _testArray..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5Cserial.5CCantata.5Ctests.5Ctest_struct.5Cstruct.
+ .text            02026498+000020 abort
+ .text            02026448+00004c atexit
+ .text            02026634+00000c atoi
+ .text            02026628+00000c atol
+ .data            0202e1c0+000004 av_struct
+ .text            02025c20+000044 calloc
+ .bss             0202ebd0+003e80 cantata_memory_pool
+ .text            02008180+0000ac check_bus
+ .text            02008818+00003c check_global_data..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5Cserial.5CCantata.5Ctests.5Ctest_struct.5Ctest_struct.
+ .text            0202950c+000020 close
+ .data            0202e578+000004 cppca_ch1a01_big_number_pc
+ .data            0202e564+000004 cppca_ch1a01_blank_line_pc
+ .data            0202e574+000004 cppca_ch1a01_configuration_pc
+ .data            0202e558+000004 cppca_ch1a01_copyright_pc
+ .data            0202e554+000004 cppca_ch1a01_double_line1_pc
+ .data            0202e550+000004 cppca_ch1a01_double_line_pc
+ .data            0202e5bc+000004 cppca_ch1a01_end_step_pc
+ .data            0202e5b4+000004 cppca_ch1a01_end_test_pc
+ .data            0202e580+000004 cppca_ch1a01_fail_pc
+ .data            0202e5a0+000004 cppca_ch1a01_finished_pc
+ .data            0202e570+000004 cppca_ch1a01_logfile_pc
+ .data            0202e59c+000004 cppca_ch1a01_minresult_pc
+ .data            0202e57c+000004 cppca_ch1a01_pass_pc
+ .data            0202e5ac+000004 cppca_ch1a01_result_fmt_pc
+ .data            0202e5a4+000004 cppca_ch1a01_results_line_pc
+ .data            0202e5c8+000004 cppca_ch1a01_se_end_script_csvb_pc
+ .data            0202e5c4+000004 cppca_ch1a01_se_end_script_ots_pc
+ .data            0202e5d8+000004 cppca_ch1a01_se_end_test_csvb_pc
+ .data            0202e5d4+000004 cppca_ch1a01_se_end_test_otc_pc
+ .data            0202e5e4+000004 cppca_ch1a01_se_end_test_step_ots_pc
+ .data            0202e5c0+000004 cppca_ch1a01_se_start_script_pc
+ .data            0202e5d0+000004 cppca_ch1a01_se_start_test_csvb_pc
+ .data            0202e5cc+000004 cppca_ch1a01_se_start_test_ots_pc
+ .data            0202e5e8+000004 cppca_ch1a01_se_start_test_step_itsb_pc
+ .data            0202e5e0+000004 cppca_ch1a01_se_start_test_step_ocsvbtb_pc
+ .data            0202e5dc+000004 cppca_ch1a01_se_start_test_step_ots_pc
+ .data            0202e560+000004 cppca_ch1a01_single_line1_pc
+ .data            0202e55c+000004 cppca_ch1a01_single_line_pc
+ .data            0202e5b8+000004 cppca_ch1a01_start_step_pc
+ .data            0202e5b0+000004 cppca_ch1a01_start_test_pc
+ .data            0202e56c+000004 cppca_ch1a01_started_pc
+ .data            0202e568+000004 cppca_ch1a01_test_desc_pc
+ .data            0202e584+000004 cppca_ch1a01_test_title1_pc
+ .data            0202e588+000004 cppca_ch1a01_test_title1_pc1
+ .data            0202e58c+000004 cppca_ch1a01_test_title1_pc2
+ .data            0202e590+000004 cppca_ch1a01_test_title2_pc
+ .data            0202e594+000004 cppca_ch1a01_test_title2_pc1
+ .data            0202e598+000004 cppca_ch1a01_test_title2_pc2
+ .data            0202e5a8+000004 cppca_ch1a01_totals_pc
+ .data            0202e350+000004 cppca_ch1a02_actual_pc
+ .data            0202e374+000110 cppca_ch1a02_ascii_strings_a
+ .data            0202e34c+000004 cppca_ch1a02_check_dynamic_type_pc
+ .data            0202e344+000004 cppca_ch1a02_check_pc
+ .data            0202e348+000004 cppca_ch1a02_check_range_pc
+ .data            0202e484+0000cc cppca_ch1a02_cppth_string_tt_a
+ .data            0202e354+000004 cppca_ch1a02_expected_pc
+ .data            0202e368+000004 cppca_ch1a02_false_pc
+ .data            0202e35c+000004 cppca_ch1a02_lower_pc
+ .data            0202e36c+000004 cppca_ch1a02_se_check_pc
+ .data            0202e370+000004 cppca_ch1a02_se_check_range_pc
+ .data            0202e340+000004 cppca_ch1a02_sizeof_ascii_strings_n
+ .rodata          0202b8a4+000004 cppca_ch1a02_sizeof_cppth_string_tt_m
+ .data            0202e364+000004 cppca_ch1a02_true_pc
+ .data            0202e360+000004 cppca_ch1a02_upper_pc
+ .data            0202e358+000004 cppca_ch1a02_value_pc
+ .data            0202e25c+000004 cppca_ch1a03_call_sequence_none_pc
+ .data            0202e284+000004 cppca_ch1a03_call_sequence_pc
+ .data            0202e290+000004 cppca_ch1a03_calls_matched_pc
+ .data            0202e294+000004 cppca_ch1a03_calls_so_far_pc
+ .data            0202e28c+000004 cppca_ch1a03_end_calls_pc
+ .data            0202e260+000004 cppca_ch1a03_end_of_sequence_pc
+ .data            0202e280+000004 cppca_ch1a03_expected_calls_pc
+ .data            0202e288+000004 cppca_ch1a03_expecting_pc
+ .data            0202e268+000004 cppca_ch1a03_fa_call_seq_fail_pc
+ .data            0202e264+000004 cppca_ch1a03_fa_incomplete_seq_pc
+ .data            0202e26c+000004 cppca_ch1a03_fa_no_match_call1_pc
+ .data            0202e270+000004 cppca_ch1a03_fa_no_match_call2_pc
+ .data            0202e274+000004 cppca_ch1a03_fa_no_match_inst_pc
+ .data            0202e298+000004 cppca_ch1a03_get_loopindex_pc
+ .data            0202e29c+000004 cppca_ch1a03_pa_registered_call_pc
+ .data            0202e2a0+000004 cppca_ch1a03_pa_registered_inst_pc
+ .data            0202e31c+000004 cppca_ch1a03_pse_expect_token1_pc
+ .data            0202e320+000004 cppca_ch1a03_pse_expect_token2_pc
+ .data            0202e324+000004 cppca_ch1a03_pse_expect_token3_pc
+ .data            0202e32c+000004 cppca_ch1a03_pse_fixed_loop_pc
+ .data            0202e314+000004 cppca_ch1a03_pse_inv_func_call_inst_pc
+ .data            0202e328+000004 cppca_ch1a03_pse_mismatched_braces_pc
+ .data            0202e338+000004 cppca_ch1a03_pse_mismatched_paren_pc
+ .data            0202e330+000004 cppca_ch1a03_pse_missing_asterisk_pc
+ .data            0202e318+000004 cppca_ch1a03_pse_mixed_binop_pc
+ .data            0202e334+000004 cppca_ch1a03_pse_mixed_loop_ops_pc
+ .data            0202e33c+000004 cppca_ch1a03_pse_unexpected_end_pc
+ .data            0202e30c+000004 cppca_ch1a03_se_call_seq_fail_pc
+ .data            0202e2a4+000004 cppca_ch1a03_se_def_exp_calls_nis_pc
+ .data            0202e2ec+000004 cppca_ch1a03_se_end_calls_frb_pc
+ .data            0202e2e8+000004 cppca_ch1a03_se_end_calls_ocsvb_pc
+ .data            0202e2ac+000004 cppca_ch1a03_se_exp_calls_frb_pc
+ .data            0202e2b0+000004 cppca_ch1a03_se_exp_calls_ics_pc
+ .data            0202e2e4+000004 cppca_ch1a03_se_expect_call_cn_pc
+ .data            0202e2c0+000004 cppca_ch1a03_se_expect_call_csf_pc
+ .data            0202e2b8+000004 cppca_ch1a03_se_expect_call_frb_pc
+ .data            0202e2cc+000004 cppca_ch1a03_se_expect_call_icn1_pc
+ .data            0202e2d0+000004 cppca_ch1a03_se_expect_call_icn2_pc
+ .data            0202e2d4+000004 cppca_ch1a03_se_expect_call_icn3_pc
+ .data            0202e2d8+000004 cppca_ch1a03_se_expect_call_icn4_pc
+ .data            0202e2dc+000004 cppca_ch1a03_se_expect_call_icn5_pc
+ .data            0202e2c8+000004 cppca_ch1a03_se_expect_call_icn_pc
+ .data            0202e2bc+000004 cppca_ch1a03_se_expect_call_ics_pc
+ .data            0202e2e0+000004 cppca_ch1a03_se_expect_call_mcn_pc
+ .data            0202e2c4+000004 cppca_ch1a03_se_expect_call_nce_pc
+ .data            0202e2b4+000004 cppca_ch1a03_se_expect_call_otc_pc
+ .data            0202e2a8+000004 cppca_ch1a03_se_expected_calls_otc_pc
+ .data            0202e2f8+000004 cppca_ch1a03_se_get_callinst_pc
+ .data            0202e304+000004 cppca_ch1a03_se_get_loopindex1_pc
+ .data            0202e308+000004 cppca_ch1a03_se_get_loopindex2_pc
+ .data            0202e2f4+000004 cppca_ch1a03_se_reg_callfunc_frb_pc
+ .data            0202e2f0+000004 cppca_ch1a03_se_reg_callfunc_ocsvb_pc
+ .data            0202e2fc+000004 cppca_ch1a03_se_reg_callinst_pc
+ .data            0202e310+000004 cppca_ch1a03_se_save_no_restore_pc
+ .data            0202e300+000004 cppca_ch1a03_se_valid_callinst_pc
+ .data            0202e27c+000004 cppca_ch1a03_set_def_exp_calls_pc
+ .data            0202e278+000004 cppca_ch1a03_start_call_seq_pc
+ .data            0202e238+000004 cppca_ch1a05_def_filename_pc
+ .data            0202e248+000014 cppca_ch1a05_ll_names_pca
+ .data            0202e240+000004 cppca_ch1a05_op_set_gui_level_pc
+ .data            0202e23c+000004 cppca_ch1a05_op_set_log_level_pc
+ .data            0202e244+000004 cppca_ch1a05_set_config_enhanced_op_pc
+ .data            0202e230+000004 cppca_ch1a07_actual_pc
+ .data            0202e220+000004 cppca_ch1a07_bytescomp_pc
+ .data            0202e228+000004 cppca_ch1a07_check_memory_pc
+ .data            0202e234+000004 cppca_ch1a07_expected_pc
+ .data            0202e224+000004 cppca_ch1a07_offset_pc
+ .data            0202e22c+000004 cppca_ch1a07_se_check_memory_pc
+ .data            0202e630+000004 cppca_ch1a_ampersand_pc
+ .data            0202e644+000004 cppca_ch1a_close_brace_pc
+ .data            0202e628+000004 cppca_ch1a_close_bracket_pc
+ .data            0202e634+000004 cppca_ch1a_double_ampersand_pc
+ .data            0202e61c+000004 cppca_ch1a_double_newline_pc
+ .data            0202e60c+000004 cppca_ch1a_ellipsis_pc
+ .data            0202e600+000004 cppca_ch1a_failed_pc
+ .data            0202e63c+000004 cppca_ch1a_hash_pc
+ .data            0202e5fc+000004 cppca_ch1a_log_file_full_error_pc
+ .data            0202e618+000004 cppca_ch1a_newline_pc
+ .data            0202e610+000004 cppca_ch1a_none_pc
+ .data            0202e5f0+000004 cppca_ch1a_null_pc
+ .data            0202e640+000004 cppca_ch1a_open_brace_pc
+ .data            0202e624+000004 cppca_ch1a_open_bracket_pc
+ .data            0202e648+000004 cppca_ch1a_or_string_pc
+ .data            0202e604+000004 cppca_ch1a_passed_pc
+ .data            0202e620+000004 cppca_ch1a_question_mark_pc
+ .data            0202e5f4+000004 cppca_ch1a_script_error_pc
+ .data            0202e5f8+000004 cppca_ch1a_script_warning_pc
+ .data            0202e650+000004 cppca_ch1a_se_log_check_fail_pc
+ .data            0202e64c+000004 cppca_ch1a_se_log_check_pass_pc
+ .data            0202e654+000004 cppca_ch1a_se_log_check_warn_pc
+ .data            0202e62c+000004 cppca_ch1a_semicolon_pc
+ .data            0202e614+000004 cppca_ch1a_tool_name_pc
+ .data            0202e638+000004 cppca_ch1a_vertical_bar_pc
+ .data            0202e608+000004 cppca_ch1a_warning_pc
+ .data            0202e6f0+000010 cppca_ch2b_boperand_combo_a
+ .data            0202e6d8+000018 cppca_ch2b_boperator_combo_a
+ .data            0202e728+000104 cppca_ch2b_coverage_data_a
+ .data            0202e91c+000198 cppca_ch2b_csi_strings_pca
+ .data            0202e82c+0000ee cppca_ch2b_csi_translation_a
+ .data            0202e710+00000c cppca_ch2b_csi_warning_level_ua
+ .data            0202e71c+00000c cppca_ch2b_loop_a
+ .data            0202e700+000010 cppca_ch2b_relational_combo_a
+ .text            0201b028+000030 cppca_data_corrupted_by_sut
+ .bss             02032f19+000001 cppca_order_by_file_b
+ .bss             02032f1a+000001 cppca_order_by_line_num_b
+ .bss             02032f1b+000001 cppca_results_full_file_path_b
+ .bss             02032ef0+000004 cppca_script_state_top_p..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Ct1c01.
+ .text            0201437c+000068 cppca_t20m02_allocMem
+ .text            0201d0f8+000030 cppca_t20m04_LockData
+ .text            020143ec+0001bc cppca_t20m10_regFile
+ .text            020145ac+000134 cppca_t20m11_regFunc
+ .text            0201d258+0000cc cppca_t20m21_exportCoverage
+ .text            0201d12c+00012c cppca_t20m21_op..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Ct2021.
+ .text            020146e0+000148 cppca_t20m30_incCount
+ .text            02025418+0001b0 cppca_t20m31_getCount
+ .text            0201d344+000038 cppca_t20m40_getNames
+ .text            02014834+000164 cppca_t20m50_configCov
+ .text            0201d380+00049c cppca_t20m60_getSetCount
+ .text            020149ac+000304 cppca_t20m61_getContext
+ .text            0201d828+000188 cppca_t20m63_resetCounts
+ .text            02014cb4+00012c cppca_t20m64..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Ct2064.
+ .text            02014de0+000180 cppca_t20m64_setBoolMapping
+ .text            02014f60+00050c cppca_t20m65_changeCount
+ .text            0201d9b4+000060 cppca_t20m82_writeString
+ .text            0201da1c+000060 cppca_t20m83_writeNumber
+ .text            0201da84+0000e8 cppca_t20m85_writeFileData
+ .text            0201db70+0005ec cppca_t20m87_writeFuncData
+ .text            0201e16c+00008c cppca_t20m89_setCSIStringBuffer
+ .text            0201e1f8+000030 cppca_t20m89_unsetCSIStringBuffer
+ .text            0201aed8+0000b8 cppca_t2am03_programExit
+ .text            0201afac+00006c cppca_t2am04_exportCovCallBack
+ .text            0201b05c+000160 cppca_t2am63_exportCoverage
+ .text            020113f0+000244 cppca_t2am64_a_matchOption..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Ct2a64.
+ .text            02011634+0000fc cppca_t2am64_b_produceError..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Ct2a64.
+ .text            0201e23c+00005c cppca_t2bm02_allocFree
+ .text            0201e2a0+00017c cppca_t2bm10_createFuncList
+ .text            0201e440+0005bc cppca_t2bm11_addCSIFuncsToList
+ .text            0201ea08+000100 cppca_t2bm12_addNonCSIFuncstoList
+ .text            02023a78+000118 cppca_t2bm13_updateCSIFunc
+ .text            0201eb10+0000fc cppca_t2bm20_readAdditionalInfo
+ .text            0201ec0c+000860 cppca_t2bm20_readCSIFile
+ .text            0201f4d8+0006ec cppca_t2bm21_readFuncCountsFromCSI
+ .text            0201fed0+000ba0 cppca_t2bm22_readFuncDataCSI
+ .text            0201fbf0+000154 cppca_t2bm22_readInfeasible
+ .text            0201fd44+0000e4 cppca_t2bm22_readPosition
+ .text            0201fe28+0000a8 cppca_t2bm22_readType
+ .text            02020aec+0000e8 cppca_t2bm30_buildMatchFuncList
+ .text            02020be8+0001d0 cppca_t2bm31_buildMatchCntxtList
+ .text            02023b90+0009f4 cppca_t2bm32_getContextData
+ .text            02020dc4+00031c cppca_t2bm40_buildResults
+ .text            02021434+0003b8 cppca_t2bm42_decnCoverage
+ .text            020217f4+0002ec cppca_t2bm43_boolOperatorCoverage
+ .text            02021af4+000670 cppca_t2bm44_boolOperandCoverage
+ .text            02024880+000230 cppca_t2bm45_combCoverage
+ .text            02024590+0002f0 cppca_t2bm45_walkTree
+ .text            02024d68+0002a0 cppca_t2bm46_boolEffCoverage
+ .text            02024cb4+0000b4 cppca_t2bm46_findResult
+ .text            02024adc+0001d8 cppca_t2bm46_walkTree
+ .text            02025364+0000a0 cppca_t2bm47_maskEffCoverage
+ .text            02025018+0001c0 cppca_t2bm47_processOp
+ .text            020251d8+00018c cppca_t2bm47_walkTree
+ .text            0202217c+0002a4 cppca_t2bm48_relationalCoverage
+ .text            02022434+0000e0 cppca_t2bm49_addOperand
+ .text            02022514+000150 cppca_t2bm49_buildExprString
+ .text            02022664+000468 cppca_t2bm49_genCombCoverage
+ .text            02022af4+0002e4 cppca_t2bm4a_loopCoverage
+ .text            02022dec+000168 cppca_t2bm50_readStringFromFile
+ .text            02022f60+000080 cppca_t2bm51_readNumberFromFile
+ .text            02022fe4+000090 cppca_t2bm52_getNextChar
+ .text            02015478+000144 cppca_t2bm62_createFuncName
+ .text            020155bc+0001b0 cppca_t2bm62_initFuncList
+ .text            0201576c+0002fc cppca_t2bm62_outputHeader
+ .text            02015a68+00021c cppca_t2bm62_outputSummary
+ .text            02016414+00069c cppca_t2bm63_outputCoverage
+ .text            02016d70+000078 cppca_t2bm64_getWarningData
+ .text            02016b18+000078 cppca_t2bm64_outputMessage
+ .text            02016de8+0000f4 cppca_t2bm64_removeDuplicateWarningEntries
+ .text            02016cc8+0000a8 cppca_t2bm64_setupCSIWarningData
+ .text            02016edc+000094 cppca_t2bm64_setupFileScopeWarnings
+ .text            02016b90+000138 cppca_t2bm64_writeCSIMessage
+ .text            02017120+0001a8 cppca_t2bm68_getContextResults
+ .text            02016fa4+00017c cppca_t2bm68_matchFunc
+ .text            02017450+000404 cppca_t2bm68_outputResults
+ .text            020172c8+000188 cppca_t2bm68_processErrors
+ .text            02018038+000464 cppca_t2bm81_calcMetric
+ .text            020184ac+000094 cppca_t2bm82_getFileNameInstances
+ .text            020185b0+0003ec cppca_t2bm82_opInvalidFuncs
+ .text            02018540+000070 cppca_t2bm82_setInsFlag
+ .text            020189e4+0001b4 cppca_t2bm90_formatName
+ .text            02023080+000470 cppca_t2bm91_opReportLine
+ .text            02018b9c+0000c8 cppca_t2bm93_fmtString
+ .text            020210e0+000338 cppca_t2mb41_generalCoverage
+ .bss             02032e60+000004 cppca_vh1a03_actual_node_p
+ .bss             02032e5c+000004 cppca_vh1a03_actuals_current_p
+ .bss             02032e48+000004 cppca_vh1a03_actuals_head_p
+ .bss             02032e4c+000004 cppca_vh1a03_actuals_tail_p
+ .bss             02032e78+000004 cppca_vh1a03_comploop_head_p
+ .bss             02032e7c+000004 cppca_vh1a03_comploop_tail_p
+ .data            0202e1c4+000024 cppca_vh1a03_end_sequence
+ .bss             02032e74+000004 cppca_vh1a03_error_count_m
+ .bss             02032e58+000004 cppca_vh1a03_nested_top_p
+ .bss             02032e68+000004 cppca_vh1a03_next_char_pc
+ .bss             02032e50+000004 cppca_vh1a03_next_head_p
+ .bss             02032e82+000001 cppca_vh1a03_next_token_b
+ .bss             02032e80+000002 cppca_vh1a03_saved_level_u
+ .bss             02032e54+000004 cppca_vh1a03_saved_top_p
+ .bss             02032e6c+000004 cppca_vh1a03_start_sequence_pc
+ .bss             02032e70+000004 cppca_vh1a03_token_start_pc
+ .bss             0202eb40+000004 cppca_vh1a03_token_value
+ .bss             02032e64+000004 cppca_vh1a03_top_of_tree_p
+ .bss             02032ef5+000001 cppca_vh1a_allow_write_to_log_over_limit_b
+ .bss             02032ea0+000004 cppca_vh1a_ctg_info_filename_pc
+ .bss             02032e9c+000004 cppca_vh1a_ctg_info_line_no_m
+ .bss             02032e90+000004 cppca_vh1a_default_expected_calls_pc
+ .rodata          0202c196+000002 cppca_vh1a_default_max_log_file_size_u
+ .bss             02032eb2+000001 cppca_vh1a_done_rci_b
+ .bss             02032e98+000004 cppca_vh1a_end_calls_fn_p
+ .data            0202e1f5+000001 cppca_vh1a_enforce_maxlinelen_b
+ .data            0202e1f0+000004 cppca_vh1a_enhanced_op_options_n
+ .bss             02032eb9+000001 cppca_vh1a_errlib_registered_b
+ .bss             02032ebd+000001 cppca_vh1a_exp_calls_in_use_b
+ .bss             02032ea4+000004 cppca_vh1a_expect_call_head_p
+ .bss             02032ea8+000004 cppca_vh1a_expect_call_tail_p
+ .bss             02032e94+000004 cppca_vh1a_expected_calls_fn_p
+ .data            0202e1f4+000001 cppca_vh1a_gather_coverage_by_test_case_b
+ .bss             02032eb5+000001 cppca_vh1a_gui_enabled_b
+ .bss             02032ebb+000001 cppca_vh1a_gui_file_open_b
+ .bss             02032eb4+000001 cppca_vh1a_in_execute_b
+ .bss             02032eb3+000001 cppca_vh1a_in_stub_b
+ .bss             02032eb8+000001 cppca_vh1a_library_locked_b
+ .bss             02032ef6+000001 cppca_vh1a_line_position_b
+ .bss             02032ef4+000001 cppca_vh1a_log_file_open_b
+ .data            0202e1ec+000004 cppca_vh1a_log_level
+ .data            0202e5ec+000004 cppca_vh1a_max_log_file_size_l
+ .bss             02032eb0+000002 cppca_vh1a_nesting_level_u
+ .data            0202e1f8+000024 cppca_vh1a_other
+ .bss             02032eb6+000001 cppca_vh1a_output_bit_mask_b
+ .bss             02032eba+000001 cppca_vh1a_output_locked_b
+ .bss             02032ef7+000001 cppca_vh1a_prefix_length_b
+ .data            0202e1e8+000004 cppca_vh1a_results_current_p
+ .bss             02032e88+000004 cppca_vh1a_results_head_p
+ .bss             02032e8c+000004 cppca_vh1a_results_tail_p
+ .bss             02032eb7+000001 cppca_vh1a_script_state_b
+ .bss             02032e84+000004 cppca_vh1a_test_name_pc
+ .bss             02032ebc+000001 cppca_vh1a_tmp_file_open_b
+ .bss             02032f17+000001 cppca_vh20_ca_called_b
+ .data            0202e67c+000058 cppca_vh20_cov_config_a
+ .data            0202e65c+000020 cppca_vh20_error_msg_a
+ .bss             02032f10+000004 cppca_vh20_export_callback
+ .data            0202e658+000001 cppca_vh20_gather_cov_b
+ .bss             02032efc+000004 cppca_vh20_input_file_p
+ .bss             02032f14+000001 cppca_vh20_lock_data_b
+ .bss             02032f0c+000004 cppca_vh20_max_csi_string_detected_m
+ .bss             02032ef8+000004 cppca_vh20_origin_p
+ .bss             02032f00+000004 cppca_vh20_output_file_p
+ .bss             02032f16+000001 cppca_vh20_read_checksum_b
+ .bss             02032f1c+000001 cppca_vh20_read_error_b
+ .bss             02032f08+000004 cppca_vh20_string_length_n
+ .bss             02032f04+000004 cppca_vh20_string_read_pc
+ .bss             02032f18+000001 cppca_vh20_use_stdout_b
+ .bss             02032f15+000001 cppca_vh20_write_checksum_b
+ .bss             02032ec4+000001 cppca_vh2a_accum_at_end_b
+ .data            0202e21d+000001 cppca_vh2a_export_at_end_b
+ .bss             02032ec0+000004 cppca_vh2a_export_file_pc
+ .bss             02032ec6+000001 cppca_vh2a_export_is_user_b
+ .data            0202e21e+000001 cppca_vh2a_export_replace_b
+ .data            0202e21c+000001 cppca_vh2a_first_file_b
+ .bss             02032ec5+000001 cppca_vh2a_t20_locked_b
+ .bss             02032ec8+000028 cppca_vh2a_trace_callback_a
+ .bss             02032ec7+000001 cppca_vh2a_use_stdout_b
+ .bss             02032f30+000004 cppca_vh2b_T20_origin_p
+ .bss             02032f50+000001 cppca_vh2b_contexts_match_b
+ .bss             02032f51+000001 cppca_vh2b_coverage_warnings_b
+ .bss             02032f2c+000004 cppca_vh2b_csi_err_num_m
+ .bss             02032f40+000004 cppca_vh2b_csi_list_p
+ .bss             02032f4c+000002 cppca_vh2b_embedded_CSI_data_index_u
+ .bss             02032f20+000004 cppca_vh2b_embedded_CSI_data_p2c
+ .bss             02032f24+000004 cppca_vh2b_embedded_CSI_data_pc
+ .bss             02032f28+000004 cppca_vh2b_file_scope_warnings_p
+ .bss             02032f48+000004 cppca_vh2b_first_T20_file_p
+ .bss             02032f34+000004 cppca_vh2b_funcs_list_p
+ .bss             02032f3c+000004 cppca_vh2b_matched_func_list_p
+ .bss             02032f38+000004 cppca_vh2b_nameless_func_list_p
+ .bss             02032f4e+000002 cppca_vh2b_num_invalid_csi_i
+ .data            0202e6d4+000001 cppca_vh2b_trace_cont_char_c
+ .bss             02032f52+000001 cppca_vh2b_trace_cont_init_b
+ .bss             02032f68+000014 cppca_vh2b_trace_context_handle
+ .bss             02032f54+000014 cppca_vh2b_trace_func_handle
+ .bss             02032f53+000001 cppca_vh2b_trace_func_init_b
+ .bss             02032f44+000004 cppca_vh2b_without_csi_list_p
+ .text            02010f74+00047c cppcg_configure_coverage
+ .text            02011760+000068 cppcg_export_coverage
+ .data            0202e148+000078 cppci_filedata_dataptr..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5Cserial.5CCantata.5Ctests.5Ctest_struct.5Cstruct.
+ .text            02008748+00000c cppci_filedata_ptr..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5Cserial.5CCantata.5Ctests.5Ctest_struct.5Cstruct.
+ .text            020080ec+000094 cppci_fileinfo_ptr..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5Cserial.5CCantata.5Ctests.5Ctest_struct.5Cstruct.
+ .bss             02032a54+000004 cppci_func_ptr.check_bus..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5Cserial.5CCantata.5Ctests.5Ctest_struct.5Cstruct..1
+ .bss             02032a58+000004 cppci_func_ptr.mem_alloc..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5Cserial.5CCantata.5Ctests.5Ctest_struct.5Cstruct..2
+ .bss             02032a5c+000004 cppci_func_ptr.serial_com..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5Cserial.5CCantata.5Ctests.5Ctest_struct.5Cstruct..4
+ .text            02010814+000070 cppci_log_bool_operand
+ .text            02010ca8+00019c cppci_log_bool_operator
+ .text            0201062c+00010c cppci_log_calls_done
+ .text            020105f8+000034 cppci_log_calls_done_and_return_value
+ .text            0201073c+000024 cppci_log_decision
+ .text            02010464+00008c cppci_log_function_entry
+ .text            020104f4+000070 cppci_log_function_exit
+ .text            02010760+000088 cppci_log_outcome
+ .text            020107ec+000028 cppci_log_start_bool
+ .text            02010568+00008c cppci_log_statement
+ .text            02010e4c+0000d0 cppci_register_file
+ .text            02010f28+00004c cppci_register_function
+ .text            020080a8+000044 cppci_strncpy..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5Cserial.5CCantata.5Ctests.5Ctest_struct.5Cstruct.
+ .text            02010b00+0001a8 cppci_t2am20_a_fillMaskCovTbl
+ .text            02010934+0001cc cppci_t2am20_b_fillUniqueTbl
+ .text            02010884+0000b0 cppci_t2am20_c_getOpType
+ .text            02017f58+000020 cppcr_get_coverage
+ .text            02017fb8+000020 cppcr_get_coverage_avg
+ .text            02017ff8+000020 cppcr_get_coverage_dev
+ .text            02017f98+000020 cppcr_get_coverage_max
+ .text            02017854+000644 cppcr_get_coverage_metric
+ .text            02017f78+000020 cppcr_get_coverage_min
+ .text            02017fd8+000020 cppcr_get_coverage_num
+ .text            02018018+000020 cppcr_get_coverage_wavg
+ .text            02015c84+0006dc cppcr_report_coverage
+ .text            0200e9a4+000018 cppth_c_restore_calls
+ .text            0200e8ac+000018 cppth_c_save_calls
+ .text            0200a9b4+000024 cppth_check_address
+ .text            0200a9d8+000024 cppth_check_address_warn
+ .text            0200ab50+000024 cppth_check_char
+ .text            0200ab74+000024 cppth_check_char_warn
+ .text            0200b108+00004c cppth_check_double_range
+ .text            0200b154+00004c cppth_check_double_range_warn
+ .text            0200b308+000038 cppth_check_memory
+ .text            0200b340+000038 cppth_check_memory_warn
+ .text            0200acf0+000038 cppth_check_s_int
+ .text            0200ad28+000038 cppth_check_s_int_warn
+ .text            0200aeb8+000038 cppth_check_u_int
+ .text            0200aef0+000038 cppth_check_u_int_warn
+ .text            0200e714+000018 cppth_close_log
+ .text            0200b814+000534 cppth_end_calls
+ .text            02009f60+0002f0 cppth_end_script
+ .text            0200a5dc+00026c cppth_end_test
+ .text            0200f98c+0002f8 cppth_expect_call
+ .text            0200b388+00042c cppth_expected_calls
+ .text            0200c28c+00016c cppth_get_callinst
+ .text            0201ae90+000028 cppth_get_current_test_name
+ .text            0201044c+000018 cppth_initialise_pool
+ .text            0200e7d8+000030 cppth_lock_output
+ .text            0201ad4c+000054 cppth_log_check_warn
+ .text            0200e72c+000054 cppth_log_script_error
+ .text            020117d0+000024 cppth_memcpy
+ .text            0200e6f4+000020 cppth_open_log
+ .text            020087a8+000030 cppth_open_log_og..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5Cserial.5CCantata.5Ctests.5Ctest_struct.5Ctest_struct.
+ .text            020121ec+000184 cppth_output_line_and_file
+ .text            0201aeb8+000014 cppth_record_coverage_by_test_case
+ .text            0200bd90+0004cc cppth_reg_callfunc
+ .text            0200c410+000338 cppth_reg_callinst
+ .text            02012ec4+000018 cppth_reportMemUsage
+ .text            0200e8e4+0000c0 cppth_restore_calls
+ .text            0200e80c+0000a0 cppth_save_calls
+ .text            020126d4+0000f8 cppth_set_pending_posn
+ .text            02009ed0+000084 cppth_start_script
+ .text            0200a268+00034c cppth_start_test
+ .text            0201a9f8+0000d4 cppth_t1am01_logCheckFail
+ .text            0201ac5c+0000e8 cppth_t1am01_logCheckMemFail
+ .text            0201abdc+000080 cppth_t1am01_logCheckMemPass
+ .text            0201a960+000098 cppth_t1am01_logCheckPass
+ .text            0201aacc+000110 cppth_t1am01_logCheckRange
+ .text            0200a87c+000138 cppth_t1am06_check_address
+ .text            0200aa0c+000144 cppth_t1am08_check_char
+ .text            0200aba8+000148 cppth_t1am11_check_s_int
+ .text            0200ad70+000148 cppth_t1am14_check_u_int
+ .text            0200af38+0001d0 cppth_t1am19_check_double_range
+ .text            0200b1b0+000158 cppth_t1am39_check_memory
+ .text            0200c778+0003cc cppth_t1am50_parseExpCallSeqLvl1
+ .text            0200cb58+000814 cppth_t1am51_parse_expCallSeqLvl2
+ .text            0200d38c+0000b4 cppth_t1am52_createParseTreeNode
+ .text            0200d444+000278 cppth_t1am53_getNextToken
+ .text            0200d6cc+0004a0 cppth_t1am54_parseFuncCallInstance
+ .text            0200db88+000638 cppth_t1am55_updateParseTreeFlags
+ .text            0200e1d4+00018c cppth_t1am56_outputCallSeq
+ .text            0200e370+000150 cppth_t1am57_outputNextCallsList
+ .text            0200e4c4+000228 cppth_t1am58_modifyExpCallsParseTree
+ .text            0200fc98+000320 cppth_t1am5a_genNextFirstList
+ .text            0200ffc0+000484 cppth_t1am5b_opExpCallSeq
+ .text            0200e780+000054 cppth_t1am75_log_script_error_code
+ .text            0200e9d8+000030 cppth_t1am80_lockLibData
+ .text            0200ea0c+000030 cppth_t1am81_logCallSeqFailure
+ .text            0200f3b4+0002a8 cppth_t1am82_end_calls
+ .text            0200f65c+0002e4 cppth_t1am82_reg_call
+ .text            0201ada8+0000e0 cppth_t1am85_getIndent
+ .text            020124a8+000044 cppth_t1cm01_anyScriptState
+ .text            02012d04+000048 cppth_t1cm01_appendRepeatedChar..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Ct1c01.
+ .text            02012484+000024 cppth_t1cm01_clearScriptState
+ .text            02011c8c+000560 cppth_t1cm01_logEndScript
+ .text            02012370+000048 cppth_t1cm01_logLibErr
+ .text            020117f8+000034 cppth_t1cm01_logPreDefd
+ .text            02012880+000024 cppth_t1cm01_logScriptErrPreDef
+ .text            020127cc+0000b4 cppth_t1cm01_logScriptErrStr
+ .text            02011844+000448 cppth_t1cm01_logStartScript
+ .text            0201182c+000018 cppth_t1cm01_logString
+ .text            02012460+000024 cppth_t1cm01_peekScriptState
+ .text            0201240c+000054 cppth_t1cm01_popScriptState
+ .text            020123cc+000040 cppth_t1cm01_pushScriptState
+ .text            0201266c+000030 cppth_t1cm01_setEnforceMaxLineLen
+ .text            0201269c+000038 cppth_t1cm01_setLogLevel
+ .text            020124ec+000014 cppth_t1cm01_setOutputBitMask
+ .text            02012648+000024 cppth_t1cm01_setPrefixStr
+ .text            020123b8+000014 cppth_t1cm01_setScriptState
+ .text            02012500+000064 cppth_t1cm01_wrapOnOverflow
+ .text            020128a4+0002e8 cppth_t1cm01_writeBanner..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Ct1c01.
+ .text            02012b8c+000178 cppth_t1cm01_writeLineAndFileEntry..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Ct1c01.
+ .text            02012e68+000038 cppth_t1cm02_closeLog
+ .text            02012d98+0000d0 cppth_t1cm02_openLog
+ .text            0201b7e8+000064 cppth_t1cm03_logValue
+ .text            0201b850+0000b8 cppth_t1cm04_logActExp
+ .text            0201bc10+0002d4 cppth_t1cm04_writeCharPActExp..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Ct1c04.
+ .text            0201b908+000308 cppth_t1cm04_writeWStringActExp..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Ct1c04.
+ .text            0201bf04+0000fc cppth_t1cm05_logActUprLwr
+ .text            0201c2f4+000264 cppth_t1cm05_writeCharPActLwrUpr..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Ct1c05.
+ .text            0201c000+0002f4 cppth_t1cm05_writeWStringActLwrUpr..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Ct1c05.
+ .text            02013080+0000e4 cppth_t1cm07_logFullFunc
+ .text            02012f50+000130 cppth_t1cm07_logFuncCallSeq
+ .text            02013164+000090 cppth_t1cm07_logInstName
+ .text            02012edc+000074 cppth_t1cm07_logLoopInd
+ .text            020131f4+0001b4 cppth_t1cm07_opParseErr
+ .text            020238f0+00011c cppth_t1cm51_outputChar
+ .text            02023a2c+000044 cppth_t1cm54_outputWChar
+ .text            0201c56c+0000e4 cppth_t1cm55_outputCCharP
+ .text            0201c65c+0000e8 cppth_t1cm56_outputWString
+ .text            0201c75c+0006f8 cppth_t1cm58_outputMem
+ .text            0201ce8c+000248 cppth_t1cm61_writeValue
+ .text            02013630+0000bc cppth_t1cm66_CTGTag..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Ct1c66.
+ .text            020136ec+000020 cppth_t1cm66_writeChar..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Ct1c66.
+ .text            0201370c+000040 cppth_t1cm66_writeGui..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Ct1c66.
+ .text            0201374c+0001f4 cppth_t1cm66_writeToLog
+ .text            02013968+0007ec cppth_t1cm91_getMessageString
+ .bss             02032eac+000004 cppth_vh1a_current_instance_pc
+ .text            020133d8+00022c cppth_write_log
+ .text            020294e8+000024 creat
+ .text            02028674+0000bc d32..trg.2Farma4.2Fobjs.2Flibs.2Flibind_sf.2Finddto32.
+ .text            02008f34+0002fc disable_watchdog
+ .text            02027658+00030c efout..trg.2Farma4.2Fobjs.2Flibs.2Flibmath_sf.2Fccefgout.
+ .bss             0202ebc8+000004 environ
+ .bss             0202ebcc+000004 errno
+ .text            020263cc+00003c exit
+ .bss             0202eac8+000048 expected_av_struct
+ .text            02029574+000028 fcntl
+ .text            020272cc+0000e4 fflush
+ .text            020271dc+000014 flockcreate
+ .text            020271f0+00002c flockdestroy
+ .text            0202721c+00001c flockfile
+ .text            02025d08+000028 free
+ .text            02027254+000020 ftrylockfile
+ .text            02027238+00001c funlockfile
+ .text            0201b5d4+000120 g06m10_opChar
+ .text            0201b5b4+000020 g06m10_opCharDirect
+ .text            0201b704+00003c g06m11_opString
+ .text            0201b740+00009c g06m12_write2GUILog
+ .text            020117f4+000004 g06m50_endTest
+ .text            0202635c+00006c getenv
+ .text            0201a7f0+00012c gf90_strError
+ .text            020087f8+000020 initialise_expected_global_data..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5Cserial.5CCantata.5Ctests.5Ctest_struct.5Ctest_struct.
+ .text            020087d8+000020 initialise_global_data..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5Cserial.5CCantata.5Ctests.5Ctest_struct.5Ctest_struct.
+ .text            02018c64+000054 iplcpp_g01m02_compareIdents
+ .text            02018cb8+000220 iplcpp_g01m03_parseIdent
+ .text            02018ee0+000074 iplcpp_g01m04_delHandle
+ .text            02018f54+000050 iplcpp_g01m05_cmpIdent2Handle
+ .text            02018fa4+0000d4 iplcpp_g01m11_parseFilename
+ .text            02019078+000164 iplcpp_g01m12_parseQualList
+ .text            020191e4+0000cc iplcpp_g01m13_parseName
+ .text            020192b0+00009c iplcpp_g01m14_parseParamList
+ .text            0201934c+00012c iplcpp_g01m15_parseParam
+ .text            02019484+0001d0 iplcpp_g01m16_parseDescriptor
+ .text            02019654+0002f4 iplcpp_g01m17_extractTokens
+ .text            02019948+0000d0 iplcpp_g01m18_parseThisQual
+ .text            02019a18+00009c iplcpp_g01m20_cmpHandle2Handle
+ .text            02019ab4+0001ac iplcpp_g01m21_compareFilenames
+ .text            02019c60+0000d8 iplcpp_g01m22_compareQualLists
+ .text            02019d38+0001b0 iplcpp_g01m24_compareParams
+ .text            02019eec+0000c8 iplcpp_g01m26_compareDescriptors
+ .text            02019fb4+00017c iplcpp_g01m27_compareIdentTokens
+ .text            0201a138+000030 iplcpp_g01m28_compareThisQual
+ .text            0201a168+000034 iplcpp_g01m32_delQualList
+ .text            0201a19c+000030 iplcpp_g01m33_delName
+ .text            0201a1cc+000044 iplcpp_g01m34_delParamList
+ .text            0201a210+000044 iplcpp_g01m36_delDescrip
+ .text            0201a254+0000a8 iplcpp_g01m40_normaliseWhiteSpace
+ .text            0201a2fc+000140 iplcpp_g01m41_srchForDelimiter
+ .text            0201a440+000094 iplcpp_g01m42_srchForOpFunc
+ .text            0201b1e4+00025c iplcpp_g03m01_raiseError
+ .text            0201b49c+000034 iplcpp_g03m03_raiseErrorCode
+ .text            0201b4d0+000014 iplcpp_g03m10_regCode
+ .text            0201b4e8+0000a8 iplcpp_g03m20_terminateMaxErrors
+ .text            0201b59c+000014 iplcpp_g03m40_getTermStatus
+ .text            0202353c+0002a8 iplcpp_g04m82_writeStringToFile
+ .text            020237f0+0000fc iplcpp_g04m83_writeNumberToFile
+ .text            0201a4d4+000108 iplcpp_g07m10_malloc
+ .text            0201a5f8+0000a8 iplcpp_g07m20_free
+ .text            0201a6b0+00003c iplcpp_g07m30_init
+ .text            0201a6fc+0000d4 iplcpp_g07m40_reportMemUsage
+ .bss             02033094+000004 iplcpp_vhg03_component_pc
+ .bss             0203309c+000004 iplcpp_vhg03_error_format_pc
+ .bss             02033098+000004 iplcpp_vhg03_errors_m
+ .data            0202eab4+000004 iplcpp_vhg03_max_errors_m
+ .bss             020330a4+000004 iplcpp_vhg03_sev_error_pc
+ .bss             020330a0+000004 iplcpp_vhg03_sev_fatal_pc
+ .bss             020330ac+000004 iplcpp_vhg03_sev_info_pc
+ .bss             020330a8+000004 iplcpp_vhg03_sev_warn_pc
+ .bss             020330b0+000001 iplcpp_vhg03_terminating_b
+ .data            0202eab8+000001 iplcpp_vhg03_warning_level_b
+ .rodata          0202d49c+000008 kf90_g03_errors0_ppc
+ .rodata          0202d4ac+000004 kf90_g06_errors4400_ppc
+ .rodata          0202d4a8+000004 kf90_g07_errors4300_ppc
+ .rodata          0202d4d0+000044 kf90_t1a_errors2900_ppc
+ .rodata          0202d4b0+00000c kf90_t2a_errors3500_ppc
+ .rodata          0202d4bc+000014 kf90_t2b_errors3800_ppc
+ .rodata          0202d4a4+000004 kf90_t3a_errors4200_ppc
+ .text            0202952c+000028 lseek
+ .text            020089c8+000064 main
+ .text            02025bf0+000030 malloc
+ .text            020255cc+000044 malloc_block_set..trg.2Farma4.2Fobjs.2Flibs.2Flibfmalloc.2Fccmalloc.
+ .text            02025610+0001e4 malloc_get_heap..trg.2Farma4.2Fobjs.2Flibs.2Flibfmalloc.2Fccmalloc.
+ .text            0200822c+0000f4 mem_alloc
+ .text            02026074+000028 memcmp
+ .text            02009cb0+000220 memcpy
+ .text            02028348+000290 memmove
+ .text            02009814+0000b0 memset
+ .text            020294ac+00003c open
+ .text            02026338+000020 printf
+ .bss             02032a50+000004 ptr.cppci_fileinfo_ptr..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5Cserial.5CCantata.5Ctests.5Ctest_struct.5Cstruct..0
+ .text            020275f8+000060 put_string..trg.2Farma4.2Fobjs.2Flibs.2Flibmath_sf.2Fccefgout.
+ .text            020270c8+000028 putc_unlocked
+ .text            02029138+000074 raise
+ .text            02029484+000028 read
+ .text            02025c64+0000a4 realloc
+ .text            02008854+000174 rule_set..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5Cserial.5CCantata.5Ctests.5Ctest_struct.5Ctest_struct.
+ .text            02008a2c+00005c run_tests
+ .text            0202929c+000060 sbrk
+ .text            020083ac+00039c serial_com
+ .text            020290e4+000054 signal
+ .text            020262d0+000018 sprintf
+ .text            020262e8+000018 sputc..trg.2Farma4.2Fobjs.2Flibs.2Flibansi.2Fccsprntf.
+ .text            020280e0+00022c sqrt
+ .text            02026050+000024 strcat
+ .text            0202602c+000024 strchr
+ .text            02025f5c+0000d0 strcmp
+ .text            02025f04+000058 strcpy
+ .text            02025eec+000018 strlen
+ .text            02025eb0+00003c strncat
+ .text            02025e80+000030 strncmp
+ .text            02025dbc+0000c4 strncpy
+ .text            02027540+000030 strnlen
+ .text            02025d58+000064 strstr
+ .text            020273b8+000188 strtol
+ .text            020264b8+000170 strtoul
+ .text            0200ea8c+000030 t1am82_get_next_call..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Ct1a82.
+ .text            0200f23c+000178 t1am82_get_remaining_calls..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Ct1a82.
+ .text            0200f1a8+000094 t1am82_int_to_string..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Ct1a82.
+ .text            0200f10c+00009c t1am82_next_instance..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Ct1a82.
+ .text            0200eabc+0004e0 t1am82_process_calls..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Ct1a82.
+ .text            0200ef9c+000170 t1am82_process_instance..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Ct1a82.
+ .text            0200ea40+00004c t1am82_process_number..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Ct1a82.
+ .rodata          0202cfb2+00001b t2b_PRCSIdent
+ .text            02008cd4+00009c test_3
+ .text            02008d70+000094 test_4
+ .text            02008e04+000094 test_5
+ .text            02008e98+00009c test_6
+ .text            02008a88+000134 test_serial_com
+ .text            02008bbc+000118 test_serial_com_1
+ .text            02029554+000020 unlink
+ .text            02026674+000044 unsout..trg.2Farma4.2Fobjs.2Flibs.2Flibansi.2Fccvsprnt.
+ .text            02026f54+00010c vfprintf
+ .bss             020330b1+000001 vh06_chars_output_b
+ .bss             020330b2+000001 vh06_checksum_val_c
+ .bss             02033084+000004 vh07_current_pg
+ .bss             0203307c+000004 vh07_free_list_p
+ .bss             0203308c+000004 vh07_memory_pool_left_m
+ .bss             02033088+000004 vh07_memory_pool_size_m
+ .bss             02033090+000004 vh07_peak_memory_m
+ .bss             02033080+000004 vh07_pool_pg
+ .data            0202eab9+000004 vl_comparison_map_ba.cppca_t2bm48_relationalCoverage..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Ct2b48..0
+ .bss             02032f7c+0000ff vl_lookup_ba.iplcpp_g01m41_srchForDelimiter..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Cg0141..0
+ .data            0202eabf+000002 vl_operand_map_ca.cppca_t2bm47_processOp..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Ct2b47..0
+ .data            0202eabd+000002 vl_operand_map_ca.cppca_t2bm49_addOperand..C.3A.5CUsers.5Cph.2Estanek.5Cworkspace9.5CCantataDeployment_3.5Ccpp_tmp.5Ct2b49..0
+ .text            02026300+000034 vsprintf
+ .text            020275f4+000004 wctomb
+ .text            0202945c+000028 write
+ .text            020260c8+00010c xdecout..trg.2Farma4.2Fobjs.2Flibs.2Flibansi.2Fccllout.
+ .text            0202609c+00002c xxdecout..trg.2Farma4.2Fobjs.2Flibs.2Flibansi.2Fccllout.

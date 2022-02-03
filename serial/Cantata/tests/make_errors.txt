@@ -1,0 +1,4 @@
+../configuration/custom.mk:50: warning: overriding commands for target `custom_pre_build'
+../configuration/custom.mk:50: warning: ignoring old commands for target `custom_pre_build'
+../configuration/custom.mk:55: warning: overriding commands for target `custom_post_build'
+../configuration/custom.mk:55: warning: ignoring old commands for target `custom_post_build'

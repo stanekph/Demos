@@ -1,0 +1,150 @@
+24 CANTPP DEFERRED COV FILE 3
+F 37 C:/Users/ph.stanek/workspace9/serial/ 8 struct.c
+63 C:/Users/ph.stanek/workspace9/serial/Cantata/tests/test_struct/ 10 struct.csi
+24 Wed Jan 26 15:29:10 2022
+3 53 0 13 0 6 1 0 0
+1
+N 1 837378957 53 0 11 0 6 1 0
+0
+5 0 0
+1
+C0 1
+n1
+C15 test_serial_com2
+t2
+f1
+e0
+s0
+N 1 2785435689 53 0 1 0 0 0 0
+0
+2
+f2
+e0
+s0
+f1
+s1
+s2
+m0 0 0 0
+u0 0 0
+l2
+o1
+s4
+s5
+N 1 2855489683 53 0 1 0 0 0 0
+0
+3
+f3
+e0
+s0
+f1
+o2
+s6
+o4
+s8
+s7
+o4
+s8
+s7
+o4
+s8
+s7
+o5
+s9
+C21 test_serial_com_busKO3
+t3
+e0
+s0
+f2
+e0
+s0
+f1
+s1
+s2
+m0 0 0 0
+u0 0 0
+l2
+o1
+s4
+s5
+f3
+e0
+s0
+f1
+o3
+s10
+C13 3: serial_com4
+t4
+e0
+s0
+s1
+s2
+m0 0 0 0
+u0 0 0
+l2
+o1
+s4
+s5
+o2
+s6
+o4
+s8
+s7
+o4
+s8
+s7
+o4
+s8
+s7
+o5
+s9
+C13 4: serial_com5
+t5
+e0
+s0
+s1
+s2
+m0 0 0 0
+u0 0 0
+l2
+o1
+s4
+s5
+o3
+s10
+C13 5: serial_com6
+t6
+e0
+s0
+s1
+s2
+m0 1 0 1
+m1 1 0 1
+u3 1 0
+l0
+o0
+s3
+C13 6: serial_com7
+t7
+e0
+s0
+s1
+s2
+m1 0 0 0
+u2 0 0
+l1
+o1
+s4
+s5
+o2
+s6
+o4
+s8
+s7
+o4
+s8
+s7
+o4
+s8
+s7
+o5
+s9

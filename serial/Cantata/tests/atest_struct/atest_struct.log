@@ -1,0 +1,100 @@
+Compiling (C) ... ../../struct.c -> atest_struct/struct.o
+Cantata CPPCCD v9.5 (c) 2021 QA Systems GmbH
+Section: x86-Win32-gcc8.2.0-bundled
+ - registered as an AUTHORISED PLATFORM
+Processing ../../struct.c
+Cantata CPPI   v9.5 (c) 2021 QA Systems GmbH
+Compiling with "gcc"
+Compiling (C) ... atest_struct/atest_struct.c -> atest_struct/atest_struct.o
+Cantata CPPCCD v9.5 (c) 2021 QA Systems GmbH
+Section: x86-Win32-gcc8.2.0-bundled
+ - registered as an AUTHORISED PLATFORM
+Processing atest_struct/atest_struct.c
+Cantata CPPI   v9.5 (c) 2021 QA Systems GmbH
+Compiling with "gcc"
+Linking (C) atest_struct/atest_struct.exe ...
+Cantata CPPCCD v9.5 (c) 2021 QA Systems GmbH
+Section: x86-Win32-gcc8.2.0-bundled
+ - registered as an AUTHORISED PLATFORM
+Cantata CPPTI  v9.5 (c) 2021 QA Systems GmbH
+Linking with "gcc"
+Built atest_struct successfully
+Running atest_struct ...
+===========================================================================
+= Cantata Test Harness v9.5                                               =
+= (c) 2021 QA Systems GmbH                                                =
+=-------------------------------------------------------------------------=
+= Test Description: struct                                                =
+=         Log File: atest_struct.ctr                                      =
+=    Configuration: x86-Win32-gcc8.2.0-bundled                            =
+=     Test Started: Mon Jan 03 22:19:23 2022                              =
+===========================================================================
+===========================================================================
+= Test Finished: Mon Jan 03 22:19:24 2022                                 =
+=-------------------------------------------------------------------------=
+= Test                 Script  Checks  Checks  Checks  Call Seq     TEST  =
+= Case                 Errors  Failed  Passed  Warned  Failures    RESULT =
+=-------------------------------------------------------------------------=
+= 1: check_bus              0       0       2       0         0      PASS =
+= 2: mem_alloc              0       0       3       0         0      PASS =
+= 3: serial_com             0       0       5       0         0      PASS =
+= 4: serial_com             0       0       5       0         0      PASS =
+= 5: serial_com             0       0       5       0         0      PASS =
+= 6: serial_com             0       0       5       0         0      PASS =
+= 7: serial_com             0       0       4       0         0      PASS =
+= COVERAGE RULE SET         0       0       5       0         0      PASS =
+= Other                     0       0       0       0         0      PASS =
+=-------------------------------------------------------------------------=
+= TOTALS                    0       0      34       0         0      PASS =
+===========================================================================
+Test complete
+Generating dependencies file for atest_struct ...
+ done
+Jan 03, 2022 10:19:25 PM com.qas.cantata.client.control.CantataClient <init>
+INFO: Creating new web service for URL: http://localhost:8085/cantata
+Exception in thread "main" javax.xml.ws.WebServiceException: Failed to access the WSDL at: http://localhost:8085/cantata/Cantata/Cantata?wsdl. It failed with: 
+	Connection refused: connect.
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:265)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:246)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:209)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:178)
+	at com.sun.xml.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:364)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:322)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:231)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:212)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:208)
+	at com.sun.xml.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:119)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at com.qas.cantata.client.webclient.Cantata_Service.<init>(Cantata_Service.java:44)
+	at com.qas.cantata.client.control.CantataClient.<init>(CantataClient.java:216)
+	at com.qas.cantata.client.control.CCLC.processOptionsFiles(CCLC.java:426)
+	at com.qas.cantata.client.control.CCLC.processProgramArgs(CCLC.java:355)
+	at com.qas.cantata.client.control.CCLC.main(CCLC.java:125)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at java.net.Socket.connect(Socket.java:556)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1223)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1567)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1495)
+	at java.net.URL.openStream(URL.java:1093)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.createReader(RuntimeWSDLParser.java:999)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.resolveWSDL(RuntimeWSDLParser.java:400)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:231)
+	... 14 more
+Cantata CPPCTR2HTML v9.5 (c) 2021 QA Systems GmbH

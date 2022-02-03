@@ -1,0 +1,389 @@
+Set Log Level: Detailed
+===========================================================================
+= Cantata Test Harness v9.5                                               =
+= (c) 2021 QA Systems GmbH                                                =
+=-------------------------------------------------------------------------=
+= Test Description: Coverage Analysis                                     =
+=    Configuration: cppgetcov                                             =
+=     Test Started: Wed Jan 26 15:29:28 2022                              =
+===========================================================================
+------------------------- Start Test: Coverage Analysis
+
+Analyse and report on imported coverage data
+IMPORT_COVERAGE: coverage data read from "test_struct/test_struct.cov" replaces
+ current
+GET_COVERAGE_MIN: entry point coverage (feasible only, including catch-clauses)
+                  for "*" in context "*" = 100.0%
+
+    PASSED: Check Range: 100% Entry Point Coverage
+           actual: 100
+            lower: 100
+            upper: 100
+-----------------------------------------------------------------------------
+Coverage results for  entry point, 
+                 for "*" in context ""
+                 with executed and un-executed details
+                 feasible only, non catch clauses only
+-----------------------------------------------------------------------------
+struct.c(34):check_bus()
+entry point coverage details (with executed and un-executed cases)
+
+struct.c(34):               entry   1                                       2
+
+"check_bus"                                              executed           1
+"check_bus"                                           un-executed           0
+"check_bus"                                  entry point coverage      100.0%
+
+struct.c(39):mem_alloc(size_t )
+entry point coverage details (with executed and un-executed cases)
+
+struct.c(39):               entry   1                                       2
+
+"mem_alloc"                                              executed           1
+"mem_alloc"                                           un-executed           0
+"mem_alloc"                                  entry point coverage      100.0%
+
+struct.c(45):serial_com(s_TEST_COM *)
+entry point coverage details (with executed and un-executed cases)
+
+struct.c(45):               entry   1                                       6
+
+"serial_com"                                             executed           1
+"serial_com"                                          un-executed           0
+"serial_com"                                 entry point coverage      100.0%
+
+Summary by     EXECUTED     Overall                Statistics
+Coverage type  INFEASIBLES  (wavg)     avg /    min /    max /    dev /   num
+-----------------------------------------------------------------------------
+entry point            0   100.0%   100.0% / 100.0% / 100.0% /   0.0% /     3
+-----------------------------------------------------------------------------
+
+GET_COVERAGE_MIN: entry point coverage (feasible only, non catch clauses only)
+                  for "*" in context "*" = 100.0%
+
+GET_COVERAGE_MIN: decision coverage (feasible only, including catch-clauses)
+                  for "*" in context "*" = 100.0%
+
+    PASSED: Check Range: 100% Decision Coverage
+           actual: 100
+            lower: 100
+            upper: 100
+-----------------------------------------------------------------------------
+Coverage results for  decision, 
+                 for "*" in context ""
+                 with executed and un-executed details
+                 feasible only, non catch clauses only
+-----------------------------------------------------------------------------
+struct.c(34):check_bus()
+decision coverage details (with executed and un-executed cases)
+
+
+"check_bus"                                              executed           0
+"check_bus"                                           un-executed           0
+"check_bus"                                     decision coverage      100.0%
+
+struct.c(39):mem_alloc(size_t )
+decision coverage details (with executed and un-executed cases)
+
+
+"mem_alloc"                                              executed           0
+"mem_alloc"                                           un-executed           0
+"mem_alloc"                                     decision coverage      100.0%
+
+struct.c(45):serial_com(s_TEST_COM *)
+decision coverage details (with executed and un-executed cases)
+
+struct.c(57):                decn   1 (if)     branch TRUE                  1
+struct.c(57):                decn   1 (if)     branch FALSE                 5
+struct.c(58):                decn   2 (if)     branch TRUE                  3
+struct.c(65):                decn   2 (if)     branch FALSE                 2
+struct.c(59):                decn   3 (for)    branch TRUE                  9
+struct.c(59):                decn   3 (for)    branch FALSE                 3
+
+"serial_com"                                             executed           6
+"serial_com"                                          un-executed           0
+"serial_com"                                    decision coverage      100.0%
+
+Summary by     EXECUTED     Overall                Statistics
+Coverage type  INFEASIBLES  (wavg)     avg /    min /    max /    dev /   num
+-----------------------------------------------------------------------------
+decision               0   100.0%   100.0% / 100.0% / 100.0% /   0.0% /     3
+-----------------------------------------------------------------------------
+
+GET_COVERAGE_MIN: decision coverage (feasible only, non catch clauses only)
+                  for "*" in context "*" = 100.0%
+
+GET_COVERAGE_MIN: statement coverage (feasible only, including catch-clauses)
+                  for "*" in context "*" = 100.0%
+
+    PASSED: Check Range: 100% Statement Coverage
+           actual: 100
+            lower: 100
+            upper: 100
+-----------------------------------------------------------------------------
+Coverage results for  statement, 
+                 for "*" in context ""
+                 with executed and un-executed details
+                 feasible only, non catch clauses only
+-----------------------------------------------------------------------------
+struct.c(34):check_bus()
+statement coverage details (with executed and un-executed cases)
+
+struct.c(37):               stmnt   1 (return)                              2
+
+"check_bus"                                              executed           1
+"check_bus"                                           un-executed           0
+"check_bus"                                    statement coverage      100.0%
+
+struct.c(39):mem_alloc(size_t )
+statement coverage details (with executed and un-executed cases)
+
+struct.c(41):               stmnt   1 (return)                              2
+
+"mem_alloc"                                              executed           1
+"mem_alloc"                                           un-executed           0
+"mem_alloc"                                    statement coverage      100.0%
+
+struct.c(45):serial_com(s_TEST_COM *)
+statement coverage details (with executed and un-executed cases)
+
+struct.c(48):               stmnt   1 (declaration)                         6
+struct.c(55):               stmnt   2 (other)                               6
+struct.c(57):               stmnt   3 (cond)                                6
+struct.c(57):               stmnt   4 (return)                              1
+struct.c(57):               stmnt   5 (other)                               5
+struct.c(58):               stmnt   6 (cond)                                5
+struct.c(59):               stmnt   7 (loop)                                3
+struct.c(59):               stmnt   8 (loop)                                9
+struct.c(61):               stmnt   9 (other)                               9
+struct.c(63):               stmnt  10 (return)                              3
+struct.c(65):               stmnt  11 (return)                              2
+
+"serial_com"                                             executed          11
+"serial_com"                                          un-executed           0
+"serial_com"                                   statement coverage      100.0%
+
+Summary by     EXECUTED     Overall                Statistics
+Coverage type  INFEASIBLES  (wavg)     avg /    min /    max /    dev /   num
+-----------------------------------------------------------------------------
+statement              0   100.0%   100.0% / 100.0% / 100.0% /   0.0% /     3
+-----------------------------------------------------------------------------
+
+GET_COVERAGE_MIN: statement coverage (feasible only, non catch clauses only)
+                  for "*" in context "*" = 100.0%
+
+-----------------------------------------------------------------------------
+Coverage results for  boolean operator, condition, boolean operand combination,
+ multiple condition, boolean operand effectiveness, masking effectiveness, 
+                 for "*" in context ""
+                 with executed and un-executed details
+                 feasible only, non catch clauses only
+-----------------------------------------------------------------------------
+struct.c(34):check_bus()
+boolean operator coverage details (with executed and un-executed cases)
+
+
+"check_bus"                                              executed           0
+"check_bus"                                           un-executed           0
+"check_bus"                                boolean oper. coverage      100.0%
+
+struct.c(39):mem_alloc(size_t )
+boolean operator coverage details (with executed and un-executed cases)
+
+
+"mem_alloc"                                              executed           0
+"mem_alloc"                                           un-executed           0
+"mem_alloc"                                boolean oper. coverage      100.0%
+
+struct.c(45):serial_com(s_TEST_COM *)
+boolean operator coverage details (with executed and un-executed cases)
+
+struct.c(57):                oper   1 (&&)     eval   T&&T                  1
+struct.c(57):                oper   1 (&&)     eval   T&&F                  1
+struct.c(57):                oper   1 (&&)     eval   F&&?                  4
+
+"serial_com"                                             executed           3
+"serial_com"                                          un-executed           0
+"serial_com"                               boolean oper. coverage      100.0%
+
+struct.c(34):check_bus()
+condition coverage details (with executed and un-executed cases)
+
+
+"check_bus"                                              executed           0
+"check_bus"                                           un-executed           0
+"check_bus"                                    condition coverage      100.0%
+
+struct.c(39):mem_alloc(size_t )
+condition coverage details (with executed and un-executed cases)
+
+
+"mem_alloc"                                              executed           0
+"mem_alloc"                                           un-executed           0
+"mem_alloc"                                    condition coverage      100.0%
+
+struct.c(45):serial_com(s_TEST_COM *)
+condition coverage details (with executed and un-executed cases)
+
+struct.c(57):                decn   1 (if)     branch TRUE                  1
+struct.c(57):                decn   1 (if)     branch FALSE                 5
+struct.c(58):                decn   2 (if)     branch TRUE                  3
+struct.c(65):                decn   2 (if)     branch FALSE                 2
+struct.c(59):                decn   3 (for)    branch TRUE                  9
+struct.c(59):                decn   3 (for)    branch FALSE                 3
+struct.c(57):                oper   1 (&&)     eval   LHS T                 2
+struct.c(57):                oper   1 (&&)     eval   LHS F                 4
+struct.c(57):                oper   1 (&&)     eval   RHS T                 1
+struct.c(57):                oper   1 (&&)     eval   RHS F                 1
+
+"serial_com"                                             executed          10
+"serial_com"                                          un-executed           0
+"serial_com"                                   condition coverage      100.0%
+
+struct.c(34):check_bus()
+boolean operand combination coverage details (with executed and un-executed 
+cases)
+
+
+"check_bus"                                              executed           0
+"check_bus"                                           un-executed           0
+"check_bus"                                boolean comb. coverage      100.0%
+
+struct.c(39):mem_alloc(size_t )
+boolean operand combination coverage details (with executed and un-executed 
+cases)
+
+
+"mem_alloc"                                              executed           0
+"mem_alloc"                                           un-executed           0
+"mem_alloc"                                boolean comb. coverage      100.0%
+
+struct.c(45):serial_com(s_TEST_COM *)
+boolean operand combination coverage details (with executed and un-executed 
+cases)
+
+struct.c(57):                expr   1 (A&&B)                                 
+struct.c(57):                expr   1 (T&&T)                                1
+struct.c(57):                expr   1 (T&&F)                                1
+struct.c(57):                expr   1 (F&&?)                                4
+
+"serial_com"                                             executed           3
+"serial_com"                                          un-executed           0
+"serial_com"                               boolean comb. coverage      100.0%
+
+struct.c(34):check_bus()
+multiple condition coverage details (with executed and un-executed cases)
+
+
+"check_bus"                                              executed           0
+"check_bus"                                           un-executed           0
+"check_bus"                               multiple cond. coverage      100.0%
+
+struct.c(39):mem_alloc(size_t )
+multiple condition coverage details (with executed and un-executed cases)
+
+
+"mem_alloc"                                              executed           0
+"mem_alloc"                                           un-executed           0
+"mem_alloc"                               multiple cond. coverage      100.0%
+
+struct.c(45):serial_com(s_TEST_COM *)
+multiple condition coverage details (with executed and un-executed cases)
+
+struct.c(57):                decn   1 (if)     branch TRUE                  1
+struct.c(57):                decn   1 (if)     branch FALSE                 5
+struct.c(58):                decn   2 (if)     branch TRUE                  3
+struct.c(65):                decn   2 (if)     branch FALSE                 2
+struct.c(59):                decn   3 (for)    branch TRUE                  9
+struct.c(59):                decn   3 (for)    branch FALSE                 3
+struct.c(57):                expr   1 (A&&B)                                 
+struct.c(57):                expr   1 (T&&T)                                1
+struct.c(57):                expr   1 (T&&F)                                1
+struct.c(57):                expr   1 (F&&?)                                4
+
+"serial_com"                                             executed           9
+"serial_com"                                          un-executed           0
+"serial_com"                              multiple cond. coverage      100.0%
+
+struct.c(34):check_bus()
+boolean operand effectiveness coverage details (with executed and un-executed 
+cases)
+
+
+"check_bus"                                             effective           0
+"check_bus"                                         not effective           0
+"check_bus"                                 boolean eff. coverage      100.0%
+
+struct.c(39):mem_alloc(size_t )
+boolean operand effectiveness coverage details (with executed and un-executed 
+cases)
+
+
+"mem_alloc"                                             effective           0
+"mem_alloc"                                         not effective           0
+"mem_alloc"                                 boolean eff. coverage      100.0%
+
+struct.c(45):serial_com(s_TEST_COM *)
+boolean operand effectiveness coverage details (with executed and un-executed 
+cases)
+
+struct.c(57):                expr   1 (A&&B)                                 
+struct.c(57):                expr   1 A                             effective
+struct.c(57):                expr   1 B                             effective
+
+"serial_com"                                            effective           2
+"serial_com"                                        not effective           0
+"serial_com"                                boolean eff. coverage      100.0%
+
+struct.c(34):check_bus()
+masking effectiveness coverage details (with executed and un-executed cases)
+
+
+"check_bus"                                             effective           0
+"check_bus"                                         not effective           0
+"check_bus"                                 masking eff. coverage      100.0%
+
+struct.c(39):mem_alloc(size_t )
+masking effectiveness coverage details (with executed and un-executed cases)
+
+
+"mem_alloc"                                             effective           0
+"mem_alloc"                                         not effective           0
+"mem_alloc"                                 masking eff. coverage      100.0%
+
+struct.c(45):serial_com(s_TEST_COM *)
+masking effectiveness coverage details (with executed and un-executed cases)
+
+struct.c(57):                expr   1 (A&&B)                                 
+struct.c(57):                expr   1 operand A                     effective
+struct.c(57):                expr   1 operand B                     effective
+
+"serial_com"                                            effective           2
+"serial_com"                                        not effective           0
+"serial_com"                                masking eff. coverage      100.0%
+
+Summary by     EXECUTED     Overall                Statistics
+Coverage type  INFEASIBLES  (wavg)     avg /    min /    max /    dev /   num
+-----------------------------------------------------------------------------
+boolean oper.          0   100.0%   100.0% / 100.0% / 100.0% /   0.0% /     3
+condition              0   100.0%   100.0% / 100.0% / 100.0% /   0.0% /     3
+boolean comb.          0   100.0%   100.0% / 100.0% / 100.0% /   0.0% /     3
+multiple cond.         0   100.0%   100.0% / 100.0% / 100.0% /   0.0% /     3
+boolean eff.           0   100.0%   100.0% / 100.0% / 100.0% /   0.0% /     3
+masking eff.           0   100.0%   100.0% / 100.0% / 100.0% /   0.0% /     3
+-----------------------------------------------------------------------------
+
+
+------------------------- End Test: Coverage Analysis
+
+===========================================================================
+= Test Finished: Wed Jan 26 15:29:28 2022                                 =
+=-------------------------------------------------------------------------=
+= Test                 Script  Checks  Checks  Checks  Call Seq     TEST  =
+= Case                 Errors  Failed  Passed  Warned  Failures    RESULT =
+=-------------------------------------------------------------------------=
+= Coverage Analysis         0       0       3       0         0      PASS =
+= Other                     0       0       0       0         0      PASS =
+=-------------------------------------------------------------------------=
+= TOTALS                    0       0       3       0         0      PASS =
+===========================================================================

@@ -1,0 +1,55 @@
+Compiling (C) ... ../../struct.c -> test_struct/struct.o
+Cantata CPPCCD v9.5 (c) 2021 QA Systems GmbH
+Section: x86-win-gnuARM-LauterbachSim-c
+ - NOT registered, please register to enable better technical support
+Processing ../../struct.c
+Cantata CPPI   v9.5 (c) 2021 QA Systems GmbH
+../../struct.c:49: warning: I9550 - variable "bst" was set but never used
+	enum bus_state bst;
+	               ^
+Compiling with "C:/GNUARM/54/bin/arm-none-eabi-gcc.exe"
+Compiling (C) ... test_struct/test_struct.c -> test_struct/test_struct.o
+Cantata CPPCCD v9.5 (c) 2021 QA Systems GmbH
+Section: x86-win-gnuARM-LauterbachSim-c
+ - NOT registered, please register to enable better technical support
+Processing test_struct/test_struct.c
+Cantata CPPI   v9.5 (c) 2021 QA Systems GmbH
+Compiling with "C:/GNUARM/54/bin/arm-none-eabi-gcc.exe"
+Linking (C) test_struct/test_struct.elf ...
+Cantata CPPCCD v9.5 (c) 2021 QA Systems GmbH
+Section: x86-win-gnuARM-LauterbachSim-c
+ - NOT registered, please register to enable better technical support
+Cantata CPPTI  v9.5 (c) 2021 QA Systems GmbH
+Linking with "C:/GNUARM/54/bin/arm-none-eabi-gcc.exe"
+Built test_struct successfully
+Running test_struct ...
+Execution started...
+current working directory is C:/Users/ph.stanek/workspace9/serial/Cantata/tests ...
+host directory is test_struct/../test_struct ...
+executable name is test_struct.elf ...
+executable full path is C:/Users/ph.stanek/workspace9/serial/Cantata/tests/test_struct/../test_struct/test_struct.elf ...
+executable base name is test_struct ...
+debugger command is C:\T32\bin\windows64\t32marm.exe -c C:\T32\configsim.t32 ...
+reference T32 script is C:\T32\t32.ref ...
+generated Trace 32 script is C:\T32\t32.cmm...
+trying to move MultiplexOutput to test_struct/../test_struct\test_struct_output.txt
+        1 file(s) moved.
+Test complete
+Demultiplexing test_struct results ... done
+Performing coverage analysis for test test_struct ... done
+Generating dependencies file for test_struct ...
+ done
+Jan 26, 2022 3:29:29 PM com.qas.cantata.client.control.CantataClient <init>
+INFO: Creating new web service for URL: http://localhost:8085/cantata
+Pushing test results for 'struct'.
+Uploading new revision of file 'C:\Users\ph.stanek\workspace9\serial\Cantata\tests\test_struct\test_struct.ctr'... Complete
+Uploading new revision of file 'C:\Users\ph.stanek\workspace9\serial\Cantata\tests\test_struct\test_struct_coverage_results.ctr'... Complete
+Uploading new revision of file 'C:\Users\ph.stanek\workspace9\serial\Cantata\tests\test_struct\test_struct.ctg'... Complete
+Uploading new revision of file 'C:\Users\ph.stanek\workspace9\serial\Cantata\tests\test_struct\test_struct.cov'... Complete
+Uploading new revision of file 'C:\Users\ph.stanek\workspace9\serial\Cantata\tests\test_struct\struct.csi'... Complete
+Uploading new revision of file 'C:\Users\ph.stanek\workspace9\serial\Debug\struct.csi'... Complete
+Current revision of file 'C:\Users\ph.stanek\workspace9\serial\struct.c' already exists on the server. Skipping upload.
+Uploading new revision of file 'C:\Users\ph.stanek\workspace9\serial\Cantata\tests\test_struct\test_struct.csi'... Complete
+Current revision of file 'C:\Users\ph.stanek\workspace9\serial\Cantata\tests\test_struct\test_struct.c' already exists on the server. Skipping upload.
+Upload complete
+Cantata CPPCTR2HTML v9.5 (c) 2021 QA Systems GmbH

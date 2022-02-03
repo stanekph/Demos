@@ -1,0 +1,21 @@
+#
+# Cantata Test-Level Options
+#
+# Any options set in this file will override the options set in the
+# project-level options file.
+#
+# WARNING: Do not alter this file manually.
+#
+#tool.use=false
+#tool.server=http://localhost:8085/cantata
+#tool.servercontainerid=139
+#tool.testid=e03f32f4-1baf-4297-acb1-404ca0a3f529
+"--ci:--instr:stmt;func;call;decn;log;"
+"--parse:-W0"
+"--sm:--access_variable:"struct.c":_testArray"
+"--sm:--wrap:check_bus()#serial_com(s_TEST_COM *)"
+"--sm:--wrap:malloc(size_t)#mem_alloc(size_t )"
+"--sm:--wrap:mem_alloc(size_t )#serial_com(s_TEST_COM *)"
+
+#User Section
+--preprocessor_logging

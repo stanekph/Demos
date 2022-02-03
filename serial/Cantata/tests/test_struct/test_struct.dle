@@ -1,0 +1,33 @@
+------------------------------------------------
+dle output started at: Mon Feb 22 14:38:43 2021
+------------------------------------------------
+dblink = "C:\ghs\comp201714\host64\dblink"
+------------------------------------------------
+argv[0] = "C:\ghs\comp201714\host64\dblink.exe"
+argv[1] = "-dbopath=test_struct,C:/qa_systems/cantata/ExtraFiles/libstartup,C:\qa_systems\cantata/libs/lib-x86-win-GHS-ARM9-Demo-c"
+argv[2] = "-nm=gnm"
+argv[3] = "C:\Users\PIERRE~1\AppData\Local\Temp\gh_0000ddc1.nm"
+argv[4] = "-o"
+argv[5] = "test_struct/test_struct.dnm"
+argv[6] = "-Dscope.target=arm/generic/standalone"
+argv[7] = "-Dscope.processor=arm"
+argv[8] = "-Dscope.cpuname=arm9"
+argv[9] = "-Dscope.fputype=soft"
+argv[10] = "-Dscope.tools_dir=C:\ghs\comp201714"
+argv[11] = "-Dscope.deflibdir=C:\ghs\comp201714\lib\arma4"
+argv[12] = "-Dscope.stackalign=8chars"
+argv[13] = "C:\ghs\comp201714\lib\arma4\libstartup.dba"
+argv[14] = "C:\qa_systems\cantata\libs\lib-x86-win-GHS-ARM9-Demo-c\libcantpp.dba"
+argv[15] = "C:\ghs\comp201714\lib\arma4\libmulti.dba"
+argv[16] = "C:\ghs\comp201714\lib\arma4\libfmalloc.dba"
+argv[17] = "C:\ghs\comp201714\lib\arma4\libwchar_u16.dba"
+argv[18] = "C:\ghs\comp201714\lib\arma4\libansi.dba"
+argv[19] = "C:\ghs\comp201714\lib\arma4\libwc_u16.dba"
+argv[20] = "C:\ghs\comp201714\lib\arma4\libmath_sf.dba"
+argv[21] = "C:\ghs\comp201714\lib\arma4\libind_sf.dba"
+argv[22] = "C:\ghs\comp201714\lib\arma4\libstartup.dba"
+argv[23] = "C:\ghs\comp201714\lib\arma4\libsys.dba"
+argv[24] = "C:\ghs\comp201714\lib\arma4\libarch.dba"
+------------------------------------------------
+dblink: WARNING: could not find .dbo for "C:\Users\paul.dunne\Documents\My Projects\Arm9\crt0.dlo" with magic="..bof.C.3A.5CUsers.5Cpaul.2Edunne.5CDocuments.5CMy.20Projects.5CArm9.5Ccrt0..C.3A.5CUsers.5Cpaul.2Edunne.5CDocuments.5CMy.20Projects.5CArm9..5ea69f24..00000000". Source level debugging will not be available for this object.
+dblink: WARNING: during processing, some .dbo files were not found.  Use the "-dbo_trace" option to diagnose.

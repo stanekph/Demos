@@ -1,0 +1,685 @@
+0000000FCANTPP CTG FILE0009000500000000
+00d5
+#0019test_struct/test_struct.c
+#0003127
+1065
+#0098= Cantata Test Harness v9.5                                               =
+= (c) 2021 QA Systems GmbH                                                =
+
+#004c= Test Description: struct                                                =
+
+#004c=    Configuration: x86-win-gnuARM-LauterbachSim-c                        =
+
+#004c=     Test Started: Time not available                                    =
+
+00d5
+#0019test_struct/test_struct.c
+#0003168
+2068
+#000ftest_serial_com
+#0023<Insert test case description here>
+52bc
+0025
+00d5
+#0019test_struct/test_struct.c
+#0003506
+00d5
+#0019test_struct/test_struct.c
+#0003506
+52be
+0005
+0023
+#0009mem_alloc
+52bf
+#000dCall Number: 
+#00011
+0024
+#0007default
+00d5
+#0019test_struct/test_struct.c
+#0003361
+00d5
+#0019test_struct/test_struct.c
+#0003361
+52be
+0005
+0023
+#0010disable_watchdog
+52bf
+#000dCall Number: 
+#00011
+0024
+#0007default
+00d5
+#0019test_struct/test_struct.c
+#0003554
+00d5
+#0019test_struct/test_struct.c
+#0003554
+52be
+0005
+0023
+#0009check_bus
+52bf
+#000dCall Number: 
+#00011
+0024
+#0007default
+306c
+0005
+#001creturnValue->dataIn[0] = 'U'
+#00040x55
+#0007    'U'
+50ba
+#0019test_struct/test_struct.c
+#0003192
+#0006PASS: 
+#001creturnValue->dataIn[0] = 'U'
+306c
+0005
+#0016pTest->dataIn[0] = 'm'
+#00040x6D
+#0007    'm'
+50ba
+#0019test_struct/test_struct.c
+#0003193
+#0006PASS: 
+#0016pTest->dataIn[0] = 'm'
+30b9
+0005
+#0023ACCESS_VARIABLE(struct, _testArray)
+50ba
+#0019test_struct/test_struct.c
+#000263
+#0006PASS: 
+#0023ACCESS_VARIABLE(struct, _testArray)
+00d5
+#0019test_struct/test_struct.c
+#0003196
+56bd
+001a
+0005
+0023
+#0009mem_alloc
+0005
+0023
+#0010disable_watchdog
+0005
+0023
+#0009check_bus
+8069
+#000ftest_serial_com
+00d5
+#0019test_struct/test_struct.c
+#0003211
+2068
+#0015test_serial_com_busKO
+#0023<Insert test case description here>
+52bc
+0025
+00d5
+#0019test_struct/test_struct.c
+#0003506
+00d5
+#0019test_struct/test_struct.c
+#0003506
+52be
+0005
+0023
+#0009mem_alloc
+52bf
+#000dCall Number: 
+#00011
+0024
+#0007default
+00d5
+#0019test_struct/test_struct.c
+#0003361
+00d5
+#0019test_struct/test_struct.c
+#0003361
+52be
+0005
+0023
+#0010disable_watchdog
+52bf
+#000dCall Number: 
+#00011
+0024
+#0007default
+00d5
+#0019test_struct/test_struct.c
+#0003554
+00d5
+#0019test_struct/test_struct.c
+#0003554
+52be
+0005
+0023
+#0009check_bus
+52bf
+#000dCall Number: 
+#00011
+0024
+#0005busKO
+306a
+0005
+#0012returnValue = NULL
+#000b0x00000000
+
+50ba
+#0019test_struct/test_struct.c
+#0003236
+#0006PASS: 
+#0012returnValue = NULL
+30b9
+0005
+#0023ACCESS_VARIABLE(struct, _testArray)
+50ba
+#0019test_struct/test_struct.c
+#000263
+#0006PASS: 
+#0023ACCESS_VARIABLE(struct, _testArray)
+00d5
+#0019test_struct/test_struct.c
+#0003239
+56bd
+001a
+0005
+0023
+#0009mem_alloc
+0005
+0023
+#0010disable_watchdog
+0005
+0023
+#0009check_bus
+8069
+#0015test_serial_com_busKO
+00d5
+#0019test_struct/test_struct.c
+#0003254
+2068
+#000d3: serial_com
+#000cdefault case
+00d5
+#0019test_struct/test_struct.c
+#0003258
+52bc
+0025
+001c
+#000bmem_alloc#1
+#0013disable_watchdog#21
+#000bcheck_bus#1
+00d5
+#0019test_struct/test_struct.c
+#0003506
+00d5
+#0019test_struct/test_struct.c
+#0003506
+52be
+0005
+0023
+#0009mem_alloc
+52bf
+0005
+0024
+#00011
+0019
+#000bmem_alloc#1
+3072
+0005
+#0009size = 4U
+#00024
+
+50ba
+#0019test_struct/test_struct.c
+#0003512
+#0006PASS: 
+#0009size = 4U
+00d5
+#0019test_struct/test_struct.c
+#0003361
+00d5
+#0019test_struct/test_struct.c
+#0003361
+52be
+0005
+0023
+#0010disable_watchdog
+52bf
+0005
+0024
+#000221
+0019
+#000bmem_alloc#1
+#0013disable_watchdog#21
+306f
+0005
+#0009param = 0
+#00020
+
+50ba
+#0019test_struct/test_struct.c
+#0003489
+#0006PASS: 
+#0009param = 0
+00d5
+#0019test_struct/test_struct.c
+#0003554
+00d5
+#0019test_struct/test_struct.c
+#0003554
+52be
+0005
+0023
+#0009check_bus
+52bf
+0005
+0024
+#00011
+0019
+#000bmem_alloc#1
+#0013disable_watchdog#21
+#000bcheck_bus#1
+306a
+0005
+#0035returnValue = &ACCESS_VARIABLE(struct, _testArray)[2]
+#000b0x00025810
+
+50ba
+#0019test_struct/test_struct.c
+#0003264
+#0006PASS: 
+#0035returnValue = &ACCESS_VARIABLE(struct, _testArray)[2]
+30b9
+0005
+#0023ACCESS_VARIABLE(struct, _testArray)
+50ba
+#0019test_struct/test_struct.c
+#000263
+#0006PASS: 
+#0023ACCESS_VARIABLE(struct, _testArray)
+00d5
+#0019test_struct/test_struct.c
+#0003267
+56bd
+001a
+0018
+#000bmem_alloc#1
+#0013disable_watchdog#21
+#000bcheck_bus#1
+8069
+#000d3: serial_com
+00d5
+#0019test_struct/test_struct.c
+#0003282
+2068
+#000d4: serial_com
+#0043created to solve false case of check_bus()==READY at line number 58
+00d5
+#0019test_struct/test_struct.c
+#0003286
+52bc
+0025
+001c
+#000bmem_alloc#1
+#0013disable_watchdog#21
+#000bcheck_bus#2
+00d5
+#0019test_struct/test_struct.c
+#0003506
+00d5
+#0019test_struct/test_struct.c
+#0003506
+52be
+0005
+0023
+#0009mem_alloc
+52bf
+0005
+0024
+#00011
+0019
+#000bmem_alloc#1
+3072
+0005
+#0009size = 4U
+#00024
+
+50ba
+#0019test_struct/test_struct.c
+#0003512
+#0006PASS: 
+#0009size = 4U
+00d5
+#0019test_struct/test_struct.c
+#0003361
+00d5
+#0019test_struct/test_struct.c
+#0003361
+52be
+0005
+0023
+#0010disable_watchdog
+52bf
+0005
+0024
+#000221
+0019
+#000bmem_alloc#1
+#0013disable_watchdog#21
+306f
+0005
+#0009param = 0
+#00020
+
+50ba
+#0019test_struct/test_struct.c
+#0003489
+#0006PASS: 
+#0009param = 0
+00d5
+#0019test_struct/test_struct.c
+#0003554
+00d5
+#0019test_struct/test_struct.c
+#0003554
+52be
+0005
+0023
+#0009check_bus
+52bf
+0005
+0024
+#00012
+0019
+#000bmem_alloc#1
+#0013disable_watchdog#21
+#000bcheck_bus#2
+306a
+0005
+#0012returnValue = NULL
+#000b0x00000000
+
+50ba
+#0019test_struct/test_struct.c
+#0003292
+#0006PASS: 
+#0012returnValue = NULL
+30b9
+0005
+#0023ACCESS_VARIABLE(struct, _testArray)
+50ba
+#0019test_struct/test_struct.c
+#000263
+#0006PASS: 
+#0023ACCESS_VARIABLE(struct, _testArray)
+00d5
+#0019test_struct/test_struct.c
+#0003295
+56bd
+001a
+0018
+#000bmem_alloc#1
+#0013disable_watchdog#21
+#000bcheck_bus#2
+8069
+#000d4: serial_com
+00d5
+#0019test_struct/test_struct.c
+#0003310
+2068
+#000d5: serial_com
+#0043created to solve true case of disable_watchdog(0) at line number 57
+00d5
+#0019test_struct/test_struct.c
+#0003314
+52bc
+0025
+001c
+#000bmem_alloc#1
+#0013disable_watchdog#22
+00d5
+#0019test_struct/test_struct.c
+#0003506
+00d5
+#0019test_struct/test_struct.c
+#0003506
+52be
+0005
+0023
+#0009mem_alloc
+52bf
+0005
+0024
+#00011
+0019
+#000bmem_alloc#1
+3072
+0005
+#0009size = 4U
+#00024
+
+50ba
+#0019test_struct/test_struct.c
+#0003512
+#0006PASS: 
+#0009size = 4U
+00d5
+#0019test_struct/test_struct.c
+#0003361
+00d5
+#0019test_struct/test_struct.c
+#0003361
+52be
+0005
+0023
+#0010disable_watchdog
+52bf
+0005
+0024
+#000222
+0019
+#000bmem_alloc#1
+#0013disable_watchdog#22
+306f
+0005
+#0009param = 0
+#00020
+
+50ba
+#0019test_struct/test_struct.c
+#0003495
+#0006PASS: 
+#0009param = 0
+306a
+0005
+#0012returnValue = NULL
+#000b0x00000000
+
+50ba
+#0019test_struct/test_struct.c
+#0003320
+#0006PASS: 
+#0012returnValue = NULL
+30b9
+0005
+#0023ACCESS_VARIABLE(struct, _testArray)
+50ba
+#0019test_struct/test_struct.c
+#000263
+#0006PASS: 
+#0023ACCESS_VARIABLE(struct, _testArray)
+00d5
+#0019test_struct/test_struct.c
+#0003323
+56bd
+001a
+0018
+#000bmem_alloc#1
+#0013disable_watchdog#22
+8069
+#000d5: serial_com
+00d5
+#0019test_struct/test_struct.c
+#0003338
+2068
+#000d6: serial_com
+#0039created to solve false case of fl==NULL at line number 57
+00d5
+#0019test_struct/test_struct.c
+#0003342
+52bc
+0025
+001c
+#000bmem_alloc#2
+#0013disable_watchdog#22
+#000bcheck_bus#1
+00d5
+#0019test_struct/test_struct.c
+#0003506
+00d5
+#0019test_struct/test_struct.c
+#0003506
+52be
+0005
+0023
+#0009mem_alloc
+52bf
+0005
+0024
+#00012
+0019
+#000bmem_alloc#2
+3072
+0005
+#0009size = 4U
+#00024
+
+50ba
+#0019test_struct/test_struct.c
+#0003516
+#0006PASS: 
+#0009size = 4U
+00d5
+#0019test_struct/test_struct.c
+#0003361
+00d5
+#0019test_struct/test_struct.c
+#0003361
+52be
+0005
+0023
+#0010disable_watchdog
+52bf
+0005
+0024
+#000222
+0019
+#000bmem_alloc#2
+#0013disable_watchdog#22
+306f
+0005
+#0009param = 0
+#00020
+
+50ba
+#0019test_struct/test_struct.c
+#0003495
+#0006PASS: 
+#0009param = 0
+00d5
+#0019test_struct/test_struct.c
+#0003554
+00d5
+#0019test_struct/test_struct.c
+#0003554
+52be
+0005
+0023
+#0009check_bus
+52bf
+0005
+0024
+#00011
+0019
+#000bmem_alloc#2
+#0013disable_watchdog#22
+#000bcheck_bus#1
+306a
+0005
+#0035returnValue = &ACCESS_VARIABLE(struct, _testArray)[2]
+#000b0x00025810
+
+50ba
+#0019test_struct/test_struct.c
+#0003348
+#0006PASS: 
+#0035returnValue = &ACCESS_VARIABLE(struct, _testArray)[2]
+30b9
+0005
+#0023ACCESS_VARIABLE(struct, _testArray)
+50ba
+#0019test_struct/test_struct.c
+#000263
+#0006PASS: 
+#0023ACCESS_VARIABLE(struct, _testArray)
+00d5
+#0019test_struct/test_struct.c
+#0003351
+56bd
+001a
+0018
+#000bmem_alloc#2
+#0013disable_watchdog#22
+#000bcheck_bus#1
+8069
+#000d6: serial_com
+00d5
+#0019test_struct/test_struct.c
+#000282
+2068
+#0011COVERAGE RULE SET
+#0026ISO26262-6 2011 ASIL D unit level (HR)
+00d5
+#0019test_struct/test_struct.c
+#000285
+70d6
+#0034Coverage Rule Set ignored in deferred analysis mode
+
+8069
+#0011COVERAGE RULE SET
+6047
+#0017Report on memory usage
+
+6047
+#002a    Peak memory used         : 1868 bytes
+
+6047
+#002b    Initial memory pool size : 16000 bytes
+
+6047
+#002b    Memory pool unused       : 14132 bytes
+
+9066
+#004f= Test Finished: Time not available                                          =
+
+#004f= test_serial_com              0       0       3       0         0      PASS =
+
+#004f= test_serial_com_busKO        0       0       2       0         0      PASS =
+
+#004f= 3: serial_com                0       0       4       0         0      PASS =
+
+#004f= 4: serial_com                0       0       4       0         0      PASS =
+
+#004f= 5: serial_com                0       0       4       0         0      PASS =
+
+#004f= 6: serial_com                0       0       4       0         0      PASS =
+
+#004f= COVERAGE RULE SET            0       0       0       1         0      PASS =
+
+#004f= Other                        0       0       0       0         0      PASS =
+
+#004f= TOTALS                       0       0      21       1         0      PASS =
+

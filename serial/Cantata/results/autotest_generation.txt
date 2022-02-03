@@ -1,0 +1,15 @@
+===========================================================================
+= Cantata AutoTest Generation Report                                      =
+= (c) 2019 QA Systems GmbH                                                =
+=-------------------------------------------------------------------------=
+= Generation Date: 26-Jan-2022 15:10                                      =
+===========================================================================
+1 function fully tested.
+Files fully tested:
+- struct.c (0.2 seconds)
+
+Files not fully tested:
+  - NONE
+
+Files not tested:
+  - NONE

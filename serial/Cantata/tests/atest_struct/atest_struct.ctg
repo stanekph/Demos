@@ -1,0 +1,1041 @@
+0000000FCANTPP CTG FILE0009000500000000
+00d5
+#001batest_struct/atest_struct.c
+#0003129
+1065
+#0098= Cantata Test Harness v9.5                                               =
+= (c) 2021 QA Systems GmbH                                                =
+
+#004c= Test Description: struct                                                =
+
+#004c=    Configuration: x86-Win32-gcc8.2.0-bundled                            =
+
+#004c=     Test Started: Mon Jan 03 22:19:23 2022                              =
+
+00d5
+#001batest_struct/atest_struct.c
+#0003170
+2068
+#000c1: check_bus
+#000cdefault case
+00d5
+#001batest_struct/atest_struct.c
+#0003174
+52bc
+0025
+306f
+0005
+#0013returnValue = READY
+#00020
+
+50ba
+#001batest_struct/atest_struct.c
+#0003180
+#0006PASS: 
+#0013returnValue = READY
+30b9
+0005
+#0023ACCESS_VARIABLE(struct, _testArray)
+50ba
+#001batest_struct/atest_struct.c
+#000259
+#0006PASS: 
+#0023ACCESS_VARIABLE(struct, _testArray)
+00d5
+#001batest_struct/atest_struct.c
+#0003183
+56bd
+001a
+0018
+8069
+#000c1: check_bus
+00d5
+#001batest_struct/atest_struct.c
+#0003198
+2068
+#000c2: mem_alloc
+#000cdefault case
+00d5
+#001batest_struct/atest_struct.c
+#0003202
+52bc
+0025
+001c
+#0008malloc#1
+00d5
+#001batest_struct/atest_struct.c
+#0003383
+00d5
+#001batest_struct/atest_struct.c
+#0003383
+52be
+0005
+0023
+#0006malloc
+52bf
+0005
+0024
+#00011
+0019
+#0008malloc#1
+3072
+0005
+#000cparam_1 = 0U
+#00020
+
+50ba
+#001batest_struct/atest_struct.c
+#0003386
+#0006PASS: 
+#000cparam_1 = 0U
+306a
+0005
+#0012returnValue = NULL
+#000b0x00000000
+
+50ba
+#001batest_struct/atest_struct.c
+#0003208
+#0006PASS: 
+#0012returnValue = NULL
+30b9
+0005
+#0023ACCESS_VARIABLE(struct, _testArray)
+50ba
+#001batest_struct/atest_struct.c
+#000259
+#0006PASS: 
+#0023ACCESS_VARIABLE(struct, _testArray)
+00d5
+#001batest_struct/atest_struct.c
+#0003211
+56bd
+001a
+0018
+#0008malloc#1
+8069
+#000c2: mem_alloc
+00d5
+#001batest_struct/atest_struct.c
+#0003226
+2068
+#000d3: serial_com
+#000cdefault case
+00d5
+#001batest_struct/atest_struct.c
+#0003230
+52bc
+0025
+001c
+#000bmem_alloc#1
+#000bcheck_bus#1
+#0012disable_watchdog#1
+#0012disable_watchdog#1
+#000bcheck_bus#1
+00d5
+#001batest_struct/atest_struct.c
+#0003417
+00d5
+#001batest_struct/atest_struct.c
+#0003417
+52be
+0005
+0023
+#0009mem_alloc
+52bf
+0005
+0024
+#00011
+0019
+#000bmem_alloc#1
+3072
+0005
+#0009size = 4U
+#00024
+
+50ba
+#001batest_struct/atest_struct.c
+#0003420
+#0006PASS: 
+#0009size = 4U
+00d5
+#001batest_struct/atest_struct.c
+#0003459
+00d5
+#001batest_struct/atest_struct.c
+#0003459
+52be
+0005
+0023
+#0009check_bus
+52bf
+0005
+0024
+#00011
+0019
+#000bmem_alloc#1
+#000bcheck_bus#1
+00d5
+#001batest_struct/atest_struct.c
+#0003362
+00d5
+#001batest_struct/atest_struct.c
+#0003362
+52be
+0005
+0023
+#0010disable_watchdog
+52bf
+0005
+0024
+#00011
+0019
+#000bmem_alloc#1
+#000bcheck_bus#1
+#0012disable_watchdog#1
+306f
+0005
+#0009param = 0
+#00020
+
+50ba
+#001batest_struct/atest_struct.c
+#0003366
+#0006PASS: 
+#0009param = 0
+00d5
+#001batest_struct/atest_struct.c
+#0003362
+00d5
+#001batest_struct/atest_struct.c
+#0003362
+52be
+0005
+0023
+#0010disable_watchdog
+52bf
+0005
+0024
+#00011
+0019
+#000bmem_alloc#1
+#000bcheck_bus#1
+#0012disable_watchdog#1
+#0012disable_watchdog#1
+306f
+0005
+#0009param = 0
+#00020
+
+50ba
+#001batest_struct/atest_struct.c
+#0003366
+#0006PASS: 
+#0009param = 0
+00d5
+#001batest_struct/atest_struct.c
+#0003459
+00d5
+#001batest_struct/atest_struct.c
+#0003459
+52be
+0005
+0023
+#0009check_bus
+52bf
+0005
+0024
+#00011
+0019
+#000bmem_alloc#1
+#000bcheck_bus#1
+#0012disable_watchdog#1
+#0012disable_watchdog#1
+#000bcheck_bus#1
+306a
+0005
+#0035returnValue = &ACCESS_VARIABLE(struct, _testArray)[2]
+#000b0x0042C050
+
+50ba
+#001batest_struct/atest_struct.c
+#0003236
+#0006PASS: 
+#0035returnValue = &ACCESS_VARIABLE(struct, _testArray)[2]
+30b9
+0005
+#0023ACCESS_VARIABLE(struct, _testArray)
+50ba
+#001batest_struct/atest_struct.c
+#000259
+#0006PASS: 
+#0023ACCESS_VARIABLE(struct, _testArray)
+00d5
+#001batest_struct/atest_struct.c
+#0003239
+56bd
+001a
+0018
+#000bmem_alloc#1
+#000bcheck_bus#1
+#0012disable_watchdog#1
+#0012disable_watchdog#1
+#000bcheck_bus#1
+8069
+#000d3: serial_com
+00d5
+#001batest_struct/atest_struct.c
+#0003254
+2068
+#000d4: serial_com
+#0043created to solve false case of check_bus()==READY at line number 57
+00d5
+#001batest_struct/atest_struct.c
+#0003258
+52bc
+0025
+001c
+#000bmem_alloc#1
+#000bcheck_bus#1
+#0012disable_watchdog#1
+#0012disable_watchdog#1
+#000bcheck_bus#2
+00d5
+#001batest_struct/atest_struct.c
+#0003417
+00d5
+#001batest_struct/atest_struct.c
+#0003417
+52be
+0005
+0023
+#0009mem_alloc
+52bf
+0005
+0024
+#00011
+0019
+#000bmem_alloc#1
+3072
+0005
+#0009size = 4U
+#00024
+
+50ba
+#001batest_struct/atest_struct.c
+#0003420
+#0006PASS: 
+#0009size = 4U
+00d5
+#001batest_struct/atest_struct.c
+#0003459
+00d5
+#001batest_struct/atest_struct.c
+#0003459
+52be
+0005
+0023
+#0009check_bus
+52bf
+0005
+0024
+#00011
+0019
+#000bmem_alloc#1
+#000bcheck_bus#1
+00d5
+#001batest_struct/atest_struct.c
+#0003362
+00d5
+#001batest_struct/atest_struct.c
+#0003362
+52be
+0005
+0023
+#0010disable_watchdog
+52bf
+0005
+0024
+#00011
+0019
+#000bmem_alloc#1
+#000bcheck_bus#1
+#0012disable_watchdog#1
+306f
+0005
+#0009param = 0
+#00020
+
+50ba
+#001batest_struct/atest_struct.c
+#0003366
+#0006PASS: 
+#0009param = 0
+00d5
+#001batest_struct/atest_struct.c
+#0003362
+00d5
+#001batest_struct/atest_struct.c
+#0003362
+52be
+0005
+0023
+#0010disable_watchdog
+52bf
+0005
+0024
+#00011
+0019
+#000bmem_alloc#1
+#000bcheck_bus#1
+#0012disable_watchdog#1
+#0012disable_watchdog#1
+306f
+0005
+#0009param = 0
+#00020
+
+50ba
+#001batest_struct/atest_struct.c
+#0003366
+#0006PASS: 
+#0009param = 0
+00d5
+#001batest_struct/atest_struct.c
+#0003459
+00d5
+#001batest_struct/atest_struct.c
+#0003459
+52be
+0005
+0023
+#0009check_bus
+52bf
+0005
+0024
+#00012
+0019
+#000bmem_alloc#1
+#000bcheck_bus#1
+#0012disable_watchdog#1
+#0012disable_watchdog#1
+#000bcheck_bus#2
+306a
+0005
+#0012returnValue = NULL
+#000b0x00000000
+
+50ba
+#001batest_struct/atest_struct.c
+#0003264
+#0006PASS: 
+#0012returnValue = NULL
+30b9
+0005
+#0023ACCESS_VARIABLE(struct, _testArray)
+50ba
+#001batest_struct/atest_struct.c
+#000259
+#0006PASS: 
+#0023ACCESS_VARIABLE(struct, _testArray)
+00d5
+#001batest_struct/atest_struct.c
+#0003267
+56bd
+001a
+0018
+#000bmem_alloc#1
+#000bcheck_bus#1
+#0012disable_watchdog#1
+#0012disable_watchdog#1
+#000bcheck_bus#2
+8069
+#000d4: serial_com
+00d5
+#001batest_struct/atest_struct.c
+#0003282
+2068
+#000d5: serial_com
+#0043created to solve true case of disable_watchdog(0) at line number 56
+00d5
+#001batest_struct/atest_struct.c
+#0003286
+52bc
+0025
+001c
+#000bmem_alloc#1
+#000bcheck_bus#1
+#0012disable_watchdog#1
+#0012disable_watchdog#2
+00d5
+#001batest_struct/atest_struct.c
+#0003417
+00d5
+#001batest_struct/atest_struct.c
+#0003417
+52be
+0005
+0023
+#0009mem_alloc
+52bf
+0005
+0024
+#00011
+0019
+#000bmem_alloc#1
+3072
+0005
+#0009size = 4U
+#00024
+
+50ba
+#001batest_struct/atest_struct.c
+#0003420
+#0006PASS: 
+#0009size = 4U
+00d5
+#001batest_struct/atest_struct.c
+#0003459
+00d5
+#001batest_struct/atest_struct.c
+#0003459
+52be
+0005
+0023
+#0009check_bus
+52bf
+0005
+0024
+#00011
+0019
+#000bmem_alloc#1
+#000bcheck_bus#1
+00d5
+#001batest_struct/atest_struct.c
+#0003362
+00d5
+#001batest_struct/atest_struct.c
+#0003362
+52be
+0005
+0023
+#0010disable_watchdog
+52bf
+0005
+0024
+#00011
+0019
+#000bmem_alloc#1
+#000bcheck_bus#1
+#0012disable_watchdog#1
+306f
+0005
+#0009param = 0
+#00020
+
+50ba
+#001batest_struct/atest_struct.c
+#0003366
+#0006PASS: 
+#0009param = 0
+00d5
+#001batest_struct/atest_struct.c
+#0003362
+00d5
+#001batest_struct/atest_struct.c
+#0003362
+52be
+0005
+0023
+#0010disable_watchdog
+52bf
+0005
+0024
+#00012
+0019
+#000bmem_alloc#1
+#000bcheck_bus#1
+#0012disable_watchdog#1
+#0012disable_watchdog#2
+306f
+0005
+#0009param = 0
+#00020
+
+50ba
+#001batest_struct/atest_struct.c
+#0003371
+#0006PASS: 
+#0009param = 0
+306a
+0005
+#0012returnValue = NULL
+#000b0x00000000
+
+50ba
+#001batest_struct/atest_struct.c
+#0003292
+#0006PASS: 
+#0012returnValue = NULL
+30b9
+0005
+#0023ACCESS_VARIABLE(struct, _testArray)
+50ba
+#001batest_struct/atest_struct.c
+#000259
+#0006PASS: 
+#0023ACCESS_VARIABLE(struct, _testArray)
+00d5
+#001batest_struct/atest_struct.c
+#0003295
+56bd
+001a
+0018
+#000bmem_alloc#1
+#000bcheck_bus#1
+#0012disable_watchdog#1
+#0012disable_watchdog#2
+8069
+#000d5: serial_com
+00d5
+#001batest_struct/atest_struct.c
+#0003310
+2068
+#000d6: serial_com
+#0039created to solve false case of fl==NULL at line number 56
+00d5
+#001batest_struct/atest_struct.c
+#0003314
+52bc
+0025
+001c
+#000bmem_alloc#2
+#000bcheck_bus#1
+#0012disable_watchdog#1
+#0012disable_watchdog#2
+#000bcheck_bus#1
+00d5
+#001batest_struct/atest_struct.c
+#0003417
+00d5
+#001batest_struct/atest_struct.c
+#0003417
+52be
+0005
+0023
+#0009mem_alloc
+52bf
+0005
+0024
+#00012
+0019
+#000bmem_alloc#2
+3072
+0005
+#0009size = 4U
+#00024
+
+50ba
+#001batest_struct/atest_struct.c
+#0003424
+#0006PASS: 
+#0009size = 4U
+00d5
+#001batest_struct/atest_struct.c
+#0003459
+00d5
+#001batest_struct/atest_struct.c
+#0003459
+52be
+0005
+0023
+#0009check_bus
+52bf
+0005
+0024
+#00011
+0019
+#000bmem_alloc#2
+#000bcheck_bus#1
+00d5
+#001batest_struct/atest_struct.c
+#0003362
+00d5
+#001batest_struct/atest_struct.c
+#0003362
+52be
+0005
+0023
+#0010disable_watchdog
+52bf
+0005
+0024
+#00011
+0019
+#000bmem_alloc#2
+#000bcheck_bus#1
+#0012disable_watchdog#1
+306f
+0005
+#0009param = 0
+#00020
+
+50ba
+#001batest_struct/atest_struct.c
+#0003366
+#0006PASS: 
+#0009param = 0
+00d5
+#001batest_struct/atest_struct.c
+#0003362
+00d5
+#001batest_struct/atest_struct.c
+#0003362
+52be
+0005
+0023
+#0010disable_watchdog
+52bf
+0005
+0024
+#00012
+0019
+#000bmem_alloc#2
+#000bcheck_bus#1
+#0012disable_watchdog#1
+#0012disable_watchdog#2
+306f
+0005
+#0009param = 0
+#00020
+
+50ba
+#001batest_struct/atest_struct.c
+#0003371
+#0006PASS: 
+#0009param = 0
+00d5
+#001batest_struct/atest_struct.c
+#0003459
+00d5
+#001batest_struct/atest_struct.c
+#0003459
+52be
+0005
+0023
+#0009check_bus
+52bf
+0005
+0024
+#00011
+0019
+#000bmem_alloc#2
+#000bcheck_bus#1
+#0012disable_watchdog#1
+#0012disable_watchdog#2
+#000bcheck_bus#1
+306a
+0005
+#0035returnValue = &ACCESS_VARIABLE(struct, _testArray)[2]
+#000b0x0042C050
+
+50ba
+#001batest_struct/atest_struct.c
+#0003320
+#0006PASS: 
+#0035returnValue = &ACCESS_VARIABLE(struct, _testArray)[2]
+30b9
+0005
+#0023ACCESS_VARIABLE(struct, _testArray)
+50ba
+#001batest_struct/atest_struct.c
+#000259
+#0006PASS: 
+#0023ACCESS_VARIABLE(struct, _testArray)
+00d5
+#001batest_struct/atest_struct.c
+#0003323
+56bd
+001a
+0018
+#000bmem_alloc#2
+#000bcheck_bus#1
+#0012disable_watchdog#1
+#0012disable_watchdog#2
+#000bcheck_bus#1
+8069
+#000d6: serial_com
+00d5
+#001batest_struct/atest_struct.c
+#0003338
+2068
+#000d7: serial_com
+#003dcreated to solve false case of bst == READY at line number 52
+00d5
+#001batest_struct/atest_struct.c
+#0003342
+52bc
+0025
+001c
+#000bmem_alloc#1
+#000bcheck_bus#2
+#0012disable_watchdog#1
+#000bcheck_bus#1
+00d5
+#001batest_struct/atest_struct.c
+#0003417
+00d5
+#001batest_struct/atest_struct.c
+#0003417
+52be
+0005
+0023
+#0009mem_alloc
+52bf
+0005
+0024
+#00011
+0019
+#000bmem_alloc#1
+3072
+0005
+#0009size = 4U
+#00024
+
+50ba
+#001batest_struct/atest_struct.c
+#0003420
+#0006PASS: 
+#0009size = 4U
+00d5
+#001batest_struct/atest_struct.c
+#0003459
+00d5
+#001batest_struct/atest_struct.c
+#0003459
+52be
+0005
+0023
+#0009check_bus
+52bf
+0005
+0024
+#00012
+0019
+#000bmem_alloc#1
+#000bcheck_bus#2
+00d5
+#001batest_struct/atest_struct.c
+#0003362
+00d5
+#001batest_struct/atest_struct.c
+#0003362
+52be
+0005
+0023
+#0010disable_watchdog
+52bf
+0005
+0024
+#00011
+0019
+#000bmem_alloc#1
+#000bcheck_bus#2
+#0012disable_watchdog#1
+306f
+0005
+#0009param = 0
+#00020
+
+50ba
+#001batest_struct/atest_struct.c
+#0003366
+#0006PASS: 
+#0009param = 0
+00d5
+#001batest_struct/atest_struct.c
+#0003459
+00d5
+#001batest_struct/atest_struct.c
+#0003459
+52be
+0005
+0023
+#0009check_bus
+52bf
+0005
+0024
+#00011
+0019
+#000bmem_alloc#1
+#000bcheck_bus#2
+#0012disable_watchdog#1
+#000bcheck_bus#1
+306a
+0005
+#0035returnValue = &ACCESS_VARIABLE(struct, _testArray)[2]
+#000b0x0042C050
+
+50ba
+#001batest_struct/atest_struct.c
+#0003348
+#0006PASS: 
+#0035returnValue = &ACCESS_VARIABLE(struct, _testArray)[2]
+30b9
+0005
+#0023ACCESS_VARIABLE(struct, _testArray)
+50ba
+#001batest_struct/atest_struct.c
+#000259
+#0006PASS: 
+#0023ACCESS_VARIABLE(struct, _testArray)
+00d5
+#001batest_struct/atest_struct.c
+#0003351
+56bd
+001a
+0018
+#000bmem_alloc#1
+#000bcheck_bus#2
+#0012disable_watchdog#1
+#000bcheck_bus#1
+8069
+#000d7: serial_com
+00d5
+#001batest_struct/atest_struct.c
+#000279
+2068
+#0011COVERAGE RULE SET
+#0011DO-178B/C Level A
+4077
+0005
+0010
+#0019100% Entry Point Coverage
+000e
+#0004100
+
+0013
+#0004100
+
+0015
+#0004100
+
+50ba
+#001batest_struct/atest_struct.c
+#000290
+#0006PASS: 
+#0019100% Entry Point Coverage
+4077
+0005
+0010
+#0017100% Statement Coverage
+000e
+#0004100
+
+0013
+#0004100
+
+0015
+#0004100
+
+50ba
+#001batest_struct/atest_struct.c
+#000294
+#0006PASS: 
+#0017100% Statement Coverage
+4077
+0005
+0010
+#0016100% Decision Coverage
+000e
+#0004100
+
+0013
+#0004100
+
+0015
+#0004100
+
+50ba
+#001batest_struct/atest_struct.c
+#000298
+#0006PASS: 
+#0016100% Decision Coverage
+4077
+0005
+0010
+#0019100% Call Return Coverage
+000e
+#0004100
+
+0013
+#0004100
+
+0015
+#0004100
+
+50ba
+#001batest_struct/atest_struct.c
+#0003102
+#0006PASS: 
+#0019100% Call Return Coverage
+4077
+0005
+0010
+#002b100% Boolean Operand Effectiveness Coverage
+000e
+#0004100
+
+0013
+#0004100
+
+0015
+#0004100
+
+50ba
+#001batest_struct/atest_struct.c
+#0003106
+#0006PASS: 
+#002b100% Boolean Operand Effectiveness Coverage
+50ba
+#002dC:/Users/ph.stanek/workspace9/serial/struct.c
+#000257
+#0000
+#0010expr   1 (A&&B) 
+8069
+#0011COVERAGE RULE SET
+6047
+#0017Report on memory usage
+
+6047
+#002a    Peak memory used         : 9828 bytes
+
+6047
+#002b    Initial memory pool size : 32000 bytes
+
+6047
+#002b    Memory pool unused       : 22172 bytes
+
+9066
+#004c= Test Finished: Mon Jan 03 22:19:24 2022                                 =
+
+#004c= 1: check_bus              0       0       2       0         0      PASS =
+
+#004c= 2: mem_alloc              0       0       3       0         0      PASS =
+
+#004c= 3: serial_com             0       0       5       0         0      PASS =
+
+#004c= 4: serial_com             0       0       5       0         0      PASS =
+
+#004c= 5: serial_com             0       0       5       0         0      PASS =
+
+#004c= 6: serial_com             0       0       5       0         0      PASS =
+
+#004c= 7: serial_com             0       0       4       0         0      PASS =
+
+#004c= COVERAGE RULE SET         0       0       5       0         0      PASS =
+
+#004c= Other                     0       0       0       0         0      PASS =
+
+#004c= TOTALS                    0       0      34       0         0      PASS =
+

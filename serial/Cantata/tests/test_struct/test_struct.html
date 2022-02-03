@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Test Results</title>
+    <meta charset='UTF-8'>
+    <style>
+* {
+padding: 3px 0 3px 3px;
+font-family: Arial, Helvetica, Sans-serif;
+font-size: 10pt
+}
+
+table {
+width: 100%;
+}
+
+.body {
+padding: 10px;
+margin-top: 3px;
+margin-bottom: 10px;
+margin-left: auto;
+margin-right: auto;
+border-collapse: collapse;
+width: 98%;
+height: 100%;
+font-size: 12px;
+color: #000000;
+background: #FFFFFF;
+}
+.h2 {
+background-color: #FFFFFF;
+text-align: left;
+margin-top: 0;
+padding: 10px 0px 5px 0px;
+margin: 0em;
+font-weight: bold;
+font-size: 18px;
+color: #9E334C;
+}
+
+.reportHeader {
+padding: 20px;
+background: #818B8A;
+}
+.reportHeader div {
+margin: 0em;
+font-weight: bold;
+font-size: 24px;
+color: #FFFFFF;
+}
+div.header_details > div.key {
+font-size: 16px;
+display: inline-block;
+width: 20%;
+}
+div.header_details > div.value {
+font-size: 16px;
+display: inline-block;
+width: 70%;
+}
+
+.summaryInfo {
+padding: 3px 3px 3px 3px;
+margin: 0em;
+font-size: 16px;
+color: #FFFFFF;
+background: #818B8A;
+}
+
+.summary {
+color: black;
+font-size: 12;
+background: none;
+}
+
+.ScriptError .summary {
+font-weight: bold;
+}
+
+.overview_header {
+border-collapse: collapse;
+margin: 0 0 25px 0;
+}
+.overview_header td {
+border-style: solid;
+border-width: 1px;
+border-color: rgb(204,204,204);
+background-color: rgb(221,221,221);
+border-bottom: solid;
+border-width-bottom: thick;
+text-align:center;
+padding: 10px;
+font-weight: bold;
+}
+.overview_header .state {
+font-size: 14pt;
+}
+.overview_header .script_errors,
+.overview_header .checks_failed,
+.overview_header .call_seq_failures,
+.overview_header .state.FAIL {
+border-bottom-color: #C80000;
+}
+.overview_header .checks_passed,
+.overview_header .state.PASS {
+border-bottom-color: green;
+}
+.overview_header .checks_warned,
+.overview_header .state.WARNED {
+border-bottom-color: #ff9700;
+}
+
+div.Test,
+div.Step,
+div.Coverage,
+div.CoverageFunctionEnterExit {
+margin: 14px auto;
+padding: 0 0 0 0px;
+}
+div.Test:nth-child(odd) .overview {
+background-color: #F7F6FA;
+}
+div.Test:nth-child(even) .overview {
+background-color: #EAEAEA;
+}
+
+.details {
+color: black;
+}
+div.details {
+margin-left: 30px;
+}
+div.details > div.key,
+div.details > div.value {
+display: inline-block;
+width: 45%;
+background-color: #f2f2f2;
+margin: 2px;
+padding: 3px 0 3px 10px;
+}
+
+.CoverageEntry,
+.CoverageDetails, 
+.CoverageFunctionDescription {
+padding: 0px 3px 0px 3px;
+background: #e5edfa;
+color: black;
+}
+.CoverageFunction {
+font-size: 12pt;
+margin-top: 5px;
+}
+.CoverageFunction {
+padding-bottom: 5px;
+background: #e5edfa;
+color: black;
+font-weight: bold;
+}
+
+
+div.CoverageEntry {
+background-color: #f8f8f8;
+border-color: #e5edfa;
+border-style: solid;
+border-width: 2px 15 0 30px;
+
+}
+div.CoverageEntry > div {
+display: inline-block;
+}
+div.CoverageEntry > div.location { width: 30%; }
+div.CoverageEntry > div.entry_type { width: 12%; }
+div.CoverageEntry > div.count { width: 8%; }
+div.CoverageEntry > div.coverage_details { width: 25%; }
+div.CoverageEntry > div.summary { width: 20%; }
+
+div.CoverageDetails > div {
+display: inline-block;
+}
+div.CoverageDetails > div.location { width: 30%; }
+div.CoverageDetails > div.extra { width: 10%; }
+div.CoverageDetails > div.category { width: 20%; }
+div.CoverageDetails > div.coverage_details { width: 10%; }
+
+.CoverageFunctionDescription > div {
+display: inline-block;
+}
+div.CoverageFunctionDescription > div.location { width: 30%; }
+div.CoverageFunctionDescription > div.extra { width: 10%; }
+
+div.CoverageSummary > div {
+display: inline-block;
+}
+div.CoverageSummary > div.summary_coverage_type { width: 20%; }
+div.CoverageSummary > div.executed_infeasible { width: 10%; }
+div.CoverageSummary > div.overall_wavg { width: 10%; }
+div.CoverageSummary > div.stat_avg { width: 10%; }
+div.CoverageSummary > div.stat_min { width: 10%; }
+div.CoverageSummary > div.stat_max { width: 10%; }
+div.CoverageSummary > div.stat_dev { width: 10%; }
+div.CoverageSummary > div.stat_num { width: 10%; }
+
+tr:nth-child(even){background-color: #f2f2f2;}
+tr:nth-child(odd){background-color: #f2f2f8;}
+
+
+.overview > label {
+cursor: pointer;
+padding: 3px;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+font-weight: bold;
+}
+.overview {
+display: flex;
+flex-direction: row;
+}
+.overview > .name {
+width: 40%;
+color: black;
+font-weight: normal;
+}
+.overview > .state {
+width: 60%;
+color: black;
+}
+.coverage .overview > .name {
+width: 20%;
+}
+.coverage .overview > .state {
+width: 80%;
+}
+.overview:hover > .name,
+.overview:hover > .state {
+color: blue;
+}
+label.state span.Passed,
+label.state span.PASSED {
+color: green;
+}
+label.state span.FAILED,
+label.state span.Error,
+label.state span.ERROR {
+color: #C80000;
+}
+label.icon svg {
+padding: 0 5px 0 0;
+}
+[type='checkbox'] {
+display: none;
+}
+[type='checkbox']:checked ~ .details, 
+[type='checkbox']:checked ~ .overview .collapse_icon {
+display: none;
+}
+[type='checkbox']:checked ~ .overview .expand_icon {
+display: inline;
+}
+.overview .collapse_icon {
+display: inline;
+}
+.overview .expand_icon {
+display: none;
+}
+.collapse_icon,
+.expand_icon {
+height: 22px;
+}
+
+.User {
+padding: 3px 3px 3px 3px;
+background: #ededed;
+color: black;
+}
+pre {
+display: block;
+font-family: monospace;
+white-space: pre;
+margin: 0em 0px;
+font-size: 8pt
+}
+
+.CheckMemorySummary,
+div.CallSequence,
+div.Instance {
+color: black;
+}
+
+.reportFooter {
+text-align: center;
+font-size: 11px;
+margin-bottom: 10px;
+padding: 0px;
+}
+.reportFooter table {
+padding: 0px;
+}
+tr.FooterResult {
+color: black;
+}
+td.TestResult.PASS {
+color: green;
+}
+td.TestResult.WARNED {
+color: #ff9700;
+}
+td.TestResult.FAIL,
+div.CoverageEntry > div.NOT.EXECUTED,
+div.CoverageEntry > div.INFEASIBLE,
+div.CoverageEntry > div.NOT.EFFECTIVE {
+color: #C80000;
+font-weight: bold;
+}
+th {
+padding: 3px;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(204,204,204);
+background-color: rgb(221,221,221);
+font-weight: bold;
+font-size: 10pt
+}
+.cell {
+padding: 3px;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(204,204,204);
+font-size: 10pt
+}
+
+.cellNoBorder {
+padding: 3px 3px 3px 3px;
+font-size: 10pt;
+}
+
+b.Passed,
+b.PASSED {
+color: green;
+}
+b.WARNED,
+b.Warning {
+color: #ff9700;
+}
+b.FAILED,
+b.Error {
+color: #C80000;
+}
+
+.active,
+div.Passed,
+div.PASSED,
+div.WARNED,
+div.Warning,
+div.FAILED,
+div.Error,
+div.ScriptError.error,
+div.Coverage,
+div.CoverageFunctionEnterExit {
+border-style: solid;
+border-width: 1px 0 0 4px;
+}
+div.Passed,
+div.PASSED {
+border-color: green;
+}
+div.WARNED,
+div.Warning {
+border-color: gold;
+}
+div.FAILED,
+div.Error {
+border-color: #C80000;
+}
+div.Coverage,
+div.CoverageFunctionEnterExit {
+border-color: lightblue;
+}
+
+div.ExpectedCalls {
+border-style:solid;
+border-width: 1px 0 0 3px;
+border-color: grey;
+color: black;
+
+}
+</style>
+
+  </head>
+  <body>
+    <div class='Header reportHeader'>
+  <div class='header_details'>    <div>Cantata Test Harness v9.5 (c) 2021 QA Systems GmbH</div>
+    <div class='key'>Test Description:</div><div class='value'>struct</div>
+    <div class='key'>Configuration:</div><div class='value'>x86-win-gnuARM-LauterbachSim-c</div>
+    <div class='key'>Test Started:</div><div class='value'>Time not available</div>
+    <div class='key'>Test Ended:</div><div class='value'>Time not available</div>
+  </div></div>
+<table class='overview_header'>
+  <tr>
+    <td colspan='5' class='state PASS'>Overall Result: PASS</td>
+  </tr>
+  <tr>
+    <td class='script_errors'>0 Script Errors</td>
+    <td class='checks_failed'>0 Checks Failed</td>
+    <td class='checks_passed'>21 Checks Passed</td>
+    <td class='checks_warned'>1 Checks Warned</td>
+    <td class='call_seq_failures'>0 Call Sequence Failures</td>
+  </tr>
+</table>
+<div class='Test PASSED'>
+  <input type='checkbox' id='hide_details2' checked />
+  <div class='overview'>
+    <label for='hide_details2' class='icon'>      <svg class='expand_icon'   enable-background='new 0 0 24 24' viewBox='0 0 24 24' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><polyline fill='none' points='8.5,3 17.5,12 8.5,21 ' stroke='#000000' stroke-miterlimit='10' stroke-width='2'/></svg>      <svg class='collapse_icon' enable-background='new 0 0 24 24' viewBox='0 0 24 24' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><polyline fill='none' points='21,8.5 12,17.5 3,8.5 ' stroke='#000000' stroke-miterlimit='10' stroke-width='2'/></svg>    </label>
+    <label for='hide_details2' class='name'>Test case: test_serial_com</label>
+    <label for='hide_details2' class='state'>Result: <span class='PASSED'>PASSED</span></label>
+  </div>
+  <div class='details'>
+    <pre class='User'>&lt;Insert test case description here&gt;</pre>
+<div class='CheckFunctionCallWrapper PASSED'>
+  <div>
+    <b class='PASSED'>PASSED: Function:</b> mem_alloc
+  </div>
+  <div class='CallNumber'>
+  <b>Call Number:</b> 1
+</div>
+<div class='Instance'>
+  <b>Instance:</b> default
+</div>
+
+</div>
+<div class='CheckFunctionCallWrapper PASSED'>
+  <div>
+    <b class='PASSED'>PASSED: Function:</b> disable_watchdog
+  </div>
+  <div class='CallNumber'>
+  <b>Call Number:</b> 1
+</div>
+<div class='Instance'>
+  <b>Instance:</b> default
+</div>
+
+</div>
+<div class='CheckFunctionCallWrapper PASSED'>
+  <div>
+    <b class='PASSED'>PASSED: Function:</b> check_bus
+  </div>
+  <div class='CallNumber'>
+  <b>Call Number:</b> 1
+</div>
+<div class='Instance'>
+  <b>Instance:</b> default
+</div>
+
+</div>
+<div class='CheckValue PASSED'>
+  <b class='PASSED'>PASSED: Check</b>
+  <div>
+    returnValue-&gt;dataIn[0] = 'U'
+  </div>
+  <div class='details'>
+    <div class='key'>Value:</div>
+    <div class='value'>0x55    'U'</div>
+  </div>
+</div>
+<div class='CheckValue PASSED'>
+  <b class='PASSED'>PASSED: Check</b>
+  <div>
+    pTest-&gt;dataIn[0] = 'm'
+  </div>
+  <div class='details'>
+    <div class='key'>Value:</div>
+    <div class='value'>0x6D    'm'</div>
+  </div>
+</div>
+<b class='PASSED'>PASSED: Check Memory</b>
+<div></div>
+
+<div class='CheckFunctionCallWrapper PASSED'>
+  <div>
+    <b class='PASSED'>PASSED: Function:</b> mem_alloc
+  </div>
+  
+</div>
+<div class='CheckFunctionCallWrapper PASSED'>
+  <div>
+    <b class='PASSED'>PASSED: Function:</b> disable_watchdog
+  </div>
+  
+</div>
+<div class='CheckFunctionCallWrapper PASSED'>
+  <div>
+    <b class='PASSED'>PASSED: Function:</b> check_bus
+  </div>
+  
+</div>
+
+  </div>
+</div>
+<div class='Test PASSED'>
+  <input type='checkbox' id='hide_details20' checked />
+  <div class='overview'>
+    <label for='hide_details20' class='icon'>      <svg class='expand_icon'   enable-background='new 0 0 24 24' viewBox='0 0 24 24' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><polyline fill='none' points='8.5,3 17.5,12 8.5,21 ' stroke='#000000' stroke-miterlimit='10' stroke-width='2'/></svg>      <svg class='collapse_icon' enable-background='new 0 0 24 24' viewBox='0 0 24 24' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><polyline fill='none' points='21,8.5 12,17.5 3,8.5 ' stroke='#000000' stroke-miterlimit='10' stroke-width='2'/></svg>    </label>
+    <label for='hide_details20' class='name'>Test case: test_serial_com_busKO</label>
+    <label for='hide_details20' class='state'>Result: <span class='PASSED'>PASSED</span></label>
+  </div>
+  <div class='details'>
+    <pre class='User'>&lt;Insert test case description here&gt;</pre>
+<div class='CheckFunctionCallWrapper PASSED'>
+  <div>
+    <b class='PASSED'>PASSED: Function:</b> mem_alloc
+  </div>
+  <div class='CallNumber'>
+  <b>Call Number:</b> 1
+</div>
+<div class='Instance'>
+  <b>Instance:</b> default
+</div>
+
+</div>
+<div class='CheckFunctionCallWrapper PASSED'>
+  <div>
+    <b class='PASSED'>PASSED: Function:</b> disable_watchdog
+  </div>
+  <div class='CallNumber'>
+  <b>Call Number:</b> 1
+</div>
+<div class='Instance'>
+  <b>Instance:</b> default
+</div>
+
+</div>
+<div class='CheckFunctionCallWrapper PASSED'>
+  <div>
+    <b class='PASSED'>PASSED: Function:</b> check_bus
+  </div>
+  <div class='CallNumber'>
+  <b>Call Number:</b> 1
+</div>
+<div class='Instance'>
+  <b>Instance:</b> busKO
+</div>
+
+</div>
+<div class='CheckValue PASSED'>
+  <b class='PASSED'>PASSED: Check</b>
+  <div>
+    returnValue = NULL
+  </div>
+  <div class='details'>
+    <div class='key'>Value:</div>
+    <div class='value'>0x00000000</div>
+  </div>
+</div>
+<b class='PASSED'>PASSED: Check Memory</b>
+<div></div>
+
+<div class='CheckFunctionCallWrapper PASSED'>
+  <div>
+    <b class='PASSED'>PASSED: Function:</b> mem_alloc
+  </div>
+  
+</div>
+<div class='CheckFunctionCallWrapper PASSED'>
+  <div>
+    <b class='PASSED'>PASSED: Function:</b> disable_watchdog
+  </div>
+  
+</div>
+<div class='CheckFunctionCallWrapper PASSED'>
+  <div>
+    <b class='PASSED'>PASSED: Function:</b> check_bus
+  </div>
+  
+</div>
+
+  </div>
+</div>
+<div class='Test PASSED'>
+  <input type='checkbox' id='hide_details37' checked />
+  <div class='overview'>
+    <label for='hide_details37' class='icon'>      <svg class='expand_icon'   enable-background='new 0 0 24 24' viewBox='0 0 24 24' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><polyline fill='none' points='8.5,3 17.5,12 8.5,21 ' stroke='#000000' stroke-miterlimit='10' stroke-width='2'/></svg>      <svg class='collapse_icon' enable-background='new 0 0 24 24' viewBox='0 0 24 24' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><polyline fill='none' points='21,8.5 12,17.5 3,8.5 ' stroke='#000000' stroke-miterlimit='10' stroke-width='2'/></svg>    </label>
+    <label for='hide_details37' class='name'>Test case: 3: serial_com</label>
+    <label for='hide_details37' class='state'>Result: <span class='PASSED'>PASSED</span></label>
+  </div>
+  <div class='details'>
+    <pre class='User'>default case</pre>
+<div class='ExpectedCalls'>
+  <b class=''>: Expected Calls:</b>
+  <div>mem_alloc#1;disable_watchdog#21;check_bus#1</div>
+</div>
+<div class='CheckFunctionCallWrapper PASSED'>
+  <div>
+    <b class='PASSED'>PASSED: Function:</b> mem_alloc
+  </div>
+  <div class='Instance'>
+  <b>Instance:</b> 1
+</div>
+
+</div>
+<div class='CallSequence'>
+  <b>Call sequence matched so far:</b>
+        mem_alloc#1
+</div>
+<div class='CheckValue PASSED'>
+  <b class='PASSED'>PASSED: Check</b>
+  <div>
+    size = 4U
+  </div>
+  <div class='details'>
+    <div class='key'>Value:</div>
+    <div class='value'>4</div>
+  </div>
+</div>
+<div class='CheckFunctionCallWrapper PASSED'>
+  <div>
+    <b class='PASSED'>PASSED: Function:</b> disable_watchdog
+  </div>
+  <div class='Instance'>
+  <b>Instance:</b> 21
+</div>
+
+</div>
+<div class='CallSequence'>
+  <b>Call sequence matched so far:</b>
+        mem_alloc#1;disable_watchdog#21
+</div>
+<div class='CheckValue PASSED'>
+  <b class='PASSED'>PASSED: Check</b>
+  <div>
+    param = 0
+  </div>
+  <div class='details'>
+    <div class='key'>Value:</div>
+    <div class='value'>0</div>
+  </div>
+</div>
+<div class='CheckFunctionCallWrapper PASSED'>
+  <div>
+    <b class='PASSED'>PASSED: Function:</b> check_bus
+  </div>
+  <div class='Instance'>
+  <b>Instance:</b> 1
+</div>
+
+</div>
+<div class='CallSequence'>
+  <b>Call sequence matched so far:</b>
+        mem_alloc#1;disable_watchdog#21;check_bus#1
+</div>
+<div class='CheckValue PASSED'>
+  <b class='PASSED'>PASSED: Check</b>
+  <div>
+    returnValue = &amp;ACCESS_VARIABLE(struct, _testArray)[2]
+  </div>
+  <div class='details'>
+    <div class='key'>Value:</div>
+    <div class='value'>0x00025810</div>
+  </div>
+</div>
+<b class='PASSED'>PASSED: Check Memory</b>
+<div></div>
+
+<div class='CallSequence'>
+  <b>Call sequence matched:</b>
+    mem_alloc#1;disable_watchdog#21;check_bus#1
+</div>
+
+  </div>
+</div>
+<div class='Test PASSED'>
+  <input type='checkbox' id='hide_details55' checked />
+  <div class='overview'>
+    <label for='hide_details55' class='icon'>      <svg class='expand_icon'   enable-background='new 0 0 24 24' viewBox='0 0 24 24' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><polyline fill='none' points='8.5,3 17.5,12 8.5,21 ' stroke='#000000' stroke-miterlimit='10' stroke-width='2'/></svg>      <svg class='collapse_icon' enable-background='new 0 0 24 24' viewBox='0 0 24 24' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><polyline fill='none' points='21,8.5 12,17.5 3,8.5 ' stroke='#000000' stroke-miterlimit='10' stroke-width='2'/></svg>    </label>
+    <label for='hide_details55' class='name'>Test case: 4: serial_com</label>
+    <label for='hide_details55' class='state'>Result: <span class='PASSED'>PASSED</span></label>
+  </div>
+  <div class='details'>
+    <pre class='User'>created to solve false case of check_bus()==READY at line number 58</pre>
+<div class='ExpectedCalls'>
+  <b class=''>: Expected Calls:</b>
+  <div>mem_alloc#1;disable_watchdog#21;check_bus#2</div>
+</div>
+<div class='CheckFunctionCallWrapper PASSED'>
+  <div>
+    <b class='PASSED'>PASSED: Function:</b> mem_alloc
+  </div>
+  <div class='Instance'>
+  <b>Instance:</b> 1
+</div>
+
+</div>
+<div class='CallSequence'>
+  <b>Call sequence matched so far:</b>
+        mem_alloc#1
+</div>
+<div class='CheckValue PASSED'>
+  <b class='PASSED'>PASSED: Check</b>
+  <div>
+    size = 4U
+  </div>
+  <div class='details'>
+    <div class='key'>Value:</div>
+    <div class='value'>4</div>
+  </div>
+</div>
+<div class='CheckFunctionCallWrapper PASSED'>
+  <div>
+    <b class='PASSED'>PASSED: Function:</b> disable_watchdog
+  </div>
+  <div class='Instance'>
+  <b>Instance:</b> 21
+</div>
+
+</div>
+<div class='CallSequence'>
+  <b>Call sequence matched so far:</b>
+        mem_alloc#1;disable_watchdog#21
+</div>
+<div class='CheckValue PASSED'>
+  <b class='PASSED'>PASSED: Check</b>
+  <div>
+    param = 0
+  </div>
+  <div class='details'>
+    <div class='key'>Value:</div>
+    <div class='value'>0</div>
+  </div>
+</div>
+<div class='CheckFunctionCallWrapper PASSED'>
+  <div>
+    <b class='PASSED'>PASSED: Function:</b> check_bus
+  </div>
+  <div class='Instance'>
+  <b>Instance:</b> 2
+</div>
+
+</div>
+<div class='CallSequence'>
+  <b>Call sequence matched so far:</b>
+        mem_alloc#1;disable_watchdog#21;check_bus#2
+</div>
+<div class='CheckValue PASSED'>
+  <b class='PASSED'>PASSED: Check</b>
+  <div>
+    returnValue = NULL
+  </div>
+  <div class='details'>
+    <div class='key'>Value:</div>
+    <div class='value'>0x00000000</div>
+  </div>
+</div>
+<b class='PASSED'>PASSED: Check Memory</b>
+<div></div>
+
+<div class='CallSequence'>
+  <b>Call sequence matched:</b>
+    mem_alloc#1;disable_watchdog#21;check_bus#2
+</div>
+
+  </div>
+</div>
+<div class='Test PASSED'>
+  <input type='checkbox' id='hide_details73' checked />
+  <div class='overview'>
+    <label for='hide_details73' class='icon'>      <svg class='expand_icon'   enable-background='new 0 0 24 24' viewBox='0 0 24 24' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><polyline fill='none' points='8.5,3 17.5,12 8.5,21 ' stroke='#000000' stroke-miterlimit='10' stroke-width='2'/></svg>      <svg class='collapse_icon' enable-background='new 0 0 24 24' viewBox='0 0 24 24' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><polyline fill='none' points='21,8.5 12,17.5 3,8.5 ' stroke='#000000' stroke-miterlimit='10' stroke-width='2'/></svg>    </label>
+    <label for='hide_details73' class='name'>Test case: 5: serial_com</label>
+    <label for='hide_details73' class='state'>Result: <span class='PASSED'>PASSED</span></label>
+  </div>
+  <div class='details'>
+    <pre class='User'>created to solve true case of disable_watchdog(0) at line number 57</pre>
+<div class='ExpectedCalls'>
+  <b class=''>: Expected Calls:</b>
+  <div>mem_alloc#1;disable_watchdog#22</div>
+</div>
+<div class='CheckFunctionCallWrapper PASSED'>
+  <div>
+    <b class='PASSED'>PASSED: Function:</b> mem_alloc
+  </div>
+  <div class='Instance'>
+  <b>Instance:</b> 1
+</div>
+
+</div>
+<div class='CallSequence'>
+  <b>Call sequence matched so far:</b>
+        mem_alloc#1
+</div>
+<div class='CheckValue PASSED'>
+  <b class='PASSED'>PASSED: Check</b>
+  <div>
+    size = 4U
+  </div>
+  <div class='details'>
+    <div class='key'>Value:</div>
+    <div class='value'>4</div>
+  </div>
+</div>
+<div class='CheckFunctionCallWrapper PASSED'>
+  <div>
+    <b class='PASSED'>PASSED: Function:</b> disable_watchdog
+  </div>
+  <div class='Instance'>
+  <b>Instance:</b> 22
+</div>
+
+</div>
+<div class='CallSequence'>
+  <b>Call sequence matched so far:</b>
+        mem_alloc#1;disable_watchdog#22
+</div>
+<div class='CheckValue PASSED'>
+  <b class='PASSED'>PASSED: Check</b>
+  <div>
+    param = 0
+  </div>
+  <div class='details'>
+    <div class='key'>Value:</div>
+    <div class='value'>0</div>
+  </div>
+</div>
+<div class='CheckValue PASSED'>
+  <b class='PASSED'>PASSED: Check</b>
+  <div>
+    returnValue = NULL
+  </div>
+  <div class='details'>
+    <div class='key'>Value:</div>
+    <div class='value'>0x00000000</div>
+  </div>
+</div>
+<b class='PASSED'>PASSED: Check Memory</b>
+<div></div>
+
+<div class='CallSequence'>
+  <b>Call sequence matched:</b>
+    mem_alloc#1;disable_watchdog#22
+</div>
+
+  </div>
+</div>
+<div class='Test PASSED'>
+  <input type='checkbox' id='hide_details88' checked />
+  <div class='overview'>
+    <label for='hide_details88' class='icon'>      <svg class='expand_icon'   enable-background='new 0 0 24 24' viewBox='0 0 24 24' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><polyline fill='none' points='8.5,3 17.5,12 8.5,21 ' stroke='#000000' stroke-miterlimit='10' stroke-width='2'/></svg>      <svg class='collapse_icon' enable-background='new 0 0 24 24' viewBox='0 0 24 24' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><polyline fill='none' points='21,8.5 12,17.5 3,8.5 ' stroke='#000000' stroke-miterlimit='10' stroke-width='2'/></svg>    </label>
+    <label for='hide_details88' class='name'>Test case: 6: serial_com</label>
+    <label for='hide_details88' class='state'>Result: <span class='PASSED'>PASSED</span></label>
+  </div>
+  <div class='details'>
+    <pre class='User'>created to solve false case of fl==NULL at line number 57</pre>
+<div class='ExpectedCalls'>
+  <b class=''>: Expected Calls:</b>
+  <div>mem_alloc#2;disable_watchdog#22;check_bus#1</div>
+</div>
+<div class='CheckFunctionCallWrapper PASSED'>
+  <div>
+    <b class='PASSED'>PASSED: Function:</b> mem_alloc
+  </div>
+  <div class='Instance'>
+  <b>Instance:</b> 2
+</div>
+
+</div>
+<div class='CallSequence'>
+  <b>Call sequence matched so far:</b>
+        mem_alloc#2
+</div>
+<div class='CheckValue PASSED'>
+  <b class='PASSED'>PASSED: Check</b>
+  <div>
+    size = 4U
+  </div>
+  <div class='details'>
+    <div class='key'>Value:</div>
+    <div class='value'>4</div>
+  </div>
+</div>
+<div class='CheckFunctionCallWrapper PASSED'>
+  <div>
+    <b class='PASSED'>PASSED: Function:</b> disable_watchdog
+  </div>
+  <div class='Instance'>
+  <b>Instance:</b> 22
+</div>
+
+</div>
+<div class='CallSequence'>
+  <b>Call sequence matched so far:</b>
+        mem_alloc#2;disable_watchdog#22
+</div>
+<div class='CheckValue PASSED'>
+  <b class='PASSED'>PASSED: Check</b>
+  <div>
+    param = 0
+  </div>
+  <div class='details'>
+    <div class='key'>Value:</div>
+    <div class='value'>0</div>
+  </div>
+</div>
+<div class='CheckFunctionCallWrapper PASSED'>
+  <div>
+    <b class='PASSED'>PASSED: Function:</b> check_bus
+  </div>
+  <div class='Instance'>
+  <b>Instance:</b> 1
+</div>
+
+</div>
+<div class='CallSequence'>
+  <b>Call sequence matched so far:</b>
+        mem_alloc#2;disable_watchdog#22;check_bus#1
+</div>
+<div class='CheckValue PASSED'>
+  <b class='PASSED'>PASSED: Check</b>
+  <div>
+    returnValue = &amp;ACCESS_VARIABLE(struct, _testArray)[2]
+  </div>
+  <div class='details'>
+    <div class='key'>Value:</div>
+    <div class='value'>0x00025810</div>
+  </div>
+</div>
+<b class='PASSED'>PASSED: Check Memory</b>
+<div></div>
+
+<div class='CallSequence'>
+  <b>Call sequence matched:</b>
+    mem_alloc#2;disable_watchdog#22;check_bus#1
+</div>
+
+  </div>
+</div>
+<div class='Test Warning'>
+  <input type='checkbox' id='hide_details106' checked />
+  <div class='overview'>
+    <label for='hide_details106' class='icon'>      <svg class='expand_icon'   enable-background='new 0 0 24 24' viewBox='0 0 24 24' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><polyline fill='none' points='8.5,3 17.5,12 8.5,21 ' stroke='#000000' stroke-miterlimit='10' stroke-width='2'/></svg>      <svg class='collapse_icon' enable-background='new 0 0 24 24' viewBox='0 0 24 24' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><polyline fill='none' points='21,8.5 12,17.5 3,8.5 ' stroke='#000000' stroke-miterlimit='10' stroke-width='2'/></svg>    </label>
+    <label for='hide_details106' class='name'>Test case: COVERAGE RULE SET</label>
+    <label for='hide_details106' class='state'>Result: <span class='Warning'>Warning</span></label>
+  </div>
+  <div class='details'>
+    <pre class='User'>ISO26262-6 2011 ASIL D unit level (HR)</pre>
+<div class='ScriptError Warning'>
+  <b class='Warning'>Test Script Warning:</b>
+  <b class='summary'> Coverage Rule Set ignored in deferred analysis mode</b>
+</div>
+
+  </div>
+</div>
+<pre class='User'>Report on memory usage
+    Peak memory used         : 1868 bytes
+    Initial memory pool size : 16000 bytes
+    Memory pool unused       : 14132 bytes</pre>
+<div class='Footer reportFooter'>
+  <table>
+    <tr>
+      <th>Test Case</th>
+      <th>Script Errors</th>
+      <th>Checks Failed</th>
+      <th>Checks Passed</th>
+      <th>Checks Warned</th>
+      <th>Call Sequence Failures</th>
+      <th>Test Result</th>
+    </tr>
+    <tr class='FooterResult PASS'>
+  <td class='TestCase'>test_serial_com</td>
+  <td class='ScriptErrors'>0</td>
+  <td class='ChecksFailed'>0</td>
+  <td class='ChecksPassed'>3</td>
+  <td class='ChecksWarned'>0</td>
+  <td class='CallSequenceFailures'>0</td>
+  <td class='TestResult PASS'>PASS</td>
+</tr>
+
+<tr class='FooterResult PASS'>
+  <td class='TestCase'>test_serial_com_busKO</td>
+  <td class='ScriptErrors'>0</td>
+  <td class='ChecksFailed'>0</td>
+  <td class='ChecksPassed'>2</td>
+  <td class='ChecksWarned'>0</td>
+  <td class='CallSequenceFailures'>0</td>
+  <td class='TestResult PASS'>PASS</td>
+</tr>
+
+<tr class='FooterResult PASS'>
+  <td class='TestCase'>3: serial_com</td>
+  <td class='ScriptErrors'>0</td>
+  <td class='ChecksFailed'>0</td>
+  <td class='ChecksPassed'>4</td>
+  <td class='ChecksWarned'>0</td>
+  <td class='CallSequenceFailures'>0</td>
+  <td class='TestResult PASS'>PASS</td>
+</tr>
+
+<tr class='FooterResult PASS'>
+  <td class='TestCase'>4: serial_com</td>
+  <td class='ScriptErrors'>0</td>
+  <td class='ChecksFailed'>0</td>
+  <td class='ChecksPassed'>4</td>
+  <td class='ChecksWarned'>0</td>
+  <td class='CallSequenceFailures'>0</td>
+  <td class='TestResult PASS'>PASS</td>
+</tr>
+
+<tr class='FooterResult PASS'>
+  <td class='TestCase'>5: serial_com</td>
+  <td class='ScriptErrors'>0</td>
+  <td class='ChecksFailed'>0</td>
+  <td class='ChecksPassed'>4</td>
+  <td class='ChecksWarned'>0</td>
+  <td class='CallSequenceFailures'>0</td>
+  <td class='TestResult PASS'>PASS</td>
+</tr>
+
+<tr class='FooterResult PASS'>
+  <td class='TestCase'>6: serial_com</td>
+  <td class='ScriptErrors'>0</td>
+  <td class='ChecksFailed'>0</td>
+  <td class='ChecksPassed'>4</td>
+  <td class='ChecksWarned'>0</td>
+  <td class='CallSequenceFailures'>0</td>
+  <td class='TestResult PASS'>PASS</td>
+</tr>
+
+<tr class='FooterResult PASS'>
+  <td class='TestCase'>COVERAGE RULE SET</td>
+  <td class='ScriptErrors'>0</td>
+  <td class='ChecksFailed'>0</td>
+  <td class='ChecksPassed'>0</td>
+  <td class='ChecksWarned'>1</td>
+  <td class='CallSequenceFailures'>0</td>
+  <td class='TestResult PASS'>PASS</td>
+</tr>
+
+<tr class='FooterResult PASS'>
+  <td class='TestCase'>Other</td>
+  <td class='ScriptErrors'>0</td>
+  <td class='ChecksFailed'>0</td>
+  <td class='ChecksPassed'>0</td>
+  <td class='ChecksWarned'>0</td>
+  <td class='CallSequenceFailures'>0</td>
+  <td class='TestResult PASS'>PASS</td>
+</tr>
+
+
+    <tr>
+      <td class='TestName'>TOTALS</td>
+      <td class='ScriptErrors'>0</td>
+      <td class='ChecksFailed'>0</td>
+      <td class='ChecksPassed'>21</td>
+      <td class='ChecksWarmed'>1</td>
+      <td class='CallSequenceFailures'>0</td>
+      <td class='TestResult PASS'>PASS</td>
+    </tr>
+  </table>
+</div>
+
+  </body>
+</html>

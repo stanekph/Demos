@@ -1,0 +1,8 @@
+<impact>
+	<impacted_test>
+		<test>atest_struct</test>
+	</impacted_test>
+	<impacted_test>
+		<test>test_struct</test>
+	</impacted_test>
+</impact>

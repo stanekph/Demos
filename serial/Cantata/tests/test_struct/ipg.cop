@@ -1,0 +1,23 @@
+#
+# Cantata Test-Level Options
+#
+# Any options set in this file will override the options set in the
+# project-level options file.
+#
+# WARNING: Do not alter this file manually.
+#
+#tool.use=false
+#tool.server=http://localhost:8085/cantata
+#tool.servercontainerid=203
+#tool.testid=90731be5-9d10-49c2-b7e6-8f3340bdff7a
+"--ci:--instr:stmt;func;decn;log;"
+"--parse:-W3"
+"--dr"
+"--dr_gen_header:mocks.h"
+"--dr_list_definitions:mocks.c"
+"--sm:--access_variable:"struct.c":_testArray"
+"--sm:--wrap:check_bus()#serial_com(s_TEST_COM *)"
+"--sm:--wrap:mem_alloc(size_t )#serial_com(s_TEST_COM *)"
+
+#User Section
+--preprocessor_logging

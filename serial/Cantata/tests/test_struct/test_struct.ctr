@@ -1,0 +1,236 @@
+===========================================================================
+= Cantata Test Harness v9.5                                               =
+= (c) 2021 QA Systems GmbH                                                =
+=-------------------------------------------------------------------------=
+= Test Description: struct                                                =
+=    Configuration: x86-win-gnuARM-LauterbachSim-c                        =
+=     Test Started: Time not available                                    =
+===========================================================================
+------------------------- Start Test: test_serial_com
+
+<Insert test case description here>
+
+        Start Call Sequence Validation:
+
+        PASSED: Function: mem_alloc
+            Call Number: 1
+            Instance: default
+
+        PASSED: Function: disable_watchdog
+            Call Number: 1
+            Instance: default
+
+        PASSED: Function: check_bus
+            Call Number: 1
+            Instance: default
+        PASSED: Check: returnValue->dataIn[0] = 'U'
+                value: 0x55    'U'
+        PASSED: Check: pTest->dataIn[0] = 'm'
+                value: 0x6D    'm'
+        PASSED: Check Memory: ACCESS_VARIABLE(struct, _testArray)
+
+        End Call Sequence Validation:
+
+        PASSED: Function: mem_alloc
+        PASSED: Function: disable_watchdog
+        PASSED: Function: check_bus
+
+------------------------- End Test: test_serial_com
+
+------------------------- Start Test: test_serial_com_busKO
+
+<Insert test case description here>
+
+        Start Call Sequence Validation:
+
+        PASSED: Function: mem_alloc
+            Call Number: 1
+            Instance: default
+
+        PASSED: Function: disable_watchdog
+            Call Number: 1
+            Instance: default
+
+        PASSED: Function: check_bus
+            Call Number: 1
+            Instance: busKO
+        PASSED: Check: returnValue = NULL
+                value: 0x00000000
+        PASSED: Check Memory: ACCESS_VARIABLE(struct, _testArray)
+
+        End Call Sequence Validation:
+
+        PASSED: Function: mem_alloc
+        PASSED: Function: disable_watchdog
+        PASSED: Function: check_bus
+
+------------------------- End Test: test_serial_com_busKO
+
+------------------------- Start Test: 3: serial_com
+
+default case
+
+    Start Call Sequence Validation:
+    Expected calls: mem_alloc#1;disable_watchdog#21;check_bus#1
+
+        PASSED: Function: mem_alloc
+        PASSED: Instance: 1
+        Call sequence matched so far: 
+        mem_alloc#1
+        PASSED: Check: size = 4U
+                value: 4
+
+        PASSED: Function: disable_watchdog
+        PASSED: Instance: 21
+        Call sequence matched so far: 
+        mem_alloc#1;disable_watchdog#21
+        PASSED: Check: param = 0
+                value: 0
+
+        PASSED: Function: check_bus
+        PASSED: Instance: 1
+        Call sequence matched so far: 
+        mem_alloc#1;disable_watchdog#21;check_bus#1
+        PASSED: Check: returnValue = &ACCESS_VARIABLE(struct, _testArray)[2]
+                value: 0x00025810
+        PASSED: Check Memory: ACCESS_VARIABLE(struct, _testArray)
+
+    End Call Sequence Validation:
+
+    Call sequence matched: 
+    mem_alloc#1;disable_watchdog#21;check_bus#1
+
+------------------------- End Test: 3: serial_com
+
+------------------------- Start Test: 4: serial_com
+
+created to solve false case of check_bus()==READY at line number 58
+
+    Start Call Sequence Validation:
+    Expected calls: mem_alloc#1;disable_watchdog#21;check_bus#2
+
+        PASSED: Function: mem_alloc
+        PASSED: Instance: 1
+        Call sequence matched so far: 
+        mem_alloc#1
+        PASSED: Check: size = 4U
+                value: 4
+
+        PASSED: Function: disable_watchdog
+        PASSED: Instance: 21
+        Call sequence matched so far: 
+        mem_alloc#1;disable_watchdog#21
+        PASSED: Check: param = 0
+                value: 0
+
+        PASSED: Function: check_bus
+        PASSED: Instance: 2
+        Call sequence matched so far: 
+        mem_alloc#1;disable_watchdog#21;check_bus#2
+        PASSED: Check: returnValue = NULL
+                value: 0x00000000
+        PASSED: Check Memory: ACCESS_VARIABLE(struct, _testArray)
+
+    End Call Sequence Validation:
+
+    Call sequence matched: 
+    mem_alloc#1;disable_watchdog#21;check_bus#2
+
+------------------------- End Test: 4: serial_com
+
+------------------------- Start Test: 5: serial_com
+
+created to solve true case of disable_watchdog(0) at line number 57
+
+    Start Call Sequence Validation:
+    Expected calls: mem_alloc#1;disable_watchdog#22
+
+        PASSED: Function: mem_alloc
+        PASSED: Instance: 1
+        Call sequence matched so far: 
+        mem_alloc#1
+        PASSED: Check: size = 4U
+                value: 4
+
+        PASSED: Function: disable_watchdog
+        PASSED: Instance: 22
+        Call sequence matched so far: 
+        mem_alloc#1;disable_watchdog#22
+        PASSED: Check: param = 0
+                value: 0
+        PASSED: Check: returnValue = NULL
+                value: 0x00000000
+        PASSED: Check Memory: ACCESS_VARIABLE(struct, _testArray)
+
+    End Call Sequence Validation:
+
+    Call sequence matched: 
+    mem_alloc#1;disable_watchdog#22
+
+------------------------- End Test: 5: serial_com
+
+------------------------- Start Test: 6: serial_com
+
+created to solve false case of fl==NULL at line number 57
+
+    Start Call Sequence Validation:
+    Expected calls: mem_alloc#2;disable_watchdog#22;check_bus#1
+
+        PASSED: Function: mem_alloc
+        PASSED: Instance: 2
+        Call sequence matched so far: 
+        mem_alloc#2
+        PASSED: Check: size = 4U
+                value: 4
+
+        PASSED: Function: disable_watchdog
+        PASSED: Instance: 22
+        Call sequence matched so far: 
+        mem_alloc#2;disable_watchdog#22
+        PASSED: Check: param = 0
+                value: 0
+
+        PASSED: Function: check_bus
+        PASSED: Instance: 1
+        Call sequence matched so far: 
+        mem_alloc#2;disable_watchdog#22;check_bus#1
+        PASSED: Check: returnValue = &ACCESS_VARIABLE(struct, _testArray)[2]
+                value: 0x00025810
+        PASSED: Check Memory: ACCESS_VARIABLE(struct, _testArray)
+
+    End Call Sequence Validation:
+
+    Call sequence matched: 
+    mem_alloc#2;disable_watchdog#22;check_bus#1
+
+------------------------- End Test: 6: serial_com
+
+------------------------- Start Test: COVERAGE RULE SET
+
+ISO26262-6 2011 ASIL D unit level (HR)
+>> Test Script Warning: Coverage Rule Set ignored in deferred analysis mode
+
+
+------------------------- End Test: COVERAGE RULE SET
+
+Report on memory usage
+    Peak memory used         : 1868 bytes
+    Initial memory pool size : 16000 bytes
+    Memory pool unused       : 14132 bytes
+==============================================================================
+= Test Finished: Time not available                                          =
+=----------------------------------------------------------------------------=
+= Test                    Script  Checks  Checks  Checks  Call Seq     TEST  =
+= Case                    Errors  Failed  Passed  Warned  Failures    RESULT =
+=----------------------------------------------------------------------------=
+= test_serial_com              0       0       3       0         0      PASS =
+= test_serial_com_busKO        0       0       2       0         0      PASS =
+= 3: serial_com                0       0       4       0         0      PASS =
+= 4: serial_com                0       0       4       0         0      PASS =
+= 5: serial_com                0       0       4       0         0      PASS =
+= 6: serial_com                0       0       4       0         0      PASS =
+= COVERAGE RULE SET            0       0       0       1         0      PASS =
+= Other                        0       0       0       0         0      PASS =
+=----------------------------------------------------------------------------=
+= TOTALS                       0       0      21       1         0      PASS =
+==============================================================================
