@@ -3,8 +3,8 @@
 = (c) 2021 QA Systems GmbH                                                =
 =-------------------------------------------------------------------------=
 = Test Description: struct                                                =
-=    Configuration: x86-win-gnuARM-LauterbachSim-c                        =
-=     Test Started: Time not available                                    =
+=    Configuration: x86-Win32-gcc8.2.0-bundled                            =
+=     Test Started: Mon Feb 21 11:54:02 2022                              =
 ===========================================================================
 ------------------------- Start Test: test_serial_com
 
@@ -66,171 +66,196 @@
 
 ------------------------- End Test: test_serial_com_busKO
 
-------------------------- Start Test: 3: serial_com
-
-default case
-
-    Start Call Sequence Validation:
-    Expected calls: mem_alloc#1;disable_watchdog#21;check_bus#1
-
-        PASSED: Function: mem_alloc
-        PASSED: Instance: 1
-        Call sequence matched so far: 
-        mem_alloc#1
-        PASSED: Check: size = 4U
-                value: 4
-
-        PASSED: Function: disable_watchdog
-        PASSED: Instance: 21
-        Call sequence matched so far: 
-        mem_alloc#1;disable_watchdog#21
-        PASSED: Check: param = 0
-                value: 0
-
-        PASSED: Function: check_bus
-        PASSED: Instance: 1
-        Call sequence matched so far: 
-        mem_alloc#1;disable_watchdog#21;check_bus#1
-        PASSED: Check: returnValue = &ACCESS_VARIABLE(struct, _testArray)[2]
-                value: 0x00025810
-        PASSED: Check Memory: ACCESS_VARIABLE(struct, _testArray)
-
-    End Call Sequence Validation:
-
-    Call sequence matched: 
-    mem_alloc#1;disable_watchdog#21;check_bus#1
-
-------------------------- End Test: 3: serial_com
-
-------------------------- Start Test: 4: serial_com
-
-created to solve false case of check_bus()==READY at line number 58
-
-    Start Call Sequence Validation:
-    Expected calls: mem_alloc#1;disable_watchdog#21;check_bus#2
-
-        PASSED: Function: mem_alloc
-        PASSED: Instance: 1
-        Call sequence matched so far: 
-        mem_alloc#1
-        PASSED: Check: size = 4U
-                value: 4
-
-        PASSED: Function: disable_watchdog
-        PASSED: Instance: 21
-        Call sequence matched so far: 
-        mem_alloc#1;disable_watchdog#21
-        PASSED: Check: param = 0
-                value: 0
-
-        PASSED: Function: check_bus
-        PASSED: Instance: 2
-        Call sequence matched so far: 
-        mem_alloc#1;disable_watchdog#21;check_bus#2
-        PASSED: Check: returnValue = NULL
-                value: 0x00000000
-        PASSED: Check Memory: ACCESS_VARIABLE(struct, _testArray)
-
-    End Call Sequence Validation:
-
-    Call sequence matched: 
-    mem_alloc#1;disable_watchdog#21;check_bus#2
-
-------------------------- End Test: 4: serial_com
-
-------------------------- Start Test: 5: serial_com
-
-created to solve true case of disable_watchdog(0) at line number 57
-
-    Start Call Sequence Validation:
-    Expected calls: mem_alloc#1;disable_watchdog#22
-
-        PASSED: Function: mem_alloc
-        PASSED: Instance: 1
-        Call sequence matched so far: 
-        mem_alloc#1
-        PASSED: Check: size = 4U
-                value: 4
-
-        PASSED: Function: disable_watchdog
-        PASSED: Instance: 22
-        Call sequence matched so far: 
-        mem_alloc#1;disable_watchdog#22
-        PASSED: Check: param = 0
-                value: 0
-        PASSED: Check: returnValue = NULL
-                value: 0x00000000
-        PASSED: Check Memory: ACCESS_VARIABLE(struct, _testArray)
-
-    End Call Sequence Validation:
-
-    Call sequence matched: 
-    mem_alloc#1;disable_watchdog#22
-
-------------------------- End Test: 5: serial_com
-
-------------------------- Start Test: 6: serial_com
-
-created to solve false case of fl==NULL at line number 57
-
-    Start Call Sequence Validation:
-    Expected calls: mem_alloc#2;disable_watchdog#22;check_bus#1
-
-        PASSED: Function: mem_alloc
-        PASSED: Instance: 2
-        Call sequence matched so far: 
-        mem_alloc#2
-        PASSED: Check: size = 4U
-                value: 4
-
-        PASSED: Function: disable_watchdog
-        PASSED: Instance: 22
-        Call sequence matched so far: 
-        mem_alloc#2;disable_watchdog#22
-        PASSED: Check: param = 0
-                value: 0
-
-        PASSED: Function: check_bus
-        PASSED: Instance: 1
-        Call sequence matched so far: 
-        mem_alloc#2;disable_watchdog#22;check_bus#1
-        PASSED: Check: returnValue = &ACCESS_VARIABLE(struct, _testArray)[2]
-                value: 0x00025810
-        PASSED: Check Memory: ACCESS_VARIABLE(struct, _testArray)
-
-    End Call Sequence Validation:
-
-    Call sequence matched: 
-    mem_alloc#2;disable_watchdog#22;check_bus#1
-
-------------------------- End Test: 6: serial_com
-
 ------------------------- Start Test: COVERAGE RULE SET
 
 ISO26262-6 2011 ASIL D unit level (HR)
->> Test Script Warning: Coverage Rule Set ignored in deferred analysis mode
+GET_COVERAGE_MIN: entry point coverage (feasible only, including catch-clauses)
+                  for "*" in context "*" = 100.0%
+
+    PASSED: Check Range: 100% Entry Point Coverage
+           actual: 100
+            lower: 100
+            upper: 100
+GET_COVERAGE_MIN: statement coverage (feasible only, including catch-clauses)
+                  for "*" in context "*" = 90.9%
+
+>>  FAILED: Check Range: 100% Statement Coverage
+           actual: 90.9
+            lower: 100
+            upper: 100
+GET_COVERAGE_MIN: decision coverage (feasible only, including catch-clauses)
+                  for "*" in context "*" = 83.3%
+
+>>  FAILED: Check Range: 100% Decision Coverage
+           actual: 83.3
+            lower: 100
+            upper: 100
+GET_COVERAGE_MIN: boolean operand effectiveness (feasible only, including 
+catch-clauses)
+                  for "*" in context "*" = 0.0%
+
+>>  FAILED: Check Range: 100% Boolean Operand Effectiveness Coverage
+           actual: 0
+            lower: 100
+            upper: 100
+-----------------------------------------------------------------------------
+Coverage results for  entry point, statement, decision, boolean operand 
+effectiveness, 
+                 for "*" in context "*"
+                 with executed and un-executed details
+                 feasible only, including catch-clauses
+-----------------------------------------------------------------------------
+struct.c(34):check_bus()
+entry point coverage details (with executed and un-executed cases)
+
+struct.c(34):               entry   1                                       2
+
+"check_bus"                                              executed           1
+"check_bus"                                           un-executed           0
+"check_bus"                                  entry point coverage      100.0%
+
+struct.c(39):mem_alloc(size_t )
+entry point coverage details (with executed and un-executed cases)
+
+struct.c(39):               entry   1                                       2
+
+"mem_alloc"                                              executed           1
+"mem_alloc"                                           un-executed           0
+"mem_alloc"                                  entry point coverage      100.0%
+
+struct.c(45):serial_com(s_TEST_COM *)
+entry point coverage details (with executed and un-executed cases)
+
+struct.c(45):               entry   1                                       2
+
+"serial_com"                                             executed           1
+"serial_com"                                          un-executed           0
+"serial_com"                                 entry point coverage      100.0%
+
+struct.c(34):check_bus()
+statement coverage details (with executed and un-executed cases)
+
+struct.c(37):               stmnt   1 (return)                              2
+
+"check_bus"                                              executed           1
+"check_bus"                                           un-executed           0
+"check_bus"                                    statement coverage      100.0%
+
+struct.c(39):mem_alloc(size_t )
+statement coverage details (with executed and un-executed cases)
+
+struct.c(41):               stmnt   1 (return)                              2
+
+"mem_alloc"                                              executed           1
+"mem_alloc"                                           un-executed           0
+"mem_alloc"                                    statement coverage      100.0%
+
+struct.c(45):serial_com(s_TEST_COM *)
+statement coverage details (with executed and un-executed cases)
+
+struct.c(48):               stmnt   1 (declaration)                         2
+struct.c(55):               stmnt   2 (other)                               2
+struct.c(57):               stmnt   3 (cond)                                2
+struct.c(57):               stmnt   4 (return)               >> NOT EXECUTED 
+struct.c(57):               stmnt   5 (other)                               2
+struct.c(58):               stmnt   6 (cond)                                2
+struct.c(59):               stmnt   7 (loop)                                1
+struct.c(59):               stmnt   8 (loop)                                3
+struct.c(61):               stmnt   9 (other)                               3
+struct.c(63):               stmnt  10 (return)                              1
+struct.c(65):               stmnt  11 (return)                              1
+
+"serial_com"                                             executed          10
+"serial_com"                                          un-executed           1
+"serial_com"                                   statement coverage       90.9%
+
+struct.c(34):check_bus()
+decision coverage details (with executed and un-executed cases)
+
+
+"check_bus"                                              executed           0
+"check_bus"                                           un-executed           0
+"check_bus"                                     decision coverage      100.0%
+
+struct.c(39):mem_alloc(size_t )
+decision coverage details (with executed and un-executed cases)
+
+
+"mem_alloc"                                              executed           0
+"mem_alloc"                                           un-executed           0
+"mem_alloc"                                     decision coverage      100.0%
+
+struct.c(45):serial_com(s_TEST_COM *)
+decision coverage details (with executed and un-executed cases)
+
+struct.c(57):                decn   1 (if)     branch TRUE   >> NOT EXECUTED 
+struct.c(57):                decn   1 (if)     branch FALSE                 2
+struct.c(58):                decn   2 (if)     branch TRUE                  1
+struct.c(65):                decn   2 (if)     branch FALSE                 1
+struct.c(59):                decn   3 (for)    branch TRUE                  3
+struct.c(59):                decn   3 (for)    branch FALSE                 1
+
+"serial_com"                                             executed           5
+"serial_com"                                          un-executed           1
+"serial_com"                                    decision coverage       83.3%
+
+struct.c(34):check_bus()
+boolean operand effectiveness coverage details (with executed and un-executed 
+cases)
+
+
+"check_bus"                                             effective           0
+"check_bus"                                         not effective           0
+"check_bus"                                 boolean eff. coverage      100.0%
+
+struct.c(39):mem_alloc(size_t )
+boolean operand effectiveness coverage details (with executed and un-executed 
+cases)
+
+
+"mem_alloc"                                             effective           0
+"mem_alloc"                                         not effective           0
+"mem_alloc"                                 boolean eff. coverage      100.0%
+
+struct.c(45):serial_com(s_TEST_COM *)
+boolean operand effectiveness coverage details (with executed and un-executed 
+cases)
+
+struct.c(57):                expr   1 (A&&B)                                 
+struct.c(57):                expr   1 A                      >> NOT EFFECTIVE
+struct.c(57):                expr   1 B                      >> NOT EFFECTIVE
+
+"serial_com"                                            effective           0
+"serial_com"                                        not effective           2
+"serial_com"                                boolean eff. coverage        0.0%
+
+Summary by     EXECUTED     Overall                Statistics
+Coverage type  INFEASIBLES  (wavg)     avg /    min /    max /    dev /   num
+-----------------------------------------------------------------------------
+entry point            0   100.0%   100.0% / 100.0% / 100.0% /   0.0% /     3
+statement              0    92.3%    96.9% /  90.9% / 100.0% /   5.2% /     3
+decision               0    83.3%    94.4% /  83.3% / 100.0% /   9.6% /     3
+boolean eff.           0     0.0%    66.6% /   0.0% / 100.0% /  57.7% /     3
+-----------------------------------------------------------------------------
 
 
 ------------------------- End Test: COVERAGE RULE SET
 
+EXPORT_COVERAGE: coverage data written to "test_struct.cov"
 Report on memory usage
-    Peak memory used         : 1868 bytes
+    Peak memory used         : 8212 bytes
     Initial memory pool size : 16000 bytes
-    Memory pool unused       : 14132 bytes
+    Memory pool unused       : 7788 bytes
 ==============================================================================
-= Test Finished: Time not available                                          =
+= Test Finished: Mon Feb 21 11:54:02 2022                                    =
 =----------------------------------------------------------------------------=
 = Test                    Script  Checks  Checks  Checks  Call Seq     TEST  =
 = Case                    Errors  Failed  Passed  Warned  Failures    RESULT =
 =----------------------------------------------------------------------------=
 = test_serial_com              0       0       3       0         0      PASS =
 = test_serial_com_busKO        0       0       2       0         0      PASS =
-= 3: serial_com                0       0       4       0         0      PASS =
-= 4: serial_com                0       0       4       0         0      PASS =
-= 5: serial_com                0       0       4       0         0      PASS =
-= 6: serial_com                0       0       4       0         0      PASS =
-= COVERAGE RULE SET            0       0       0       1         0      PASS =
+= COVERAGE RULE SET            0       3       1       0         0   >> FAIL =
 = Other                        0       0       0       0         0      PASS =
 =----------------------------------------------------------------------------=
-= TOTALS                       0       0      21       1         0      PASS =
+= TOTALS                       0       3       6       0         0   >> FAIL =
 ==============================================================================
